@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex apj_template"] 1758650691.26711 "apj_template.aux" "apj_template.bbl" "apj_template" 1758651018.5459 0
-  "./refs.bib" 1758650690.27212 935 08022c36cbe7b773ecba2d2b5fe2e315 ""
+["bibtex apj_template"] 1758651535.33925 "apj_template.aux" "apj_template.bbl" "apj_template" 1758651535.4141 0
+  "./refs.bib" 1758651535.1644 1244 2b4f34f84e0ad332c5bfd58867dcf8c3 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "apj_template.aux" 1758651018.35643 2176 7703df2952b5b87aca7e91bbaa96e139 "pdflatex"
+  "apj_template.aux" 1758651422.15465 2176 7703df2952b5b87aca7e91bbaa96e139 "pdflatex"
   (generated)
   "apj_template.bbl"
   "apj_template.blg"
   (rewritten before read)
-["pdflatex"] 1758651017.55162 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex" "apj_template.pdf" "apj_template" 1758651018.546 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex" 1758651017.32936 3680 1ee8afe75502940c3ee8dde9f7922283 ""
+["pdflatex"] 1758651421.44486 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex" "apj_template.pdf" "apj_template" 1758651535.41413 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex" 1758651317.10871 3674 5a647245a7f01612fa4759b754935a59 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -151,10 +151,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "apj_template.aux" 1758651018.35643 2176 7703df2952b5b87aca7e91bbaa96e139 "pdflatex"
-  "apj_template.bbl" 1758650691.34231 778 4371eaf830f5e84c73fc6cb667e48887 "bibtex apj_template"
-  "apj_template.out" 1758651018.35687 1197 d9b11d8fad60c562b8fc02128ba1ea2d "pdflatex"
-  "apj_template.tex" 1758651017.32936 3680 1ee8afe75502940c3ee8dde9f7922283 ""
+  "apj_template.aux" 1758651422.15465 2176 7703df2952b5b87aca7e91bbaa96e139 "pdflatex"
+  "apj_template.bbl" 1758651535.41063 778 4371eaf830f5e84c73fc6cb667e48887 "bibtex apj_template"
+  "apj_template.out" 1758651422.15511 1197 d9b11d8fad60c562b8fc02128ba1ea2d "pdflatex"
+  "apj_template.tex" 1758651317.10871 3674 5a647245a7f01612fa4759b754935a59 ""
   "bifurcation.png" 1758649105.45425 1030750 29cdaa779a7288a2fe5da68e5f346b07 ""
   (generated)
   "apj_template.aux"
