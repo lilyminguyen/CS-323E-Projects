@@ -1,0 +1,14 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{Boeing(2016)}]{boeing}
+Boeing, G. 2016, Systems, 4, 37, \dodoi{https://www.mdpi.com/2079-8954/4/4/37}
+
+\bibitem[{Bubulo(2018)}]{bubolo}
+Bubulo, M. 2018, The Dynamics of the Logistic Map and Difference Equations
+
+\end{thebibliography}
