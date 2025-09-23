@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex apj_template"] 1758639701.82642 "apj_template.aux" "apj_template.bbl" "apj_template" 1758639775.74308 0
+["bibtex apj_template"] 1758639701.82642 "apj_template.aux" "apj_template.bbl" "apj_template" 1758645171.19927 0
   "./refs.bib" 1758639416.54484 618 fa5e62fea60ebcfd0c4a06c6e00d9b3c ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "apj_template.aux" 1758639775.53254 2065 5cb9a7b5e2dfef030309ce9e934a39a6 "pdflatex"
+  "apj_template.aux" 1758645171.01935 2065 5cb9a7b5e2dfef030309ce9e934a39a6 "pdflatex"
   (generated)
   "apj_template.bbl"
   "apj_template.blg"
   (rewritten before read)
-["pdflatex"] 1758639774.96652 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/Projects/Project 1/apj_template.tex" "apj_template.pdf" "apj_template" 1758639775.74355 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/Projects/Project 1/apj_template.tex" 1758639774.78118 2509 a63a36abb63baf2080a077401efcd937 ""
+["pdflatex"] 1758645170.58775 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex" "apj_template.pdf" "apj_template" 1758645171.19938 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex" 1758645170.18506 2511 a0e1cfa7bf97193babc6fd9dc1f7da77 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -145,10 +145,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "apj_template.aux" 1758639775.53254 2065 5cb9a7b5e2dfef030309ce9e934a39a6 "pdflatex"
+  "apj_template.aux" 1758645171.01935 2065 5cb9a7b5e2dfef030309ce9e934a39a6 "pdflatex"
   "apj_template.bbl" 1758639701.91833 645 6ee96d8c4c1199c1ee5bee9a61d0517b "bibtex apj_template"
-  "apj_template.out" 1758639775.53297 1197 d9b11d8fad60c562b8fc02128ba1ea2d "pdflatex"
-  "apj_template.tex" 1758639774.78118 2509 a63a36abb63baf2080a077401efcd937 ""
+  "apj_template.out" 1758645171.01971 1197 d9b11d8fad60c562b8fc02128ba1ea2d "pdflatex"
+  "apj_template.tex" 1758645170.18506 2511 a0e1cfa7bf97193babc6fd9dc1f7da77 ""
   (generated)
   "apj_template.aux"
   "apj_template.log"

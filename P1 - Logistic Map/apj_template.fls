@@ -1,8 +1,8 @@
-PWD /Users/lilynguyen/Downloads/UT Fa25/CS 323E/Projects/Project 1
+PWD /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lilynguyen/Downloads/UT Fa25/CS 323E/Projects/Project 1/apj_template.tex
+INPUT /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex
 OUTPUT apj_template.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls

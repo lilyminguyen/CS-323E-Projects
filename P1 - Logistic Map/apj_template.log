@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  23 SEP 2025 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  23 SEP 2025 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/lilynguyen/Downloads/UT Fa25/CS 323E/Projects/Project 1/apj_template.tex"
-(/Users/lilynguyen/Downloads/UT Fa25/CS 323E/Projects/Project 1/apj_template.tex
+**"/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex"
+(/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
@@ -665,14 +665,14 @@ Package rerunfilecheck Info: File `apj_template.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  15715 strings out of 473190
- 250632 string characters out of 5715801
+ 250680 string characters out of 5715801
  727480 words of memory out of 5000000
  38693 multiletter control sequences out of 15000+600000
  568016 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,6n,93p,433b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,6n,93p,449b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on apj_template.pdf (2 pages, 137265 bytes).
+Output written on apj_template.pdf (2 pages, 137403 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
