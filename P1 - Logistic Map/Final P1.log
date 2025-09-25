@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  25 SEP 2025 02:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  25 SEP 2025 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,28 +639,28 @@ Package hyperref Info: Link coloring ON on input line 24.
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 24.
 Class revtex4-1 Info: Reinvoke \linenumbers on input line 24.
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 24.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 43.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 45.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<bifurcation.png, id=74, 714.7503pt x 469.755pt>
+<bifurcation.png, id=71, 714.7503pt x 469.755pt>
 File: bifurcation.png Graphic file (type png)
 <use bifurcation.png>
-Package pdftex.def Info: bifurcation.png  used on input line 117.
+Package pdftex.def Info: bifurcation.png  used on input line 119.
 (pdftex.def)             Requested size: 333.5232pt x 219.20795pt.
  [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.158 
+l.153 
        <./bifurcation.png>] (./Final P1.bbl [3]) [4] (./Final P1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -676,9 +676,9 @@ Here is how much of TeX's memory you used:
  38757 multiletter control sequences out of 15000+600000
  568944 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,6n,93p,582b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,6n,93p,582b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on "Final P1.pdf" (4 pages, 1372792 bytes).
+Output written on "Final P1.pdf" (4 pages, 1373625 bytes).
 PDF statistics:
  179 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
