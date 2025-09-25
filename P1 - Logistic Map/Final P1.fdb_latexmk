@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Final P1"] 1758820924.54261 "Final P1.aux" "Final P1.bbl" "Final P1" 1758820930.96556 0
+["bibtex Final P1"] 1758820924.54261 "Final P1.aux" "Final P1.bbl" "Final P1" 1758821022.57936 0
   "./refs.bib" 1758782259.1072 2914 50f08940437e5523ec34698fd1adec91 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "Final P1.aux" 1758820930.77626 1722 4c3b68837394944409cd35f686b7c7cf "pdflatex"
+  "Final P1.aux" 1758821022.40031 1722 4c3b68837394944409cd35f686b7c7cf "pdflatex"
   (generated)
   "Final P1.bbl"
   "Final P1.blg"
   (rewritten before read)
-["pdflatex"] 1758820930.043 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/Final P1.tex" "Final P1.pdf" "Final P1" 1758820930.96566 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/Final P1.tex" 1758820929.86123 8167 535e0403d17894d9b60254180461e5cf ""
+["pdflatex"] 1758821021.67455 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/Final P1.tex" "Final P1.pdf" "Final P1" 1758821022.57946 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/Final P1.tex" 1758821021.48631 8198 42a3a116145700b0d8a79e1059a27a68 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -156,10 +156,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Final P1.aux" 1758820930.77626 1722 4c3b68837394944409cd35f686b7c7cf "pdflatex"
+  "Final P1.aux" 1758821022.40031 1722 4c3b68837394944409cd35f686b7c7cf "pdflatex"
   "Final P1.bbl" 1758820924.62691 1147 1461ea60c33c253cb248d0670f21c71e "bibtex Final P1"
-  "Final P1.out" 1758820930.77672 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
-  "Final P1.tex" 1758820929.86123 8167 535e0403d17894d9b60254180461e5cf ""
+  "Final P1.out" 1758821022.40078 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
+  "Final P1.tex" 1758821021.48631 8198 42a3a116145700b0d8a79e1059a27a68 ""
   "bifurcation.png" 1758649105.45425 1030750 29cdaa779a7288a2fe5da68e5f346b07 ""
   (generated)
   "Final P1.aux"
