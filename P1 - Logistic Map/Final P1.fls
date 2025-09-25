@@ -2,8 +2,8 @@ PWD /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic M
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/paper.tex
-OUTPUT paper.log
+INPUT /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/Final P1.tex
+OUTPUT Final P1.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/revtex4-1/revtex4-1.cls
@@ -183,10 +183,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./paper.aux
-INPUT ./paper.aux
-INPUT paper.aux
-OUTPUT paper.aux
+INPUT ./Final P1.aux
+INPUT ./Final P1.aux
+INPUT Final P1.aux
+OUTPUT Final P1.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -198,14 +198,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
-INPUT ./paper.out
-INPUT ./paper.out
-INPUT paper.out
-INPUT paper.out
-OUTPUT paper.pdf
-INPUT ./paper.out
-INPUT ./paper.out
-OUTPUT paper.out
+INPUT ./Final P1.out
+INPUT ./Final P1.out
+INPUT Final P1.out
+INPUT Final P1.out
+OUTPUT Final P1.pdf
+INPUT ./Final P1.out
+INPUT ./Final P1.out
+OUTPUT Final P1.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
@@ -260,12 +260,12 @@ INPUT ./bifurcation.png
 INPUT ./bifurcation.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT ./paper.bbl
-INPUT ./paper.bbl
-INPUT paper.bbl
-INPUT paper.aux
-INPUT ./paper.out
-INPUT ./paper.out
+INPUT ./Final P1.bbl
+INPUT ./Final P1.bbl
+INPUT Final P1.bbl
+INPUT Final P1.aux
+INPUT ./Final P1.out
+INPUT ./Final P1.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
