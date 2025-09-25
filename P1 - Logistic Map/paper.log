@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  25 SEP 2025 02:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  25 SEP 2025 02:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex"
-(/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/apj_template.tex
+**"/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/paper.tex"
+(/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P1 - Logistic Map/paper.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
@@ -585,8 +585,8 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 24.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count373
 \l__pdf_internal_box=\box95
-) (./apj_template.aux)
-\openout1 = `apj_template.aux'.
+) (./paper.aux)
+\openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -632,9 +632,9 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 24.
- (./apj_template.out) (./apj_template.out)
+ (./paper.out) (./paper.out)
 \@outlinefile=\write5
-\openout5 = `apj_template.out'.
+\openout5 = `paper.out'.
 
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 24.
 Class revtex4-1 Info: Reinvoke \linenumbers on input line 24.
@@ -661,24 +661,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.158 
-       <./bifurcation.png>] (./apj_template.bbl [3]) [4] (./apj_template.aux)
+       <./bifurcation.png>] (./paper.bbl [3]) [4] (./paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `apj_template.out' has not changed.
+Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: FD6613885883F8A97E52E98D2DEE2C3B;631.
  ) 
 Here is how much of TeX's memory you used:
  15784 strings out of 473190
- 252009 string characters out of 5715801
- 740363 words of memory out of 5000000
+ 251827 string characters out of 5715801
+ 740328 words of memory out of 5000000
  38753 multiletter control sequences out of 15000+600000
  568944 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,6n,93p,586b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,6n,93p,579b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on apj_template.pdf (4 pages, 1372792 bytes).
+Output written on paper.pdf (4 pages, 1372792 bytes).
 PDF statistics:
  179 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
