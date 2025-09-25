@@ -6,12 +6,21 @@
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
 \bibitem[{Boeing(2016)}]{boeing}
-Boeing, G. 2016, Systems, 4, 37, \dodoi{https://www.mdpi.com/2079-8954/4/4/37}
+Boeing, G. 2016, Systems, 4, 37, \dodoi{10.3390/systems4040037}
 
-\bibitem[{Bubulo(2018)}]{bubolo}
-Bubulo, M. 2018, The Dynamics of the Logistic Map and Difference Equations
+\bibitem[{Bubolo(2018)}]{bubolo}
+Bubolo, M. 2018, The Dynamics of the Logistic Map and Difference Equations
 
-\bibitem[{Feigenbaum(1978)}]{feigenbaum}
-Feigenbaum, M.~J. 1978, Journal of Statistical Physics, 19, 25, \dodoi{10.1007/BF01020332}
+\bibitem[{Chen {et~al.}(2021)Chen, Feng, Fu, \& Zhang}]{chen}
+Chen, S., Feng, S., Fu, W., \& Zhang, Y. 2021, Journal of Physics: Conference Series, 2014, 012009, \dodoi{10.1088/1742-6596/2014/1/012009}
+
+\bibitem[{Feigenbaum(1978)}]{feig}
+Feigenbaum, M. 1978, J. Stat. Phys., 19, 25, \dodoi{10.1007/BF01020332}
+
+\bibitem[{May(1976)}]{may}
+May, R. 1976, Nature, 26, 457, \dodoi{10.1038/261459a0}
+
+\bibitem[{Schtickzelle(1981)}]{sch}
+Schtickzelle, M. 1981, Population (French Edition), 36, 541, \dodoi{10.2307/1532327}
 
 \end{thebibliography}
