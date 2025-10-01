@@ -1,0 +1,155 @@
+\documentclass[linenumbers,RNAAS,trackchanges]{aastex631}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}           % hrefs
+\usepackage{natbib}             % for bibliography
+\usepackage{float}              % figure positioning
+\usepackage{svg}                % used for SVG images
+\usepackage{graphicx}           % used for non-SVG images
+
+% Search Query Metadata
+\shorttitle{Short Title}
+\shortauthors{Corresponding Author's Last Name, et al.}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+urlcolor=blue
+}
+
+\begin{document}
+\title{Title Name Here}
+% [] is for ORCiD
+\correspondingauthor{Lily Nguyen}
+\email{lilyminguyen@utexas.edu, lilyminguyen@gmail.com}
+\author{Lily Nguyen}
+\affiliation{Department of Physics\\
+The University of Texas at Austin\\
+Austin, TX 78712, USA}
+\affiliation{Department of Mathematics\\
+The University of Texas at Austin\\
+Austin, TX 78712}
+
+\author[0000-0000-0000-0000]{Author Name 2}
+\affiliation{Affiliation Name 2\\
+Affiliation Address Line 1\\
+Affiliation Address Line 2}
+
+\collaboration{6}{(Collaboration Name)}
+% or 
+% \nocollaboration{0}
+
+\author[0000-0000-0000-0000]{Author Name 3}
+\author[0000-0000-0000-0000]{Author Name 4}
+\author[0000-0000-0000-0000]{Author Name 5}
+
+% 250 word limit for abstract
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat tristique velit sollicitudin egestas. Fusce nec ex out neque gravida facilisis laoreet ac dui. Suspendisse vel feugiat orci. Nulla pharetra nec lacus non sollicitudin. Donec in suscipit orci, et interdum tellus. Vestibulum mollis risus in metus venenatis, quis vestibulum nisi cursus. Proin lacinia hendrerit elit a luctus. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sed lectus accumsan, dignissim metus non, bibendum tellus.
+Pellentesque interdum purus ut augue euismod imperdiet. Vestibulum tortor ex, consectetur at condimentum at, finibus nec lacus. Quisque eu vehicula lorem, pretium blandit odio. Nullam sodales efficitur purus at efficitur. Donec ornare, libero quis eleifend eleifend, metus ex aliquet magna, at rhoncus ipsum tellus vel velit. Mauris quis elit viverra metus tristique ullamcorper blandit at metus. Integer porta malesuada mauris vitae porttitor. Nunc erat dui, molestie id dui id, varius tempus augue. Morbi vel augue eu quam auctor aliquam. Proin efficitur ipsum ut arcu placerat consequat. In eget tortor vitae magna suscipit efficitur vitae ac massa. Suspendisse potenti.
+\end{abstract}
+
+% Use astrothesaurus numbers in place of num
+\keywords{keyword 1 (num) --- keyword 2 (num) --- keyword 3 (num)}
+\section{Introduction} \label{sec:intro}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed felis ante. Nam interdum, nisl ut euismod iaculis, sem mi condimentum nisl, et viverra ex dui mattis neque. Donec semper tortor ut laoreet maximus. Aliquam auctor hendrerit justo quis congue. Etiam eu euismod urna. Donec sapien lectus, rhoncus ac vestibulum euismod, posuere id ex. Etiam rhoncus tempus ultricies.
+
+Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna.
+
+Nulla malesuada porttitor nisl, eu consequat ex finibus vitae. Pellentesque id sem eu leo cursus porttitor efficitur sit amet orci. In aliquam lorem consectetur luctus consectetur. Aliquam a lacus lacinia, fermentum augue in, blandit ante. Donec hendrerit est ac mauris volutpat, id congue quam imperdiet. Maecenas eu lacinia dolor. Mauris luctus semper tincidunt. Morbi quis nibh eu dolor consequat pellentesque.
+
+Etiam ut dictum orci. Mauris augue nibh, aliquam id ipsum vitae, mattis tincidunt dui. In hac habitasse platea dictumst. Etiam tempor tortor et magna ornare, nec volutpat dolor vestibulum. Morbi non condimentum lorem, in rutrum odio. Aenean luctus rutrum fermentum. Duis ac elit efficitur, ultricies arcu vel, sodales sapien. Sed malesuada nibh sed varius maximus. Phasellus in ipsum vestibulum, condimentum enim sit amet, hendrerit mauris. Aenean ac risus eleifend, pulvinar justo commodo.
+
+\section{Data} \label{sec:data}
+Aenean rhoncus cursus massa eu porta. Quisque magna libero, vehicula blandit lorem in, pellentesque rutrum urna. Morbi tincidunt a enim nec egestas. Aliquam interdum diam eu felis consectetur, non tempor ipsum mattis. Phasellus in leo porttitor ex congue pulvinar. Mauris velit metus, pharetra ut facilisis id, auctor in ligula. Nunc erat lacus, vehicula eget lacus nec, ornare viverra ligula. In id fringilla nibh. Mauris eget bibendum eros, vel ultrices nisi. Suspendisse enim dolor, iaculis ullamcorper tempus eu, aliquam sed erat. Duis nec nibh vitae quam vestibulum ultrices. Duis sed sollicitudin mi, nec sagittis dolor. Quisque quis pellentesque lectus. Suspendisse sapien enim, tristique vitae sagittis non, mattis vel ligula. Curabitur at scelerisque sapien. Aliquam porta ipsum ac lectus viverra feugiat.
+
+% Example list
+\begin{itemize}
+ \item{Item 1}
+   \begin{enumerate}
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet.
+    \end{enumerate}
+  \item{Item 2}
+    \begin{enumerate}
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+    \end{enumerate}
+  \item{Item 3}
+    \begin{enumerate}
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+      \item Lorem ipsum dolor sit amet
+    \end{enumerate}
+\end{itemize}
+
+Mauris placerat sagittis sapien, in consectetur tellus tristique quis. Phasellus in magna eu nibh lobortis auctor. Nunc non aliquet massa. Phasellus suscipit urna sit amet libero sodales pulvinar in ut metus. Sed vestibulum eleifend consequat. Donec commodo luctus ex, sed fermentum ex accumsan in.
+
+\section{Information about Observations}
+Phasellus tincidunt ligula nisl, in cursus odio mattis cursus. Aenean vitae neque purus. Morbi ac nisi quis est consequat euismod. Aenean tincidunt aliquet velit, a semper est aliquet sed. Aenean nunc lorem, vulputate vitae vulputate et, tincidunt a leo. Morbi urna purus, rhoncus id erat vel, ullamcorper sollicitudin velit. Donec eros elit, vulputate eu hendrerit vel, tincidunt non mi. Nullam eu lectus sodales, lobortis purus vel, egestas orci. Nam aliquam convallis est at bibendum.
+
+\subsection{Specific Topic Pt 1} \label{sec:subtopic1}
+Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+
+
+\subsection{Specific Topic Pt 2} \label{sec:subtopic2}
+Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{orcid-ID.png}
+    \caption{Example Figure}
+    \label{fig:my_label}
+\end{figure}
+
+Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+
+\subsection{Specific Topic Pt 3} \label{sec:subtopic3}
+Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline
+         Name &  Value \\
+         \hline
+         A & 104 \\
+         B & 684 \\
+         C & 1480 \\
+         D & 803 \\
+         E & 800 \\
+         F & 1421 \\
+         \hline
+    \end{tabular}
+    \caption{Data}
+    \label{tab:data_tab}
+\end{table}
+
+Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+
+
+\section{Results} \label{sec:results}
+Quisque aliquam dignissim leo vitae efficitur. In at ex est. Praesent lobortis posuere nulla et aliquet. Donec augue arcu, finibus at auctor id, blandit vitae odio. Vestibulum ut nunc et est tempus egestas non sed augue. Donec fringilla tellus quis volutpat rhoncus. Pellentesque varius magna sed metus hendrerit maximus. Duis at ipsum sem. Aenean et porttitor tortor. Praesent quis sem ullamcorper orci interdum semper in ut lacus. Praesent varius sem eget sem semper, ut venenatis sem mattis.
+
+Duis ac urna sollicitudin, malesuada lorem eu, molestie quam. Curabitur quis lectus sollicitudin, tincidunt eros a, dapibus nisl. In ligula elit, laoreet ac suscipit in, pretium non dolor. Ut pretium ultricies felis, ac vehicula nisi luctus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Nullam id mauris lectus. Fusce blandit mauris non quam posuere imperdiet. Curabitur consectetur sit amet sapien vitae condimentum. Donec pharetra risus lectus, ac malesuada dolor luctus nec. Maecenas vel fermentum nisl. Mauris id nisi quis ipsum ultrices eleifend quis at sapien. Nulla a porttitor quam. Phasellus sit amet magna magna.
+
+\section{Summary /  Conclusion} \label{sec:summary}
+Donec lobortis commodo lectus bibendum imperdiet. Maecenas non porttitor leo. Suspendisse lacus risus, facilisis ut sapien sit amet, pretium rhoncus arcu. Proin vitae risus at ligula vehicula pretium at vel velit. Vivamus quis quam auctor enim accumsan sagittis ac eu est. Proin porttitor odio vitae odio dictum, nec sodales nisl rutrum. In eu nunc tincidunt, vestibulum magna vel, pretium nibh. Vestibulum massa augue, pharetra a ipsum quis, accumsan imperdiet nibh. Pellentesque maximus sed velit at convallis. Pellentesque sapien libero, dictum nec magna vitae, convallis volutpat lacus. Mauris gravida metus mauris, quis malesuada ipsum molestie non. Vestibulum quis enim auctor libero cursus porta et facilisis quam.
+
+Sed gravida justo non vehicula commodo. Ut ut tortor a arcu maximus vestibulum quis id est. Donec elementum magna vel sem pellentesque cursus. Curabitur sollicitudin dui a congue cursus. In accumsan non orci non venenatis. Nullam luctus accumsan facilisis. Integer nec gravida justo. Nunc varius tortor imperdiet, semper justo eu, molestie ex. Phasellus at lorem turpis. Aliquam nec pretium purus, in tincidunt turpis. Vestibulum tristique dolor eget suscipit sollicitudin. Morbi nec maximus lacus, vitae vehicula velit. Sed fringilla sapien ac diam consectetur sagittis.
+
+\subsubsection{References}
+References can be added from BibTex support using {\tt\string\cite} command\\
+\cite{textbook}
+\cite{latex:companion}
+\cite{lesk:1977}
+
+\newpage
+\bibliographystyle{aasjournal}
+\bibliography{refs}
+
+\end{document}
