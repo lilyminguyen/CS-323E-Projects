@@ -113,7 +113,7 @@ spherical Bessel function in differential form, which looks similar to the
 origianl Bessel function in differential form:
 
 \begin{equation}
-    r^2\frac{\partial R_{n,l}}{partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
+    r^2\frac{\partial R_{n,l}}{\partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
 \end{equation}
 
 \noindent To obtain a solution, we impose a boundary condition $j_l(k_{n,l}a)=0$ at the
@@ -127,6 +127,7 @@ Bessel Function:
 \end{equation}
 
 \noindent where $j_l(k_{n,l},r)=\sqrt{\frac{\pi}{2kr}}J_{l+\frac{1}{2}}(k_{n,l}R)$.
+
 
 \subsection{Thermal Diffusion}
 
@@ -163,12 +164,20 @@ $t$ is time with $t>0$, and $T_1$ is a constant real value. The initial conditio
 the radial space is defined as $T(r,0)=T_2$, where $T_2$ is a constant real value.
 
 \begin{equation}
-    T^*=\frac{T(r,t)-T(R,t)}{T(r,0)-T(R,t)}=2\sum_{n=0}^\infty e^{-\beta_{n}^2}
+    T^*=\frac{T(r,t)-T(R,t)}{T(r,0)-T(R,t)}=2\sum_{n=0}^\infty e^{-\beta_{n}^2 \frac{\alpha t}{R^2}} \frac{J_0(\beta_n\frac{r}{R})}{\beta_nJ_1(\beta_n)}
+    \label{eq:T_star}
 \end{equation}
 
-CAN"T READ EQUATION GO LOOK IN PAPER
+\begin{equation}
+    T(r,t)=T^*(T(r,0)-T(R,t))+T(R,t)
+    \label{eq:T}
+\end{equation}
 
-\noindent We define temperature as a unitless quantity $T^*$. 
+\noindent We define temperature as a unitless quantity $T^*$. $\beta_n$ is the
+nth-root solution where $J_0(r)=0$. The temperature function uses both the zeroth
+and first order Bessel function in the solution. Hence, Equation~\ref{eq:T_star}
+and Equation ~\ref{eq:T} is the final solution for that the temperature takes.
+
 
 \subsection{Drum Wave Propagation}
 
@@ -184,7 +193,15 @@ across the membrane:
 
 \noindent where $c^2=\frac{\sigma^2}{S}$.
 
-The first boundary condition is $z(R_f,t)=0$. The displacement ...
+The first boundary condition is $z(R_f,t)=0$. The displacement from the origin
+along the z-axis must be zero at the edge of the drum since those points are
+fixed. This condition quantizes the solution, yielding discrete Bessel functions
+that satisfy the boundary conditions. To simplify the example, we impose the boundary
+condition $z(r,\theta,0)=f(r)$ for $0\leq r \leq a$, representing the initial
+pertubation caused by striking the surface at its center. This approach preserves
+the $\theta$-dependence in the solution, allowing the Bessel function to appear
+explicitly in the radial component.
+
 
 \section{Results} \label{sec:results}
 
