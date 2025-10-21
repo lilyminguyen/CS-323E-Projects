@@ -1,14 +1,18 @@
-\documentclass[linenumbers,RNAAS,trackchanges]{aastex631}
+\documentclass[linenumbers, RNAAS, trackchanges]{aastex631}
+
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}           % hrefs
 \usepackage{natbib}             % for bibliography
 \usepackage{float}              % figure positioning
 \usepackage{svg}                % used for SVG images
 \usepackage{graphicx}           % used for non-SVG images
+\usepackage{amsmath}
+\usepackage{parskip}
+
 
 % Search Query Metadata
-\shorttitle{Short Title}
-\shortauthors{Corresponding Author's Last Name, et al.}
+\shorttitle{Bessel Functions}
+%\shortauthors{Nguyen & Sae}
 
 % Hyperlink setup
 \hypersetup{
@@ -18,128 +22,141 @@ urlcolor=blue
 }
 
 \begin{document}
-\title{Numerical Computation of Bessel Function Zeroes for Orders $n=0,1,2$}
+\title{Bessel Functions: Theory and Applications}
 % [] is for ORCiD
-\correspondingauthor{Lily Nguyen}
-\email{lilyminguyen@utexas.edu, lilyminguyen@gmail.com}
+%\correspondingauthor{Main Author}
+%\email{author1@email.com, author2@email.com, author3@email.com}
 \author{Lily Nguyen}
-\affiliation{Department of Physics\\
-The University of Texas at Austin\\
+\affiliation{Department of Physics, The University of Texas at Austin\\
 Austin, TX 78712, USA}
-\affiliation{Department of Mathematics\\
-The University of Texas at Austin\\
-Austin, TX 78712}
 
-\author[0000-0000-0000-0000]{Author Name 2}
-\affiliation{Affiliation Name 2\\
-Affiliation Address Line 1\\
-Affiliation Address Line 2}
+\author{Andre Sae}
+\affiliation{Department of Physics, The University of Texas at Austin\\
+Austin, TX 78712, USA}
 
-\collaboration{6}{(Collaboration Name)}
-% or 
-% \nocollaboration{0}
-
-\author[0000-0000-0000-0000]{Author Name 3}
-\author[0000-0000-0000-0000]{Author Name 4}
-\author[0000-0000-0000-0000]{Author Name 5}
 
 % 250 word limit for abstract
 \begin{abstract}
-State the purpose, numerical methods used, main results (roots found), and relevance to physics problems
+
+We go over three physical scenarios where Bessel Functions are used. The first 
+scenario is the infinite square well quantum mechanical wave function in 
+spherical coordinates. The second example scenario involves solving the 
+temperature equation for thermal diffusion through a material. The final 
+example models the vibration along the drum head right after it is struck in 
+the middle. 
+
 \end{abstract}
 
 % Use astrothesaurus numbers in place of num
-\keywords{Bessel functions (1) --- numerical methods (2) --- root finding (3) --- cylindrical coordinates (4)}
+\keywords{word 1 (1) --- word 2 (2) --- word 3 (3) --- word 4 (4)}
+
+
 \section{Introduction} \label{sec:intro}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed felis ante. Nam interdum, nisl ut euismod iaculis, sem mi condimentum nisl, et viverra ex dui mattis neque. Donec semper tortor ut laoreet maximus. Aliquam auctor hendrerit justo quis congue. Etiam eu euismod urna. Donec sapien lectus, rhoncus ac vestibulum euismod, posuere id ex. Etiam rhoncus tempus ultricies.
-
-Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna.
-
-Nulla malesuada porttitor nisl, eu consequat ex finibus vitae. Pellentesque id sem eu leo cursus porttitor efficitur sit amet orci. In aliquam lorem consectetur luctus consectetur. Aliquam a lacus lacinia, fermentum augue in, blandit ante. Donec hendrerit est ac mauris volutpat, id congue quam imperdiet. Maecenas eu lacinia dolor. Mauris luctus semper tincidunt. Morbi quis nibh eu dolor consequat pellentesque.
-
-Etiam ut dictum orci. Mauris augue nibh, aliquam id ipsum vitae, mattis tincidunt dui. In hac habitasse platea dictumst. Etiam tempor tortor et magna ornare, nec volutpat dolor vestibulum. Morbi non condimentum lorem, in rutrum odio. Aenean luctus rutrum fermentum. Duis ac elit efficitur, ultricies arcu vel, sodales sapien. Sed malesuada nibh sed varius maximus. Phasellus in ipsum vestibulum, condimentum enim sit amet, hendrerit mauris. Aenean ac risus eleifend, pulvinar justo commodo.
-
-\section{Data} \label{sec:data}
-Aenean rhoncus cursus massa eu porta. Quisque magna libero, vehicula blandit lorem in, pellentesque rutrum urna. Morbi tincidunt a enim nec egestas. Aliquam interdum diam eu felis consectetur, non tempor ipsum mattis. Phasellus in leo porttitor ex congue pulvinar. Mauris velit metus, pharetra ut facilisis id, auctor in ligula. Nunc erat lacus, vehicula eget lacus nec, ornare viverra ligula. In id fringilla nibh. Mauris eget bibendum eros, vel ultrices nisi. Suspendisse enim dolor, iaculis ullamcorper tempus eu, aliquam sed erat. Duis nec nibh vitae quam vestibulum ultrices. Duis sed sollicitudin mi, nec sagittis dolor. Quisque quis pellentesque lectus. Suspendisse sapien enim, tristique vitae sagittis non, mattis vel ligula. Curabitur at scelerisque sapien. Aliquam porta ipsum ac lectus viverra feugiat.
-
-% Example list
-\begin{itemize}
- \item{Item 1}
-   \begin{enumerate}
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet.
-    \end{enumerate}
-  \item{Item 2}
-    \begin{enumerate}
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-    \end{enumerate}
-  \item{Item 3}
-    \begin{enumerate}
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-      \item Lorem ipsum dolor sit amet
-    \end{enumerate}
-\end{itemize}
-
-Mauris placerat sagittis sapien, in consectetur tellus tristique quis. Phasellus in magna eu nibh lobortis auctor. Nunc non aliquet massa. Phasellus suscipit urna sit amet libero sodales pulvinar in ut metus. Sed vestibulum eleifend consequat. Donec commodo luctus ex, sed fermentum ex accumsan in.
-
-\section{Information about Observations}
-Phasellus tincidunt ligula nisl, in cursus odio mattis cursus. Aenean vitae neque purus. Morbi ac nisi quis est consequat euismod. Aenean tincidunt aliquet velit, a semper est aliquet sed. Aenean nunc lorem, vulputate vitae vulputate et, tincidunt a leo. Morbi urna purus, rhoncus id erat vel, ullamcorper sollicitudin velit. Donec eros elit, vulputate eu hendrerit vel, tincidunt non mi. Nullam eu lectus sodales, lobortis purus vel, egestas orci. Nam aliquam convallis est at bibendum.
-
-\subsection{Specific Topic Pt 1} \label{sec:subtopic1}
-Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
 
 
-\subsection{Specific Topic Pt 2} \label{sec:subtopic2}
-Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+For our applications we go over three different physical scenarios where the
+conversion of coordinate from cartesian to the coordinate with a radial 
+dependency has solutions that contain a Bessel function. The key point between 
+each scenario is that the radial dependency in the new coordinate systems 
+transforms the second order differential equation whose solution is sinusoidal 
+with a damping term or critical damping  into a Bessel function along the radial 
+basis. The Bessel function decays to 0 as the input parameter for each physical 
+situation radial basis moves toward infinity. However, the physical model does 
+resemble the exponential decay pattern found in the physical problems such as a 
+spring in fluid simulation.
 
 
-Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
 
-\subsection{Specific Topic Pt 3} \label{sec:subtopic3}
-Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
+\section{Data and Observations} \label{sec:data}
 
-\begin{table}[H]
+\begin{figure}[H]
     \centering
-    \begin{tabular}{|c|c|}
-         \hline
-         Name &  Value \\
-         \hline
-         A & 104 \\
-         B & 684 \\
-         C & 1480 \\
-         D & 803 \\
-         E & 800 \\
-         F & 1421 \\
-         \hline
-    \end{tabular}
-    \caption{Data}
-    \label{tab:data_tab}
-\end{table}
+    \includegraphics[width=0.70\linewidth]{bessel_roots.png}
+    \caption{some caption here}
+    \label{fig:bessel_roots}
+\end{figure}
 
-Fusce pellentesque vestibulum massa, sed volutpat leo pharetra in. Integer id blandit arcu. Aliquam blandit, tellus a ultrices viverra, nibh ligula mattis massa, eu auctor nisl neque ut velit. Donec venenatis euismod dolor. Morbi euismod lectus eget risus ornare, at ultricies mi eleifend. Maecenas aliquam varius risus sit amet posuere. Suspendisse at lacus consectetur, semper dui vitae, dapibus massa. Nunc lobortis metus tincidunt lorem eleifend facilisis. Nulla sodales et orci id molestie. Sed dignissim quam vitae sagittis efficitur. Sed pellentesque tellus ut suscipit congue. Sed commodo neque in ipsum vestibulum, at viverra urna ornare. Duis sollicitudin ipsum purus, eget facilisis diam scelerisque at. In sed consequat lectus, sodales finibus magna
 
+
+\section{Applications} \label{sec:applications}
+
+\subsection{Quantum Mechanics: The Infinite Square Well}
+The Bessel function appears in the solution to the wave function of an infinite
+square well in spherical coordinates. To solve the quantum mechanics problem, we
+define a potential well:
+
+\begin{equation}
+    V(x)=
+    \begin{cases}
+        0, &\text{if }r < a\\
+        \infty, &\text{if }r\geq a
+    \end{cases}
+\end{equation}
+
+The Hamiltonian operator $\hat{H}$ and energy operator $\hat{E}$ must also be
+defined to compute the wavefunction. The $n$ and $i$ are quantum numbers where $n$
+is the principle quantum number and $I$ is the angular momentum quantum number where
+both span the integer range from zero to infinity. $\hbar$ is Planck's constant, $m$
+is the mass of the particle, $r$ is the radius, and $R_{n,l}$ is the wavefunction in
+the radial basis.
+
+\begin{equation}
+    \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
+\end{equation}
+
+\begin{equation}
+    \hat{H}\psi-E\psi=\hat{H}R_{n,l}-ER_{n,l}=0
+\end{equation}
+
+\noindent Applying the Hamiltonial operator on the wavefunction gives us the
+spherical Bessel function in differential form, which looks similar to the
+origianl Bessel function in differential form:
+
+\begin{equation}
+    r^2\frac{\partial R_{n,l}}{partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
+\end{equation}
+
+\noindent To obtain a solution, we impose a boundary condition $j_l(k_{n,l}a)=0$ at the
+bounds of the well. This quantizes our solution by setting a discrete energy
+level $E_{n,l}=\frac{\hbar^2k_{n,l}^2}{2ma^2}$ where the solution exists. Hence,
+we are left with a radial solution to the wave equation containing the original
+Bessel Function:
+
+\begin{equation}
+    R_{n,l}=Aj_l(k_{n,l}r)
+\end{equation}
+
+\noindent where $j_l(k_{n,l},r)=\sqrt{\frac{\pi}{2kr}}J_{l+\frac{1}{2}}(k_{n,l}R)$.
+
+\subsection{Thermal Diffusion}
+
+
+\subsection{Drum Wave Propagation}
+
+Drum wave propagation is similar to thermal diffusion regarding classical wave 
+mechanics and quantum mechanics through the quantization of boundary conditions.
+We define a wavefunction for the propagation across a drum surface where $\sigma$
+is the surface mass density of the membrane and $S$ is the surface tension
+across the membrane:
+
+\begin{equation}
+    \frac{\partial^2z}{\partial t^2}=c^2\nabla^2z
+\end{equation}
+
+\noindent where $c^2=\frac{\sigma^2}{S}$.
+
+The first boundary condition is $z(R_f,t)=0$. The displacement ...
 
 \section{Results} \label{sec:results}
-Quisque aliquam dignissim leo vitae efficitur. In at ex est. Praesent lobortis posuere nulla et aliquet. Donec augue arcu, finibus at auctor id, blandit vitae odio. Vestibulum ut nunc et est tempus egestas non sed augue. Donec fringilla tellus quis volutpat rhoncus. Pellentesque varius magna sed metus hendrerit maximus. Duis at ipsum sem. Aenean et porttitor tortor. Praesent quis sem ullamcorper orci interdum semper in ut lacus. Praesent varius sem eget sem semper, ut venenatis sem mattis.
 
-Duis ac urna sollicitudin, malesuada lorem eu, molestie quam. Curabitur quis lectus sollicitudin, tincidunt eros a, dapibus nisl. In ligula elit, laoreet ac suscipit in, pretium non dolor. Ut pretium ultricies felis, ac vehicula nisi luctus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Nullam id mauris lectus. Fusce blandit mauris non quam posuere imperdiet. Curabitur consectetur sit amet sapien vitae condimentum. Donec pharetra risus lectus, ac malesuada dolor luctus nec. Maecenas vel fermentum nisl. Mauris id nisi quis ipsum ultrices eleifend quis at sapien. Nulla a porttitor quam. Phasellus sit amet magna magna.
 
-\section{Summary /  Conclusion} \label{sec:summary}
-Donec lobortis commodo lectus bibendum imperdiet. Maecenas non porttitor leo. Suspendisse lacus risus, facilisis ut sapien sit amet, pretium rhoncus arcu. Proin vitae risus at ligula vehicula pretium at vel velit. Vivamus quis quam auctor enim accumsan sagittis ac eu est. Proin porttitor odio vitae odio dictum, nec sodales nisl rutrum. In eu nunc tincidunt, vestibulum magna vel, pretium nibh. Vestibulum massa augue, pharetra a ipsum quis, accumsan imperdiet nibh. Pellentesque maximus sed velit at convallis. Pellentesque sapien libero, dictum nec magna vitae, convallis volutpat lacus. Mauris gravida metus mauris, quis malesuada ipsum molestie non. Vestibulum quis enim auctor libero cursus porta et facilisis quam.
 
-Sed gravida justo non vehicula commodo. Ut ut tortor a arcu maximus vestibulum quis id est. Donec elementum magna vel sem pellentesque cursus. Curabitur sollicitudin dui a congue cursus. In accumsan non orci non venenatis. Nullam luctus accumsan facilisis. Integer nec gravida justo. Nunc varius tortor imperdiet, semper justo eu, molestie ex. Phasellus at lorem turpis. Aliquam nec pretium purus, in tincidunt turpis. Vestibulum tristique dolor eget suscipit sollicitudin. Morbi nec maximus lacus, vitae vehicula velit. Sed fringilla sapien ac diam consectetur sagittis.
-
-\subsubsection{References}
-References can be added from BibTex support using {\tt\string\cite} command\\
-\cite{textbook}
-\cite{latex:companion}
-\cite{lesk:1977}
+\subsection{Acknowledgements}
+We thank Professor Mitra for his guidance and instruction throughout the course,
+as well as the teaching assistants for their helpful feedback. We also
+acknowledge the Department of Physics for providing an excellent academic foundation 
+to support this work. This work was completed as part of the requirements for 
+C S 323E: Elements of Scientific Computing at the University of Texas at Austin.
 
 \newpage
 \bibliographystyle{aasjournal}
