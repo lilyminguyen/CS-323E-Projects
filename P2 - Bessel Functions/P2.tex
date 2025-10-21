@@ -76,6 +76,7 @@ spring in fluid simulation.
     \label{fig:bessel_roots}
 \end{figure}
 
+\section{Results} \label{sec:results}
 
 
 \section{Applications} \label{sec:applications}
@@ -193,7 +194,7 @@ across the membrane:
 
 \noindent where $c^2=\frac{\sigma^2}{S}$.
 
-The first boundary condition is $z(R_f,t)=0$. The displacement from the origin
+\noindent The first boundary condition is $z(R_f,t)=0$. The displacement from the origin
 along the z-axis must be zero at the edge of the drum since those points are
 fixed. This condition quantizes the solution, yielding discrete Bessel functions
 that satisfy the boundary conditions. To simplify the example, we impose the boundary
@@ -202,10 +203,44 @@ pertubation caused by striking the surface at its center. This approach preserve
 the $\theta$-dependence in the solution, allowing the Bessel function to appear
 explicitly in the radial component.
 
+\begin{equation}
+    z(r,\theta,t)=R(r)T(t)\Theta(\theta)=R(r)T(t)
+\end{equation}
 
-\section{Results} \label{sec:results}
+\begin{equation}
+    r^2\frac{\partial^2R}{\partial r^2}+r\frac{\partial R}{\partial r}+(\lambda^2r^2-n^2)R=0
+\end{equation}
+
+\begin{equation}
+    \frac{dT}{dt}+\lambda^2cT=0
+\end{equation}
+
+\begin{eqnarray}
+    n=\lambda_{m,k}
+\end{eqnarray}
+
+\begin{eqnarray}
+    z(r,t)=\sum_{m=0}^\infty \sum_{k=1}^\infty J_m(\lambda_{m,k}r)e^{-c\lambda_{m,n}t}
+\end{eqnarray}
+
+\noindent Finally, impose a boundary condition enforcing zero displacement at
+the drum's boundary:
+
+\begin{equation}
+    J_m(\lambda_{m,k}R_f)=0,
+\end{equation}
+
+\noindent where $m$ is the order of the Bessel function and $k$ is the wavenumber.
+For $m=0$, the Bessel function itself vanishes at the boundary. There exist infinitely
+many integer values of $m$ and $k$ for which this condition is satisfied, corresponding
+to the distinct vibration modes of the drumhead. The resulting function $z(r,t)$
+describes the final waveform of the drum's vibration in time.
 
 
+
+
+
+\section{Summary and Conclusion} \label{sec:summary}
 
 \subsection{Acknowledgements}
 We thank Professor Mitra for his guidance and instruction throughout the course,
