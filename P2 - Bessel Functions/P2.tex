@@ -130,6 +130,45 @@ Bessel Function:
 
 \subsection{Thermal Diffusion}
 
+We define the heat equation propagating through a two-dimensional surface in
+the radial direction. $T$ is the temperature, $t$ is the time, $r$ is the radius,
+$k$ is the material conductivity, $\rho$ is the density of the material, and $c_p$
+is the specific heat capacity.
+
+\begin{align}
+    \frac{\partial T}{\partial t}&=\alpha\nabla^2T\\
+    &=\alpha\left(\frac{1}{r} \frac{\partial T}{\partial r} + \frac{\partial^2 T}{\partial r^2}\right)
+\end{align}
+
+\noindent where $\alpha=\frac{k}{\rho c_p}$.
+
+To solve this equation, we use separation of variables to split the 
+differential equation into two separate differential equations and assume
+that one takes the form $T(r,t)=X(r)\theta(t)$. The first equation takes the
+form of exponential decay over time:
+
+\begin{equation}
+    \frac{d\theta}{dt}+\lambda^2\alpha\theta=0
+\end{equation}
+
+\noindent whereas the second equation is the Bessel function of the zeroth-order
+since $\alpha=0$:
+
+\begin{equation}
+    \frac{d^2X}{dr^2}+\frac{1}{r}\frac{X}{r}+\lambda^2X=0.
+\end{equation}
+
+We set a boundary condition of $T(r,t)=T_1$, where $R$ is the radius of the circle,
+$t$ is time with $t>0$, and $T_1$ is a constant real value. The initial condition for
+the radial space is defined as $T(r,0)=T_2$, where $T_2$ is a constant real value.
+
+\begin{equation}
+    T^*=\frac{T(r,t)-T(R,t)}{T(r,0)-T(R,t)}=2\sum_{n=0}^\infty e^{-\beta_{n}^2}
+\end{equation}
+
+CAN"T READ EQUATION GO LOOK IN PAPER
+
+\noindent We define temperature as a unitless quantity $T^*$. 
 
 \subsection{Drum Wave Propagation}
 
