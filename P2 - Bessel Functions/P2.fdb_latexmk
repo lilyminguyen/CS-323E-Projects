@@ -1,16 +1,18 @@
 # Fdb version 4
-["bibtex P2"] 1761094186.58606 "P2.aux" "P2.bbl" "P2" 1761094188.66063 0
+["bibtex P2"] 1761095631.77046 "P2.aux" "P2.bbl" "P2" 1761095681.03411 0
   "./refs.bib" 1761093793.06666 247 e193b5265e595fc9b26e23421ffe0d66 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "P2.aux" 1761094188.45894 2047 37855a727be4a7ef2615ccb5f90a501a "pdflatex"
+  "P2.aux" 1761095680.83328 2047 e3a624ffc21399a27edad79e8f597462 "pdflatex"
   (generated)
   "P2.bbl"
   "P2.blg"
   (rewritten before read)
-["pdflatex"] 1761094187.99287 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" "P2.pdf" "P2" 1761094188.66075 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" 1761094187.96227 10600 7e744a40e46f1885b35372e51da31e49 ""
+["pdflatex"] 1761095680.33718 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" "P2.pdf" "P2" 1761095681.03422 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" 1761095680.14726 12304 4a9b3fb206a055e83745bb113ec49c98 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -51,6 +53,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
@@ -65,6 +68,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -162,10 +166,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "P2.aux" 1761094188.45894 2047 37855a727be4a7ef2615ccb5f90a501a "pdflatex"
-  "P2.bbl" 1761094186.65864 634 10d2b7dbc685b5fc7073add87c826dd3 "bibtex P2"
-  "P2.out" 1761094188.45939 1334 bc4204093da03b6bc8396f1736d5ac70 "pdflatex"
-  "P2.tex" 1761094187.96227 10600 7e744a40e46f1885b35372e51da31e49 ""
+  "P2.aux" 1761095680.83328 2047 e3a624ffc21399a27edad79e8f597462 "pdflatex"
+  "P2.bbl" 1761095631.83953 634 10d2b7dbc685b5fc7073add87c826dd3 "bibtex P2"
+  "P2.out" 1761095680.83374 1334 bc4204093da03b6bc8396f1736d5ac70 "pdflatex"
+  "P2.tex" 1761095680.14726 12304 4a9b3fb206a055e83745bb113ec49c98 ""
   "bessel_roots.png" 1761068854.88505 67111 2d5131541e2a719958704d0c18a09196 ""
   (generated)
   "P2.aux"

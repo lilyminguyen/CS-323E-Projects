@@ -55,21 +55,17 @@ the middle.
 
 The Bessel functions of the first kind, $J_n(x)$, are solutions to the
 second-order linear differential equation:
-
 \begin{equation}
     z^2\frac{d^2 w}{dz^2}+z\frac{dw}{dz}+(z^2-n^2)w=0,
 \end{equation}
-
 \noindent where integer $n=0,1,2\dots$ represents the order of the
 function. These functions appear naturally in the separation of variables when solving
 partial differential equations in cylindrical or spherical coordinates,
 particularly in systems with radial symmetry. Bessel functions also have an
-integral representation:
-
+integral
 \begin{equation}
     J_n(x)=\frac{1}{\pi}\int_0^\pi cos(x\sin\theta-n\theta)d\theta
 \end{equation}
-
 \noindent for integers $n=0,1,2\dots$, which is particularly useful for understanding 
 their oscillatory behavior.
 
@@ -91,15 +87,47 @@ function, estimate locations of roots from their plots, and apply the \texttt{fs
 method from \texttt{scipy.optimize} to define each root with high precision.
 
 
-
 \section{Data and Observations} \label{sec:data}
+
+This project focuses on computing and visualizing the first five roots of the
+Bessel functions of the first kind, $J_n(x)$, for orders $n=0,1,2$. These
+functions solve the second-order linear differential equation:
+\begin{equation}
+    J_n(x)=\frac{1}{\pi}\int_0^\pi cos(x\sin\theta-n\theta)d\theta,
+\end{equation}
+\noindent which arise in physical systems with spherical or cylindrical 
+symmetry. The positive roots of $J_n(x)$ represent physically meaningful
+quantities such as resonant frequencies or quantized energy levels in such
+systems.
+
+\noindent We computed the Bessel fucntions using Python's \texttt{scipy.special.jv}
+method, which evaluates $J_n(x)$ for an arbitrary order and argument. To
+find the roots numerically, we used the \texttt{fsolve} method from \texttt{scipy.optimize},
+which refines an initial guess until it finds a point where the function crosses
+zero. We chose a set of initial guesses based on where the function appeared to
+cross the x-axis in the plot and passed those values into \texttt{fsolve} to
+calculate each root more precisely. We use the following initial guesses:
+
+\begin{itemize}
+    \item $J_0(x)$: [2, 6.1, 8.6, 11.7, 15]
+    \item $J_1(x)$: [3.9, 7, 10.15, 13.1, 16.4]
+    \item $J_2(x)$: [5.1, 8.3, 11.8, 14.9, 18]
+\end{itemize}
+
+\noindent This gave us exactly five positive roots for each Bessel function. The 
+resulting plots of $J_0(x)$, $J_1(x)$, and $J_2(x)$ over the domain $x=0$ to
+$x=20$ are shown in Figure~\ref{fig:bessel_roots}, with the first five roots of
+each function marked as scatter points.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.70\linewidth]{bessel_roots.png}
-    \caption{some caption here}
+    \caption{Bessel functions $J_0(x)$, $J_1(x)$, and $J_2(x)$ plotted from $x=0$ to
+    $x=20$, with their first five positive roots represented as circular markers.}
     \label{fig:bessel_roots}
 \end{figure}
+
+
 
 \section{Results} \label{sec:results}
 
