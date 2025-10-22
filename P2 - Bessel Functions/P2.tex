@@ -53,17 +53,42 @@ the middle.
 
 \section{Introduction} \label{sec:intro}
 
+The Bessel functions of the first kind, $J_n(x)$, are solutions to the
+second-order linear differential equation:
 
-For our applications we go over three different physical scenarios where the
-conversion of coordinate from cartesian to the coordinate with a radial 
-dependency has solutions that contain a Bessel function. The key point between 
-each scenario is that the radial dependency in the new coordinate systems 
-transforms the second order differential equation whose solution is sinusoidal 
-with a damping term or critical damping  into a Bessel function along the radial 
-basis. The Bessel function decays to 0 as the input parameter for each physical 
-situation radial basis moves toward infinity. However, the physical model does 
-resemble the exponential decay pattern found in the physical problems such as a 
-spring in fluid simulation.
+\begin{equation}
+    z^2\frac{d^2 w}{dz^2}+z\frac{dw}{dz}+(z^2-n^2)w=0,
+\end{equation}
+
+\noindent where integer $n=0,1,2\dots$ represents the order of the
+function. These functions appear naturally in the separation of variables when solving
+partial differential equations in cylindrical or spherical coordinates,
+particularly in systems with radial symmetry. Bessel functions also have an
+integral representation:
+
+\begin{equation}
+    J_n(x)=\frac{1}{\pi}\int_0^\pi cos(x\sin\theta-n\theta)d\theta
+\end{equation}
+
+\noindent for integers $n=0,1,2\dots$, which is particularly useful for understanding 
+their oscillatory behavior.
+
+\noindent Bessel functions were first introduced by German astoronomer and
+mathematician Friedrich Wilhelm Bessel in the early 1800s during his study of
+planetary orbits. However, the equation itself had been investigated earlier
+by Bernoulli and Euler in problems involving vibrational membranes
+\citet{abramowitz_stegun}. Today, Bessel functions are foundational tools in 
+mathematical physics and engineering. In quantum mechanics, they appear in 
+radial solutions to the Schrödinger equation for quantum wells CITE, in the 
+vibration modes of circular membranes like drumheads CITE, and in heat 
+conduction problems with cylindrical geometries CITE.
+
+\noindent In this project, we numerically compute the first five positive roots
+of the Bessel functions $J_0(x)$, $J_1(x)$, and $J_2(x)$. These roots correspond
+to physically meaningful quantities such as resonance modes, cutoff frequencies, 
+or quantized boundary values in radial systems. We use Python to visualize each
+function, estimate locations of roots from their plots, and apply the \texttt{fsolve}
+method from \texttt{scipy.optimize} to define each root with high precision.
 
 
 

@@ -5,4 +5,7 @@
 \providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
+\bibitem[{Abramowitz \& Stegun(1972)}]{abramowitz_stegun}
+Abramowitz, M., \& Stegun, I.~A. 1972, Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables (New York: Dover Publications)
+
 \end{thebibliography}
