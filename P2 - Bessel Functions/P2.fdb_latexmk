@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex P2"] 1761095631.77046 "P2.aux" "P2.bbl" "P2" 1761095681.03411 0
+["bibtex P2"] 1761095877.66883 "P2.aux" "P2.bbl" "P2" 1761095884.20496 0
   "./refs.bib" 1761093793.06666 247 e193b5265e595fc9b26e23421ffe0d66 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "P2.aux" 1761095680.83328 2047 e3a624ffc21399a27edad79e8f597462 "pdflatex"
+  "P2.aux" 1761095883.99956 2047 f7d9284c54affcdf88371fdcd149d4dc "pdflatex"
   (generated)
   "P2.bbl"
   "P2.blg"
   (rewritten before read)
-["pdflatex"] 1761095680.33718 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" "P2.pdf" "P2" 1761095681.03422 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" 1761095680.14726 12304 4a9b3fb206a055e83745bb113ec49c98 ""
+["pdflatex"] 1761095883.53195 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" "P2.pdf" "P2" 1761095884.20505 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P2 - Bessel Functions/P2.tex" 1761095882.86918 12393 153d1e4730db3561112554f860f152f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -166,10 +166,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "P2.aux" 1761095680.83328 2047 e3a624ffc21399a27edad79e8f597462 "pdflatex"
-  "P2.bbl" 1761095631.83953 634 10d2b7dbc685b5fc7073add87c826dd3 "bibtex P2"
-  "P2.out" 1761095680.83374 1334 bc4204093da03b6bc8396f1736d5ac70 "pdflatex"
-  "P2.tex" 1761095680.14726 12304 4a9b3fb206a055e83745bb113ec49c98 ""
+  "P2.aux" 1761095883.99956 2047 f7d9284c54affcdf88371fdcd149d4dc "pdflatex"
+  "P2.bbl" 1761095877.74272 634 10d2b7dbc685b5fc7073add87c826dd3 "bibtex P2"
+  "P2.out" 1761095884.00001 1334 bc4204093da03b6bc8396f1736d5ac70 "pdflatex"
+  "P2.tex" 1761095882.86918 12393 153d1e4730db3561112554f860f152f0 ""
   "bessel_roots.png" 1761068854.88505 67111 2d5131541e2a719958704d0c18a09196 ""
   (generated)
   "P2.aux"

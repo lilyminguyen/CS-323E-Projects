@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 OCT 2025 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 OCT 2025 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,14 +654,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <bessel_roots.png, id=71, 578.16pt x 361.35pt>
 File: bessel_roots.png Graphic file (type png)
 <use bessel_roots.png>
-Package pdftex.def Info: bessel_roots.png  used on input line 124.
+Package pdftex.def Info: bessel_roots.png  used on input line 126.
 (pdftex.def)             Requested size: 359.18063pt x 224.48682pt.
  [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \end{equation}
-                     <./bessel_roots.png>] [3] (./P2.bbl [4]) [5] (./P2.aux)
+l.161 \end{equation}
+                     <./bessel_roots.png>] [3] [4] (./P2.bbl [5]) [6] (./P2.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -670,18 +670,18 @@ Package rerunfilecheck Info: File `P2.out' has not changed.
 (rerunfilecheck)             Checksum: BC4204093DA03B6BC8396F1736D5AC70;1334.
  ) 
 Here is how much of TeX's memory you used:
- 15826 strings out of 473190
- 252486 string characters out of 5715801
- 740293 words of memory out of 5000000
- 38772 multiletter control sequences out of 15000+600000
+ 15828 strings out of 473190
+ 252503 string characters out of 5715801
+ 739293 words of memory out of 5000000
+ 38773 multiletter control sequences out of 15000+600000
  569447 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,11n,93p,580b,489s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on P2.pdf (5 pages, 327394 bytes).
+Output written on P2.pdf (6 pages, 327745 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
