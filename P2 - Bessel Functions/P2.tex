@@ -23,7 +23,7 @@ urlcolor=blue
 }
 
 \begin{document}
-\title{Bessel Functions: Theory and Applications}
+\title{Numerical Analysis of Bessel Function Roots and their Physical Applications}
 % [] is for ORCiD
 %\correspondingauthor{Main Author}
 %\email{author1@email.com, author2@email.com, author3@email.com}
@@ -186,13 +186,13 @@ The time-independent radial Schrödinger equation in spherical coordinates becom
     \hat{H}\psi-E\psi=\hat{H}R_{n,l}-ER_{n,l}=0
 \end{equation}
 \begin{equation}
-    \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
+    \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
 \end{equation}
 \noindent where $\hat{H}$ is the Hamiltonian operator and $E$ is the energy eigenvalue.
 
 \noindent Inside the well ($r<a$), the radial equation reduces to:
 \begin{equation}
-    r^2\frac{\partial R_{n,l}}{\partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
+    r^2\frac{\partial^2 R_{n,l}}{\partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
 \end{equation}
 
 \noindent This is recognizeed as the spherical Bessel differential equation.
@@ -221,7 +221,7 @@ is the mass of the particle, $r$ is the radius, and $R_{n,l}$ is the wavefunctio
 the radial basis.
 
 \begin{equation}
-    \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
+    \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
 \end{equation}
 
 \begin{equation}
