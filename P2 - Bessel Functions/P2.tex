@@ -53,7 +53,7 @@ and demonstrate the usefulness of numerical methods in modeling such systems.
 \end{abstract}
 
 % Use astrothesaurus numbers in place of num
-\keywords{Bessel functions --- root-finding --- radial symmetry --- boundary value problems --- numerical analysis}
+\keywords{Bessel functions --- root-finding --- radial symmetry --- boundary conditions --- numerical analysis}
 
 
 \section{Introduction} \label{sec:intro}
@@ -66,7 +66,7 @@ second-order linear differential equation:
 \noindent where integer $n=0,1,2\dots$ represents the order of the
 function. These functions appear naturally in the separation of variables when solving
 partial differential equations in cylindrical or spherical coordinates,
-particularly in systems with radial symmetry. Bessel functions also have an
+particularly in systems with radial symmetry \cite{abramowitz_stegun}. Bessel functions also have an
 integral
 \begin{equation}
     J_n(x)=\frac{1}{\pi}\int_0^\pi cos(x\sin\theta-n\theta)d\theta
@@ -103,7 +103,7 @@ functions solve the second-order linear differential equation:
     z^2\frac{d^2 w}{dz^2}+z\frac{dw}{dz}+(z^2-n^2)w=0,
 \end{equation}
 \noindent which arise in physical systems with spherical or cylindrical 
-symmetry. The positive roots of $J_n(x)$ represent physically meaningful
+symmetry \citet{abramowitz_stegun}. The positive roots of $J_n(x)$ represent physically meaningful
 quantities such as resonant frequencies or quantized energy levels in such
 systems.
 
@@ -165,14 +165,13 @@ problems that exhibit radial symmetry. In this section, we highlight three
 examples: the infinite square well in quantum mechanics, radial thermal
 diffusion, and wave propagation on a circular membrane. In each case, Bessel
 functions emerge from imposing boundary conditions on the radial part of a 
-separable partial differential equation.
+separable partial differential equation.\\
 
 \subsection{Quantum Mechanics: The Infinite Square Well}
 
 Bessel functions appear in the solution to the Schrödinger equation for a
 particle confined in a three-dimensinoal infinite spherical potential well.
 The potential is defined as:
-
 \begin{equation}
     V(x)=
     \begin{cases}
@@ -180,153 +179,83 @@ The potential is defined as:
         \infty, &\text{if }r\geq a
     \end{cases}
 \end{equation}
-
-The time-independent radial Schrödinger equation in spherical coordinates becomes:
+\noindent Inside the well ($r < a$), the time-independent Schrödinger equation in
+spherical coordinates becomes:
 \begin{equation}
     \hat{H}\psi-E\psi=\hat{H}R_{n,l}-ER_{n,l}=0
 \end{equation}
 \begin{equation}
     \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
 \end{equation}
-\noindent where $\hat{H}$ is the Hamiltonian operator and $E$ is the energy eigenvalue.
+\noindent where $R_{n,l}(r)$ is the radial wavefunction, $n$ is the principle
+quantum number, $l$ is the angular momentum quantum number, $m$ is the
+particle mass, and $\hbar$ is the reduced Planck constant.
 
-\noindent Inside the well ($r<a$), the radial equation reduces to:
+\noindent With $V(r)=0$ inside the well, the radial differential equation
+reduces to:
 \begin{equation}
     r^2\frac{\partial^2 R_{n,l}}{\partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
 \end{equation}
-
-\noindent This is recognizeed as the spherical Bessel differential equation.
-Its solutions are the spherical Bessel functions $j_l(k_{n,l},r)$, which are related
-to the ordinary Bessel functions by:
+\noindent This is the spherical Bessel differential equation, and its solutions
+are spherical Bessel functions $j_l(k_{n,l}r)$, which relate to the ordinary
+Bessel functions by:
 \begin{equation}
-    j_l(k_{n,l},r)=\sqrt{\frac{\pi}{2kr}}J_{l+\frac{1}{2}}(k_{n,l}r)
+    j_l(k_{n,l}r)=\sqrt{\frac{\pi}{2kr}}J_{l+\frac{1}{2}}(k_{n,l}r)
 \end{equation}
-
-\noindent Imposing the boundary condition $j_l(ka)=0$ leads to discrete values $k_{n,l}$,
-which quantize the energy levels as:
+\noindent To satisfy the boundary condition that the wavefunction vanishes at
+$r=a$, we require that $j_l(k_{n,l}a)=0$. This quantization conditions selects
+discrete values $k_{n,l}$ which in turn determine the allowed energy levels:
 \begin{equation}
     E_{n,l}=\frac{\hbar^2k_{n,l}^2}{2ma^2}
 \end{equation}
-
-Thus, the Bessel function roots determine the allowed energy states of the system.
-
-
-------------------------------------------------------------------------
-
-The Hamiltonian operator $\hat{H}$ and energy operator $\hat{E}$ must also be
-defined to compute the wavefunction. The $n$ and $i$ are quantum numbers where $n$
-is the principle quantum number and $I$ is the angular momentum quantum number where
-both span the integer range from zero to infinity. $\hbar$ is Planck's constant, $m$
-is the mass of the particle, $r$ is the radius, and $R_{n,l}$ is the wavefunction in
-the radial basis.
-
-\begin{equation}
-    \hat{H}=\frac{-\hbar ^2}{2m}\left(\frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} - \frac{l(l+1)}{r^2}\right) +V(r)
-\end{equation}
-
-\begin{equation}
-    \hat{H}\psi-E\psi=\hat{H}R_{n,l}-ER_{n,l}=0
-\end{equation}
-
-\noindent Applying the Hamiltonial operator on the wavefunction gives us the
-spherical Bessel function in differential form, which looks similar to the
-origianl Bessel function in differential form:
-
-\begin{equation}
-    r^2\frac{\partial R_{n,l}}{\partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
-\end{equation}
-
-\noindent To obtain a solution, we impose a boundary condition $j_l(k_{n,l}a)=0$ at the
-bounds of the well. This quantizes our solution by setting a discrete energy
-level $E_{n,l}=\frac{\hbar^2k_{n,l}^2}{2ma^2}$ where the solution exists. Hence,
-we are left with a radial solution to the wave equation containing the original
-Bessel Function:
-
-\begin{equation}
-    R_{n,l}=Aj_l(k_{n,l}r)
-\end{equation}
-
-\noindent where $j_l(k_{n,l},r)=\sqrt{\frac{\pi}{2kr}}J_{l+\frac{1}{2}}(k_{n,l}r)$.\\
+\noindent Thus, the roots of the spherical Bessel functions determine the
+quantized energy spectrum of the particle in the well. This example illustrates how
+the mathematical properties of Bessel functions have direct physical 
+consequences in quantum systems with spherical symmetry.\\
 
 
 \subsection{Thermal Diffusion}
 
-Bessel functions also arise in radial heat conduction problems. The temperature
-distribution $T(r,t)$ in a two-dimensional circular region is governed by the
-heat equation:
+Bessel functions also appear in heat conduction problems with radial symmetry.
+In a two-dimensional circular region, the temperature distribution $T(r,t)$
+evolves according to the heat equation:
 \begin{align}
     \frac{\partial T}{\partial t}&=\alpha\nabla^2T\\
     &=\alpha\left(\frac{1}{r} \frac{\partial T}{\partial r} + \frac{\partial^2 T}{\partial r^2}\right)
 \end{align}
-\noindent where $\alpha=\frac{k}{\rho c_p}$.
+\noindent where  $\alpha=\frac{k}{\rho c_p}$ is the thermal diffusivity, with
+$k$ as the thermal conductivity, $\rho$ the material density, and $c_p$ the
+specific heat capacity.
 
-\noindent Using separation of variables with $T(r,t)=X(r)\theta(t)$, the spatial equation becomes:
+\noindent To solve this equation, we assume separable solutions of the form
+$T(r,t)=X(r)\theta(t)$, which leads us to two ordinary differential equations.
+The time-dependent part gives exponential decay:
 \begin{equation}
-    \frac{d^2X}{dr^2}+\frac{1}{r}\frac{X}{r}+\lambda^2X=0.
+    \frac{d\theta}{dt}+\lambda^2\alpha\theta=0,
 \end{equation}
-
-\noindent THis is the Bessel equation of order zero. Solutions involve the
-Bessel function $J_0(\lambda r)$, and applying the boundary condition 
-$T(r,t)=T_1$ leads to quantization in terms of the roots $\beta_n$ such
-that $J_0(\beta_0)=0$.
-
-\noindent The full solution is:
-
-REWRITE/SIMPLIFY EQN TMRW
-
-\noindent The decay of each mode over time depends on the root $\beta_n$,
-which emphasizes how Bessel zeroes influence the thermal dynamics of
-circular geometries.
-
-
-------------------------------------------------------------------------
-
-We define the heat equation propagating through a two-dimensional surface in
-the radial direction. $T$ is the temperature, $t$ is the time, $r$ is the radius,
-$k$ is the material conductivity, $\rho$ is the density of the material, and $c_p$
-is the specific heat capacity.
-
-\begin{align}
-    \frac{\partial T}{\partial t}&=\alpha\nabla^2T\\
-    &=\alpha\left(\frac{1}{r} \frac{\partial T}{\partial r} + \frac{\partial^2 T}{\partial r^2}\right)
-\end{align}
-
-\noindent where $\alpha=\frac{k}{\rho c_p}$.
-
-To solve this equation, we use separation of variables to split the 
-differential equation into two separate differential equations and assume
-that one takes the form $T(r,t)=X(r)\theta(t)$. The first equation takes the
-form of exponential decay over time:
-
+\noindent and the spatial part gives the Bessel differential equation
+of order zero:
 \begin{equation}
-    \frac{d\theta}{dt}+\lambda^2\alpha\theta=0
+    \frac{d^2X}{dr^2}+\frac{1}{r}\frac{dX}{dr}+\lambda^2X=0.
 \end{equation}
+\noindent The general solution involves $J_0(\lambda r)$, and applying boundary
+conditions quantizes the solutions in terms of the roots $\beta_n$ where
+$J_0(\beta_n)=0$.
 
-\noindent whereas the second equation is the Bessel function of the zeroth-order
-since $\alpha=0$:
-
+\noindent We impose the initial condition $T(r,0)=T_2$ and the boundary condition
+$T(R,t)=0$, where $R$ is the radius of the domain and $T_1,T_2$ are constant
+values. The resulting dimensionsionless solution can be written as:
 \begin{equation}
-    \frac{d^2X}{dr^2}+\frac{1}{r}\frac{X}{r}+\lambda^2X=0.
+    T^*(r,t)=\frac{T(r,t)-T(R,t)}{T(r,0)-T(R,t)}=2\sum_{n=0}^\infty e^{-\beta_n^2\frac{\alpha t}{R^2}}\frac{J_0(\beta_n\frac{r}{R})}{\beta_nJ_1(\beta_n)}
 \end{equation}
-
-We set a boundary condition of $T(r,t)=T_1$, where $R$ is the radius of the circle,
-$t$ is time with $t>0$, and $T_1$ is a constant real value. The initial condition for
-the radial space is defined as $T(r,0)=T_2$, where $T_2$ is a constant real value.
-
+\noindent thus, making the full temperature solution:
 \begin{equation}
-    T^*=\frac{T(r,t)-T(R,t)}{T(r,0)-T(R,t)}=2\sum_{n=0}^\infty e^{-\beta_{n}^2 \frac{\alpha t}{R^2}} \frac{J_0(\beta_n\frac{r}{R})}{\beta_nJ_1(\beta_n)}
-    \label{eq:T_star}
+    T(r,t)=T^*(T(r,0)-T(R,t))+T(R,t).
 \end{equation}
-
-\begin{equation}
-    T(r,t)=T^*(T(r,0)-T(R,t))+T(R,t)
-    \label{eq:T}
-\end{equation}
-
-\noindent We define temperature as a unitless quantity $T^*$. $\beta_n$ is the
-nth-root solution where $J_0(r)=0$. The temperature function uses both the zeroth
-and first order Bessel function in the solution. Hence, Equation~\ref{eq:T_star}
-and Equation ~\ref{eq:T} is the final solution for that the temperature takes.\\
+\noindent The temperature function uses both the zeroth and first order
+Bessel function in the solution. Thus, we see how the Bessel function determine the
+the dynamics of thermal modes, with each mode decaying exponentially at a rate set
+by $\beta_n$.\\
 
 
 \subsection{Drum Wave Propagation}
