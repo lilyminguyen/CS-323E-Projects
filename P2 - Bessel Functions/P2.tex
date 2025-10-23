@@ -80,9 +80,9 @@ planetary orbits. However, the equation itself had been investigated earlier
 by Bernoulli and Euler in problems involving vibrational membranes
 \citet{abramowitz_stegun}. Today, Bessel functions are foundational tools in 
 mathematical physics and engineering. In quantum mechanics, they appear in 
-radial solutions to the Schrödinger equation for quantum wells CITE, in the 
-vibration modes of circular membranes like drumheads CITE, and in heat 
-conduction problems with cylindrical geometries CITE.
+radial solutions to the Schrödinger equation for quantum wells \cite{hanson}, in the 
+vibration modes of circular membranes like drumheads \cite{tamrin}, and in heat 
+conduction problems with cylindrical geometries \cite{tsega}.
 
 \noindent In this project, we numerically compute the first five positive roots
 of the Bessel functions $J_0(x)$, $J_1(x)$, and $J_2(x)$. These roots correspond
@@ -189,7 +189,7 @@ spherical coordinates becomes:
 \end{equation}
 \noindent where $R_{n,l}(r)$ is the radial wavefunction, $n$ is the principle
 quantum number, $l$ is the angular momentum quantum number, $m$ is the
-particle mass, and $\hbar$ is the reduced Planck constant CITE.
+particle mass, and $\hbar$ is the reduced Planck constant \citet{hanson}.
 
 \noindent With $V(r)=0$ inside the well, the radial differential equation
 reduces to:
@@ -211,7 +211,7 @@ discrete values $k_{n,l}$ which in turn determine the allowed energy levels:
 \noindent Thus, the roots of the spherical Bessel functions determine the
 quantized energy spectrum of the particle in the well. This example illustrates how
 the mathematical properties of Bessel functions have direct physical 
-consequences in quantum systems with spherical symmetry CITE.\\
+consequences in quantum systems with spherical symmetry \cite{weisstein}.\\
 
 
 \subsection{Thermal Diffusion}
@@ -225,7 +225,7 @@ evolves according to the heat equation:
 \end{align}
 \noindent where  $\alpha=\frac{k}{\rho c_p}$ is the thermal diffusivity, with
 $k$ as the thermal conductivity, $\rho$ the material density, and $c_p$ the
-specific heat capacity CITE.
+specific heat capacity \cite{hahn}.
 
 \noindent To solve this equation, we assume separable solutions of the form
 $T(r,t)=X(r)\theta(t)$, which leads us to two ordinary differential equations.
@@ -255,7 +255,7 @@ values. The resulting dimensionsionless solution can be written as:
 \noindent The temperature function uses both the zeroth and first order
 Bessel function in the solution. Thus, we see how the Bessel function determine the
 the dynamics of thermal modes, with each mode decaying exponentially at a rate set
-by $\beta_n$ CITE.\\
+by $\beta_n$ \cite{tsega}.\\
 
 
 \subsection{Drum Wave Propagation}
@@ -299,7 +299,7 @@ angular modes:
 of the membrane. Each pair of integers($m,k$) corresponding to a distinct
 vibration mode, where $m$ is the order of the Bessel function and $k$ is the wavenumber.
 For $m=0$, the Bessel function vanishes at the boundary. Thus, the final waveform
-$z(r,t)$ describes the motion of the drumhead as a superposition of these modes evolving in time CITE.\\
+$z(r,t)$ describes the motion of the drumhead as a superposition of these modes evolving in time \cite{tamrin}.\\
 
 
 \section{Summary and Conclusion} \label{sec:summary}

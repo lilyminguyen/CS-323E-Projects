@@ -8,4 +8,20 @@
 \bibitem[{Abramowitz \& Stegun(1972)}]{abramowitz_stegun}
 Abramowitz, M., \& Stegun, I.~A. 1972, Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables (New York: Dover Publications)
 
+\bibitem[{Hahn \& Özışık(2021)}]{hahn}
+Hahn, D.~W., \& Özışık, M.~N. 2021, Heat Conduction, 3rd edn. (Hoboken, NJ: John Wiley \& Sons), 179--252
+
+\bibitem[{Hanson {et~al.}(2025)Hanson, Harvey, Sweeney, \& Zielinski}]{hanson}
+Hanson, D.~M., Harvey, E., Sweeney, R., \& Zielinski, T.~J. 2025, 7.2: The Hamiltonian Operator for Rotational Motion, \url{https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Book\%3A_Quantum_States_of_Atoms_and_Molecules_(Zielinksi_et_al)/07\%3A_Rotational_States/7.02\%3A_The_Hamiltonian_Operator_for_Rotational_Motion}
+
+\bibitem[{Tamrin \& Zakaria(2022)}]{tamrin}
+Tamrin, N.~N., \& Zakaria, M.~N. 2022, Proceedings of Science and Mathematics, 8, 132
+
+\bibitem[{Tsega {et~al.}(2017)Tsega, Yimer, \& Alemayehu}]{tsega}
+Tsega, E., Yimer, M., \& Alemayehu, G. 2017, American Journal of Computational Mathematics, 7, 18, \dodoi{10.4236/ajcm.2017.71002}
+
+\bibitem[{Weisstein(2025)}]{weisstein}
+Weisstein, E.~W. 2025, Modified Spherical Bessel Differential Equation.
+\newblock \url{https://mathworld.wolfram.com/ModifiedSphericalBesselDifferentialEquation.html}
+
 \end{thebibliography}
