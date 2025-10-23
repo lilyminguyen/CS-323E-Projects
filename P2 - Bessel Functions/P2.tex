@@ -91,7 +91,7 @@ or quantized boundary values in systems with radial symmetry. We use Python to v
 function, estimate the approximation locations of their roots, and apply the \texttt{fsolve}
 method from \texttt{scipy.optimize} to compute each root with high precision. 
 Our goal is to obtain accurate roots values for each order and verify them 
-using numerical methods
+using numerical methods.\\
 
 
 \section{Data and Observations} \label{sec:data}
@@ -153,7 +153,7 @@ vibrations, and decay rates of thermal modes in cylindrical heat conduction.
 \noindent Our numerical results followed the expected trend that root values
 increase with both the order $n$ and the root index. This quantized structure
 highlights the physical significance of Bessel function solutions in bounded
-radial domains.
+radial domains.\\
 
 
 \section{Applications} \label{sec:applications}
@@ -189,7 +189,7 @@ spherical coordinates becomes:
 \end{equation}
 \noindent where $R_{n,l}(r)$ is the radial wavefunction, $n$ is the principle
 quantum number, $l$ is the angular momentum quantum number, $m$ is the
-particle mass, and $\hbar$ is the reduced Planck constant.
+particle mass, and $\hbar$ is the reduced Planck constant CITE.
 
 \noindent With $V(r)=0$ inside the well, the radial differential equation
 reduces to:
@@ -211,7 +211,7 @@ discrete values $k_{n,l}$ which in turn determine the allowed energy levels:
 \noindent Thus, the roots of the spherical Bessel functions determine the
 quantized energy spectrum of the particle in the well. This example illustrates how
 the mathematical properties of Bessel functions have direct physical 
-consequences in quantum systems with spherical symmetry.\\
+consequences in quantum systems with spherical symmetry CITE.\\
 
 
 \subsection{Thermal Diffusion}
@@ -225,7 +225,7 @@ evolves according to the heat equation:
 \end{align}
 \noindent where  $\alpha=\frac{k}{\rho c_p}$ is the thermal diffusivity, with
 $k$ as the thermal conductivity, $\rho$ the material density, and $c_p$ the
-specific heat capacity.
+specific heat capacity CITE.
 
 \noindent To solve this equation, we assume separable solutions of the form
 $T(r,t)=X(r)\theta(t)$, which leads us to two ordinary differential equations.
@@ -255,91 +255,51 @@ values. The resulting dimensionsionless solution can be written as:
 \noindent The temperature function uses both the zeroth and first order
 Bessel function in the solution. Thus, we see how the Bessel function determine the
 the dynamics of thermal modes, with each mode decaying exponentially at a rate set
-by $\beta_n$.\\
+by $\beta_n$ CITE.\\
 
 
 \subsection{Drum Wave Propagation}
 
-The vibration of a circular membrane, such as a drumhead, is another problem
-where Bessel functions appear. The vertical displacement $z(r,\theta,t)$
+The vibration of a circular membrane, such as a drumhead, is another example of
+where Bessel functions appear. The vertical displacement of the membrane $z(r,\theta,t)$
 satisfies the two-dimensional wave equation:
 \begin{equation}
     \frac{\partial^2z}{\partial t^2}=c^2\nabla^2z
 \end{equation}
-\noindent where $c^2=\frac{\sigma^2}{S}$.
+\noindent where $c=\sqrt{\frac{S}{\sigma}}$ is the wave speed, $S$ is the surface
+tension, and $\sigma$ is the surface mass density of the membrane. 
 
-\noindent Assuming axisymmetric vibrations and separating variables, we arrive
-at the radial equation:
+\noindent Assuming symmetry about the axis (no $\theta$-dependence) and using
+separation of variables with $z(r,\theta,t)=R(r)T(t)\Theta(\theta)=R(r)T(t)$,
+we obtain two ordinary differential equations. The time-dependent part gives:
 \begin{equation}
-    r^2\frac{\partial^2R}{\partial r^2}+r\frac{\partial R}{\partial r}+(\lambda^2r^2-n^2)R=0
+    \frac{d^2T}{dt^2}+\lambda^2c^2T=0
 \end{equation}
-
-\noindent whose solutions are $J_m(\lambda r)$. The boundary condition $(R_f)=0$
-implies that $\lambda$ must be a root $\lambda_{m,k}$ of the Bessel function
-$J_m(\lambda r)$. Thus, the full solution becomes:
-
-REWRITE/SIMPLLIFY EQN TMRW
-
-
-\noindent These roots define the resonance frequencies of the drumhead and
-determine its modes of vibration.
-
-
-------------------------------------------------------------------------
-
-Drum wave propagation is similar to thermal diffusion regarding classical wave 
-mechanics and quantum mechanics through the quantization of boundary conditions.
-We define a wavefunction for the propagation across a drum surface where $\sigma$
-is the surface mass density of the membrane and $S$ is the surface tension
-across the membrane:
-
+\noindent which describes simple harmonic motion in time, and the radial part
+ becomes the Bessel differential equation of order $n$:
 \begin{equation}
-    \frac{\partial^2z}{\partial t^2}=c^2\nabla^2z
+    r^2\frac{\partial^2R}{\partial r^2}+r\frac{\partial R}{\partial r}+(\lambda^2r^2-n^2)R=0.
 \end{equation}
+\noindent with solutions $R(r)=J_m(\lambda r)$. $J_m$ is the Bessel
+function of the first kind.
 
-\noindent where $c^2=\frac{\sigma^2}{S}$.
-
-\noindent The first boundary condition is $z(R_f,t)=0$. The displacement from the origin
-along the z-axis must be zero at the edge of the drum since those points are
-fixed. This condition quantizes the solution, yielding discrete Bessel functions
-that satisfy the boundary conditions. To simplify the example, we impose the boundary
-condition $z(r,\theta,0)=f(r)$ for $0\leq r \leq a$, representing the initial
-pertubation caused by striking the surface at its center. This approach preserves
-the $\theta$-dependence in the solution, allowing the Bessel function to appear
-explicitly in the radial component.
-
+\noindent When we impose the boundary condition that the membrane is fixed at
+its edge ($z(R_f,t)=0$), we can quantize the allowable modes. This means $\lambda$
+must be one of the roots $\lambda_{m,k}$ of the Bessel 
+function $J_m(\lambda r)$, which satisfies:
 \begin{equation}
-    z(r,\theta,t)=R(r)T(t)\Theta(\theta)=R(r)T(t)
+    J_m(\lambda_{m,k}R_f)=0.
 \end{equation}
-
+\noindent We can write the general solution as a double sum over all radial and
+angular modes:
 \begin{equation}
-    r^2\frac{\partial^2R}{\partial r^2}+r\frac{\partial R}{\partial r}+(\lambda^2r^2-n^2)R=0
-\end{equation}
-
-\begin{equation}
-    \frac{dT}{dt}+\lambda^2cT=0
-\end{equation}
-
-\begin{eqnarray}
-    n=\lambda_{m,k}
-\end{eqnarray}
-
-\begin{eqnarray}
     z(r,t)=\sum_{m=0}^\infty \sum_{k=1}^\infty J_m(\lambda_{m,k}r)e^{-c\lambda_{m,n}t}
-\end{eqnarray}
-
-\noindent Finally, impose a boundary condition enforcing zero displacement at
-the drum's boundary:
-
-\begin{equation}
-    J_m(\lambda_{m,k}R_f)=0,
 \end{equation}
-
-\noindent where $m$ is the order of the Bessel function and $k$ is the wavenumber.
-For $m=0$, the Bessel function itself vanishes at the boundary. There exist infinitely
-many integer values of $m$ and $k$ for which this condition is satisfied, corresponding
-to the distinct vibration modes of the drumhead. The resulting function $z(r,t)$
-describes the final waveform of the drum's vibration in time.
+\noindent These quantized roots $\lambda_{m,k}$ determine the resonant frequencies
+of the membrane. Each pair of integers($m,k$) corresponding to a distinct
+vibration mode, where $m$ is the order of the Bessel function and $k$ is the wavenumber.
+For $m=0$, the Bessel function vanishes at the boundary. Thus, the final waveform
+$z(r,t)$ describes the motion of the drumhead as a superposition of these modes evolving in time CITE.\\
 
 
 \section{Summary and Conclusion} \label{sec:summary}
@@ -364,7 +324,7 @@ roots are important physical systems. Further work could involve exploring other
 families of Bessel functions or extending the root-finding method to more
 advanced applications involving partial differential equations where these functions
 naturally arise due to symmetry. These additions would provide deeper insight into the
-mathematical structure and wide-ranging applications of Bessel functions.
+mathematical structure and wide-ranging applications of Bessel functions.\\
 
 
 \subsection{Acknowledgements}
