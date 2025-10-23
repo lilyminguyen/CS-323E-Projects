@@ -113,8 +113,9 @@ find the roots numerically, we used the \texttt{fsolve} method from \texttt{scip
 which refines an initial guess until it finds a point where the function crosses
 zero. We chose a set of initial guesses based on where the function appeared to
 cross the x-axis in the plot and passed those values into \texttt{fsolve} to
-calculate each root more precisely. We used the following initial guesses:
+calculate each root more precisely. 
 
+\noindent We used the following initial guesses:
 \begin{itemize}
     \item $J_0(x)$: [2, 6.1, 8.6, 11.7, 15]
     \item $J_1(x)$: [3.9, 7, 10.15, 13.1, 16.4]
@@ -157,8 +158,6 @@ radial domains.\\
 
 
 \section{Applications} \label{sec:applications}
-
-ADD IN CITATIONS AND REORGANIZE THIS SECTION\\
 
 Bessel functions arise naturally in the solutions to a wide variety of physical
 problems that exhibit radial symmetry. In this section, we highlight three
@@ -240,7 +239,7 @@ of order zero:
 \end{equation}
 \noindent The general solution involves $J_0(\lambda r)$, and applying boundary
 conditions quantizes the solutions in terms of the roots $\beta_n$ where
-$J_0(\beta_n)=0$.
+$J_0(\beta_n)=0$ \cite{tsega}.
 
 \noindent We impose the initial condition $T(r,0)=T_2$ and the boundary condition
 $T(R,t)=0$, where $R$ is the radius of the domain and $T_1,T_2$ are constant
@@ -255,7 +254,7 @@ values. The resulting dimensionsionless solution can be written as:
 \noindent The temperature function uses both the zeroth and first order
 Bessel function in the solution. Thus, we see how the Bessel function determine the
 the dynamics of thermal modes, with each mode decaying exponentially at a rate set
-by $\beta_n$ \cite{tsega}.\\
+by $\beta_n$ \cite{neils}.\\
 
 
 \subsection{Drum Wave Propagation}
