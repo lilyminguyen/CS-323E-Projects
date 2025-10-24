@@ -39,7 +39,7 @@ Austin, TX 78712, USA}
 % 250 word limit for abstract
 \begin{abstract}
 
-In this project, we numerically computed and visualized the first five positive
+We numerically computed and visualized the first five positive
 roots of the Bessel functions of the first kind, $J_0(x)$, $J_1(x)$, and $J_2(x)$,
 using Python. These functions solve a second-order differential equation that 
 occur in problems with radial symmetry. We used the \texttt{scipy} library to
@@ -48,7 +48,7 @@ interpreted the computed roots in the context of three physical materials: the
 radial wavefunction in a quantum infinite square well, heat conduction in
 cylindrical geometries, and vibrational modes of a circular drumhead. Our
 results show how Bessel function roots reflect physical boundary conditions
-and demonstrate the usefulness of numerical methods in modeling such systems.
+and highlight the usefulness of numerical methods in modeling such systems.
 
 \end{abstract}
 
@@ -64,14 +64,14 @@ second-order linear differential equation:
     z^2\frac{d^2 w}{dz^2}+z\frac{dw}{dz}+(z^2-n^2)w=0,
 \end{equation}
 \noindent where integer $n=0,1,2\dots$ represents the order of the
-function. These functions appear naturally in the separation of variables when solving
+function. These functions appear in the separation of variables when solving
 partial differential equations in cylindrical or spherical coordinates,
 particularly in systems with radial symmetry \cite{abramowitz_stegun}. Bessel functions also have an
 integral
 \begin{equation}
     J_n(x)=\frac{1}{\pi}\int_0^\pi cos(x\sin\theta-n\theta)d\theta
 \end{equation}
-\noindent for integers $n=0,1,2\dots$, which is particularly useful for understanding 
+\noindent for integers $n=0,1,2\dots$, which is useful for understanding 
 their oscillatory behavior.
 
 \noindent Bessel functions were first introduced by German astoronomer and
@@ -88,9 +88,9 @@ conduction problems with cylindrical geometries \cite{neils}.
 of the Bessel functions $J_0(x)$, $J_1(x)$, and $J_2(x)$. These roots correspond
 to physically meaningful quantities such as resonance modes, cutoff frequencies, 
 or quantized boundary values in systems with radial symmetry. We use Python to visualize each
-function, estimate the approximation locations of their roots, and apply the \texttt{fsolve}
-method from \texttt{scipy.optimize} to compute each root with high precision. 
-Our goal is to obtain accurate roots values for each order and verify them 
+function, estimate the approximate locations of their roots, and apply the \texttt{fsolve}
+method from \texttt{scipy.optimize} to compute each root. 
+Our goal is to obtain accurate root values for each order
 using numerical methods.\\
 
 
@@ -102,7 +102,7 @@ functions solve the second-order linear differential equation:
 \begin{equation}
     z^2\frac{d^2 w}{dz^2}+z\frac{dw}{dz}+(z^2-n^2)w=0,
 \end{equation}
-\noindent which arise in physical systems with spherical or cylindrical 
+\noindent which appear in physical systems with radial 
 symmetry \citet{abramowitz_stegun}. The positive roots of $J_n(x)$ represent physically meaningful
 quantities such as resonant frequencies or quantized energy levels in such
 systems.
@@ -139,7 +139,7 @@ each function marked as scatter points.
 \section{Results} \label{sec:results}
 
 The plots of $J_0(x)$, $J_1(x)$, and $J_2(x)$ from $x=0$ to $x=20$ show that
-Bessel functions of the first kind exhibit oscillatory behavior with gradually
+Bessel functions of the first kind exhibit oscillatory behavior with a gradually
 decaying amplitude. As expected, $J_0(x)$ begins at $1$, while higher-order
 functions satisfy $J_n(x)=0$. The zero crossings become slightly less
 frequent as $x$ increases.
@@ -152,14 +152,14 @@ energy levels in circular quantum wells, resonance frequencies in drumhead
 vibrations, and decay rates of thermal modes in cylindrical heat conduction.
 
 \noindent Our numerical results followed the expected trend that root values
-increase with both the order $n$ and the root index. This quantized structure
+increase with both the order $n$ and the root index. The quantized structure
 highlights the physical significance of Bessel function solutions in bounded
 radial domains.\\
 
 
 \section{Applications} \label{sec:applications}
 
-Bessel functions arise naturally in the solutions to a wide variety of physical
+Bessel functions appear in the solutions of physical
 problems that exhibit radial symmetry. In this section, we highlight three
 examples: the infinite square well in quantum mechanics, radial thermal
 diffusion, and wave propagation on a circular membrane. In each case, Bessel
@@ -195,22 +195,22 @@ reduces to:
 \begin{equation}
     r^2\frac{\partial^2 R_{n,l}}{\partial r^2} + 2r\frac{\partial R_{n,l}}{\partial r} +(k^2r^2-l(l+1))R_{n,l}=0
 \end{equation}
-\noindent This is the spherical Bessel differential equation, and its solutions
-are spherical Bessel functions $j_l(k_{n,l}r)$, which relate to the ordinary
+\noindent This is the spherical Bessel differential equation where its solutions
+are spherical Bessel functions $j_l(k_{n,l}r)$ These relate to the ordinary
 Bessel functions by:
 \begin{equation}
     j_l(k_{n,l}r)=\sqrt{\frac{\pi}{2kr}}J_{l+\frac{1}{2}}(k_{n,l}r)
 \end{equation}
 \noindent To satisfy the boundary condition that the wavefunction vanishes at
 $r=a$, we require that $j_l(k_{n,l}a)=0$. This quantization conditions selects
-discrete values $k_{n,l}$ which in turn determine the allowed energy levels:
+discrete values $k_{n,l}$, which in turn determine the allowed energy levels:
 \begin{equation}
     E_{n,l}=\frac{\hbar^2k_{n,l}^2}{2ma^2}
 \end{equation}
-\noindent Thus, the roots of the spherical Bessel functions determine the
-quantized energy spectrum of the particle in the well. This illustrates how
+\noindent The roots of the spherical Bessel functions determine the
+quantized energy spectrum of the particle in the well, which illustrates how
 the mathematical properties of Bessel functions have direct physical 
-consequences in quantum systems with spherical symmetry \cite{weisstein}.\\
+consequences in radially symmetric quantum systems \cite{weisstein}.\\
 
 
 \subsection{Thermal Diffusion}
@@ -230,12 +230,12 @@ specific heat capacity \cite{hahn}.
 $T(r,t)=X(r)\theta(t)$, which leads us to two ordinary differential equations.
 The time-dependent part gives exponential decay:
 \begin{equation}
-    \frac{d\theta}{dt}+\lambda^2\alpha\theta=0,
+    \frac{d\theta}{dt}+\lambda^2\alpha\theta=0
 \end{equation}
 \noindent and the spatial part gives the Bessel differential equation
 of order zero:
 \begin{equation}
-    \frac{d^2X}{dr^2}+\frac{1}{r}\frac{dX}{dr}+\lambda^2X=0.
+    \frac{d^2X}{dr^2}+\frac{1}{r}\frac{dX}{dr}+\lambda^2X=0
 \end{equation}
 \noindent The general solution involves $J_0(\lambda r)$, and applying boundary
 conditions quantizes the solutions in terms of the roots $\beta_n$ where
@@ -247,20 +247,20 @@ values. The resulting dimensionless solution can be written as:
 \begin{equation}
     T^*(r,t)=\frac{T(r,t)-T(R,t)}{T(r,0)-T(R,t)}=2\sum_{n=0}^\infty e^{-\beta_n^2\frac{\alpha t}{R^2}}\frac{J_0(\beta_n\frac{r}{R})}{\beta_nJ_1(\beta_n)}
 \end{equation}
-\noindent thus, making the full temperature solution:
+\noindent which makes the full temperature solution:
 \begin{equation}
-    T(r,t)=T^*(T(r,0)-T(R,t))+T(R,t).
+    T(r,t)=T^*(T(r,0)-T(R,t))+T(R,t)
 \end{equation}
 \noindent The temperature function uses both the zeroth and first order
-Bessel function in the solution. Thus, we see how the Bessel function determines
-the dynamics of thermal modes, with each mode decaying exponentially at a rate set
-by $\beta_n$ \cite{neils}.\\
+Bessel function in the solution, and each mode decays exponentially at a rate set 
+by $\beta_n$. Therefore, we see how the Bessel function determines the 
+dynamics of thermal modes \cite{neils}.\\
 
 
 \subsection{Drum Wave Propagation}
 
 The vibration of a circular membrane, such as a drumhead, is another example of
-where Bessel functions appear. The vertical displacement of the membrane $z(r,\theta,t)$
+where Bessel functions appear. The vertical displacement of the membrane, $z(r,\theta,t)$,
 satisfies the two-dimensional wave equation:
 \begin{equation}
     \frac{\partial^2z}{\partial t^2}=c^2\nabla^2z
@@ -283,7 +283,7 @@ we obtain two ordinary differential equations. The time-dependent part gives:
 function of the first kind.
 
 \noindent When we impose the boundary condition that the membrane is fixed at
-its edge ($z(R_f,t)=0$), we can quantize the allowable modes. This means $\lambda$
+its edge ($z(R_f,t)=0$), we can quantize the allowable modes. $\lambda$
 must be one of the roots $\lambda_{m,k}$ of the Bessel 
 function $J_m(\lambda r)$, which satisfies:
 \begin{equation}
@@ -295,35 +295,36 @@ angular modes:
     z(r,t)=\sum_{m=0}^\infty \sum_{k=1}^\infty J_m(\lambda_{m,k}r)e^{-c\lambda_{m,n}t}
 \end{equation}
 \noindent These quantized roots $\lambda_{m,k}$ determine the resonant frequencies
-of the membrane. Each pair of integers($m,k$) corresponding to a distinct
+of the membrane. Each pair of integers ($m,k$) corresponds to a distinct
 vibration mode, where $m$ is the order of the Bessel function and $k$ is the wavenumber.
-For $m=0$, the Bessel function vanishes at the boundary. Thus, the final waveform
+For $m=0$, the Bessel function vanishes at the boundary. The final waveform
 $z(r,t)$ describes the motion of the drumhead as a superposition of these modes evolving in time \cite{tamrin}.\\
 
 
 \section{Summary and Conclusion} \label{sec:summary}
 
-In this project, we explored the roots of the Bessel functions of the first kind, 
+We explored the roots of Bessel functions of the first kind, 
 $J_n(x)$, for orders $n=0,1,2$ using Python's \texttt{scipy} library. Our numerical
 approach combined the built-in evaluation of $J_n(x)$ with the \texttt{fsolve}
 method to accurately identify the first five positive roots for each order. Our
 results aligned well with the expected theoretical behavior, including the trends
 in oscillation decay and root spacing.
 
-\noindent The numerical methods we used were sufficiently accurate for our goals.
-Plotting the functions alongside their roots helped us visualize their role in
-physical boundary value problems with radial symmetry. While the method was
-effective, it relied on manually chosen initial guesses. This could be improved in
-future work by using analytical approximations or implementing a more automated
-root-finding strategy.
+\noindent The numerical methods we used were sufficient for our goals.
+Plotting the Bessel functions alongside their roots helped us visualize how the zero
+crossings correspond to boundary conditions in physical systems with radial symmetry.
+While our method was effective, it required manually selected initial guesses for
+each root. Future improvements include using analytical root approximations or 
+symbolic solvers such as \texttt{SymPy} for better automation.
 
 \noindent Overall, this project demonstrated how Bessel functions can be approached
 computationally, how their oscillatory behavior varies with order, and why their
 roots are important physical systems. Further work could involve exploring other 
 families of Bessel functions or extending the root-finding method to more
 advanced applications involving partial differential equations where these functions
-naturally arise due to symmetry. These additions would provide deeper insight into the
-mathematical structure and wide-ranging applications of Bessel functions.\\
+appear due to symmetry. These additions would build a stronger understanding of the
+the mathematics and practical significance of Bessel functions across physics and
+applied fields.\\
 
 
 \subsection{Acknowledgements}
