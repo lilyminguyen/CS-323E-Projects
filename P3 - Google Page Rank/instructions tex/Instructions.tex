@@ -23,13 +23,13 @@ In the third paper, you will explore how the Google PageRank algorithm works. A 
     \item (Exercise 4.95) Finish writing the hyperlink matrix $\boldsymbol{H}$ from Figure~\ref{fig:web_graph}.
     \item (Exercise 4.96) Write code to implement the iterative process defined previously. Then, create a plot showing how the rank evolves over the iterations.
     \item (Exercise 4.97) What must be true about a collection of n pages such that an $n\times n$ hyperlink matrix $\boldsymbol{H}$ is a stochastic matrix?
-    \item (Exercise 4.98)The statement of Theorem 4.9 is incomplete, but the proof is given to you. Fill in the blank in the statement of the theorem, and provide a few sentences supporting your answer.
-    \item (Exercise 4.99) Discuss how Theorem 4.9 greatly simplifies the PageRank iterative process described previously. In other words, there is no reason to iterate at all. Instead, find ... what?
+    \item (Exercise 4.98)The statement of \textbf{Theorem 4.9} is incomplete, but the proof is given to you. Fill in the blank in the statement of the theorem, and provide a few sentences supporting your answer.
+    \item (Exercise 4.99) Discuss how \textbf{Theorem 4.9} greatly simplifies the PageRank iterative process described previously. In other words, there is no reason to iterate at all. Instead, find ... what?
     \item (Exercise 4.100)Use the previous two problems to find the resulting PageRank vector from the web in Figure~\ref{fig:web_graph}. Be sure to rank the pages in order of importance. 
     \item (Exercise 4.101) Consider the web in Figure~\ref{fig:web_graph2}.
     \begin{itemize}
         \item Write the $\boldsymbol{H}$ matrix and find the initial state $\boldsymbol{x}_0$.
-        \item Find steady state PageRank vector using the two methods described: one using the iterative difference equation and the other using Theorem 4.9 and the dominant eigenvector.
+        \item Find steady state PageRank vector using the two methods described: one using the iterative difference equation and the other using \textbf{Theorem 4.9} and the dominant eigenvector.
         \item Rank the pages in order of importance.
     \end{itemize}
 \end{itemize}
@@ -129,11 +129,11 @@ When you type a query into Google the following two steps take place:
                 \hline
                 \textbf{Iteration} & \textbf{New Page Rank Estimation} \\
                 \hline
-                0 & $x_0$ \\
-                1 & $x_1 = \boldsymbol{H} x_0$ \\
-                2 & $x_2 = \boldsymbol{H} x_1 = \boldsymbol{H}^2 x_0$ \\
-                3 & $x_3 = \boldsymbol{H} x_2 = \boldsymbol{H}^3 x_0$ \\
-                4 & $x_4 = \boldsymbol{H} x_3 = \boldsymbol{H}^4 x_0$ \\
+                0 & $\boldsymbol{x}_0$ \\
+                1 & $\boldsymbol{x}_1 = \boldsymbol{H} \boldsymbol{x}_0$ \\
+                2 & $\boldsymbol{x}_2 = \boldsymbol{H} \boldsymbol{x}_1 = \boldsymbol{H}^2 \boldsymbol{x}_0$ \\
+                3 & $\boldsymbol{x}_3 = \boldsymbol{H} \boldsymbol{x}_2 = \boldsymbol{H}^3 \boldsymbol{x}_0$ \\
+                4 & $\boldsymbol{x}_4 = \boldsymbol{H} \boldsymbol{x}_3 = \boldsymbol{H}^4 \boldsymbol{x}_0$ \\
                 $\vdots$ & $\vdots$ \\
                 $k$ & $x_k = \boldsymbol{H}^k x_0$ \\
                 \hline
@@ -185,8 +185,8 @@ $$
 
 \noindent Proof:\\
 
-\noindent First note that $\boldsymbol{A}$ is an $n\times n$ stochastic matrix so from Theorem 4.8. We know that there are $n$ linearly independent eigenvectors.
-We can then substitute the eigenvalues from Theorem 4.8 in Theorem 4.7.
+\noindent First note that $\boldsymbol{A}$ is an $n\times n$ stochastic matrix so from \textbf{Theorem 4.8}. We know that there are $n$ linearly independent eigenvectors.
+We can then substitute the eigenvalues from \textbf{Theorem 4.8} in \textbf{Theorem 4.7}.
 Noting that if $0<\lambda_j<1$ we have $\lim_{k\to\infty}\lambda_j^k=0$ the result follows immediately.
 
 \section{Extra}

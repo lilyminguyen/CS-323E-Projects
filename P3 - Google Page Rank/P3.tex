@@ -1,0 +1,80 @@
+%\documentclass[linenumbers, RNAAS, trackchanges]{aastex631}
+\documentclass[linenumbers, twocolumn]{aastex631}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}           % hrefs
+\usepackage{natbib}             % for bibliography
+\usepackage{float}              % figure positioning
+\usepackage{svg}                % used for SVG images
+\usepackage{graphicx}           % used for non-SVG images
+\usepackage{amsmath}
+\usepackage{parskip}
+
+
+% Search Query Metadata
+\shorttitle{add short title here}
+%\shortauthors{Nguyen & Sae}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+urlcolor=blue
+}
+
+\begin{document}
+\title{Some title here}
+% [] is for ORCiD
+%\correspondingauthor{Main Author}
+%\email{author1@email.com, author2@email.com, author3@email.com}
+\author{Lily Nguyen}
+\affiliation{Department of Physics, The University of Texas at Austin\\
+Austin, TX 78712, USA}
+
+\author{Andre Sae}
+\affiliation{Department of Physics, The University of Texas at Austin\\
+Austin, TX 78712, USA}
+
+
+% 250 word limit for abstract
+\begin{abstract}
+
+abstract
+
+\end{abstract}
+
+% Use astrothesaurus numbers in place of num
+\keywords{word1 --- word2 --- word3 --- word4 --- word5}
+
+
+\section{Introduction} \label{sec:intro}
+
+Intro
+
+\section{Data and Observations} \label{sec:data}
+
+data/obs
+
+
+\section{Results} \label{sec:results}
+
+results
+
+
+\section{Summary and Conclusion} \label{sec:summary}
+
+summary/concl
+
+
+\subsection{Acknowledgements}
+We thank Professor Mitra for his guidance and instruction throughout the course,
+as well as the teaching assistants for their helpful feedback. We also
+acknowledge the Department of Physics for providing an excellent academic foundation 
+to support this work. This work was completed as part of the requirements for 
+C S 323E: Elements of Scientific Computing at the University of Texas at Austin.
+
+\newpage
+\bibliographystyle{aasjournal}
+\bibliography{refs}
+
+\end{document}
