@@ -15,24 +15,31 @@
 
 \maketitle
 
-\section{Introduction}
+\section{Instructions}
 
 In the third paper, you will explore how the Google PageRank algorithm works. A detailed description of this project is given in your book at the end of Chapter 4. This is a guided project, and you will follow the exercises given below:
 
 \begin{itemize}
-    \item Finish writing the hyperlink matrix H from Figure 4.3.
-    \item Write code to implement the iterative process defined previously. Then, create a plot showing how the rank evolves over the iterations.
-    \item What must be true about a collection of n pages such that an nxn hyperlink matrix H is a stochastic matrix?
-    \item The statement of Theorem 4.9 is incomplete, but the proof is given to you. Fill in the blank in the statement of the theorem, and provide a few sentences supporting your answer.
-    \item Discuss how Theorem 4.9 greatly simplifies the PageRank iterative process described previously. In other words, there is no reason to iterate at all. Instead, find ... what?
-    \item Use the previous two problems to find the resulting PageRank vector from the web in Figure 4.3. Be sure to rank the pages in order of importance. 
-    \item Consider the web in Figure 4.4.
+    \item (Exercise 4.95) Finish writing the hyperlink matrix $\boldsymbol{H}$ from Figure~\ref{fig:web_graph}.
+    \item (Exercise 4.96) Write code to implement the iterative process defined previously. Then, create a plot showing how the rank evolves over the iterations.
+    \item (Exercise 4.97) What must be true about a collection of n pages such that an $n\times n$ hyperlink matrix $\boldsymbol{H}$ is a stochastic matrix?
+    \item (Exercise 4.98)The statement of Theorem 4.9 is incomplete, but the proof is given to you. Fill in the blank in the statement of the theorem, and provide a few sentences supporting your answer.
+    \item (Exercise 4.99) Discuss how Theorem 4.9 greatly simplifies the PageRank iterative process described previously. In other words, there is no reason to iterate at all. Instead, find ... what?
+    \item (Exercise 4.100)Use the previous two problems to find the resulting PageRank vector from the web in Figure~\ref{fig:web_graph}. Be sure to rank the pages in order of importance. 
+    \item (Exercise 4.101) Consider the web in Figure~\ref{fig:web_graph2}.
     \begin{itemize}
-        \item Write the H matrix and find the initial state x0.
+        \item Write the $\boldsymbol{H}$ matrix and find the initial state $\boldsymbol{x}_0$.
         \item Find steady state PageRank vector using the two methods described: one using the iterative difference equation and the other using Theorem 4.9 and the dominant eigenvector.
         \item Rank the pages in order of importance.
     \end{itemize}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{web_graph2.png}
+    \caption{Example web graph.}
+    \label{fig:web_graph2}
+\end{figure}
 
 \noindent Research other references to the Google PageRank algorithm. After you complete your investigations, you will write a research paper. The tone of your paper is critical to us. Browse papers in the Astrophysical Journal or Physical Review to get a feel for the writing style that we are expecting. You will be submitting a single paper for your group. We have enclosed the LaTeX template that you have to use. Here is the outline of your paper:
 
@@ -58,8 +65,8 @@ In this project you will discover how the Page Rank algorithm works to give the 
 
 When you type a query into Google the following two steps take place:
 \begin{enumerate}
-    \item Query Module: The query module at Google converts your natural language into a language that the search system can understand and consults the various indexes at Google in order to answer the query. This is done to find the list of relevant pages. 
-    \item Ranking Module: The ranking module takes the set of relevant pages and ranks them. The outcome of the ranking is an ordered list of web pages such that the pages near the top of the list are most likely to be what you desire from your search. This ranking is the same as assigning a popularity score to each web site and then listing the relevant sites by this score.
+    \item \textbf{Query Module}: The query module at Google converts your natural language into a language that the search system can understand and consults the various indexes at Google in order to answer the query. This is done to find the list of relevant pages. 
+    \item \textbf{Ranking Module}: The ranking module takes the set of relevant pages and ranks them. The outcome of the ranking is an ordered list of web pages such that the pages near the top of the list are most likely to be what you desire from your search. This ranking is the same as assigning a popularity score to each web site and then listing the relevant sites by this score.
 \end{enumerate}
 
 \noindent This section focuses on the Linear Algebra behind the Ranking Module developed by the founders of Google: Sergey Brin and Larry Page. Their algorithm is called the Page Rank algorithm, and you use it every single time you use Googles (insert apostrophe) search engine.\\
@@ -68,7 +75,7 @@ When you type a query into Google the following two steps take place:
 
 \noindent The Internet can be viewed as a directed graph (look up this term here on Wikipedia) where the nodes are the web pages and the edges are the hyperlinks between the pages. The hyperlinks into a page are called in links, and the ones pointing out of a page are called out links. In essence, a hyperlink from my page to yours is my endorsement of your page. Thus, a page with more recommendations must be more important than a page with a few links. However, the status of the recommendation is also important.\\
 
-\noindent Let us now translate this into mathematics. To help understand this we first consider the small web of six pages shown in Figure 4.3 (a graph of the router level of the internet can be found here). The links between the pages are shown by arrows. An arrow pointing into a node is an in link and an arrow pointing out of a node is an out link. In Figure 4.3, node 3 has three out links (to nodes 1, 2, and 5) and 1 in link (from node 1).
+\noindent Let us now translate this into mathematics. To help understand this we first consider the small web of six pages shown in Figure~\ref{fig:web_graph} (a graph of the router level of the internet can be found here). The links between the pages are shown by arrows. An arrow pointing into a node is an in link and an arrow pointing out of a node is an out link. In Figure~\ref{fig:web_graph}, node 3 has three out links (to nodes 1, 2, and 5) and 1 in link (from node 1).
 
 \begin{figure}[H]
     \centering
@@ -145,7 +152,7 @@ that has a size of hundreds of thousands of entries by hundreds of thousands of 
 
 \section{Theorems}
 
-\subsection{Theorem 4.7}
+\subsection*{Theorem 4.7}
 
 If $\boldsymbol{A}$ is an $n\times n$ matrix with $n$ linearly dependent eigenvectors $\boldsymbol{v}_1,\boldsymbol{v}_2, \boldsymbol{v}_3,\cdots,\boldsymbol{v}_n$
 and associated eigenvalues $\lambda_1,\lambda_2,\lambda_3,\cdots,\lambda_n$ then for any initial vector $\boldsymbol{x} \in \mathbb{R}^n$
@@ -158,7 +165,7 @@ $$
 
 \noindent Note: We can assume that the eigenvalues are ordered such that $|\lambda_1|>|\lambda_2|\geq|\lambda_3|\geq\cdots\geq|\lambda_n|$.
 
-\subsection{Theorem 4.8}
+\subsection*{Theorem 4.8}
 
 A \textbf{probability vector} is a vector with entries on the interval $[0,1]$ that add up to 1.\\
 
@@ -168,12 +175,12 @@ A \textbf{probability vector} is a vector with entries on the interval $[0,1]$ t
 $\lambda_1=1$ and the smallest eigenvalue will always be nonnegative: $0\leq|\lambda_n|<1$.\\
 
 
-\subsection{Theorem 4.9}
+\subsection*{Theorem 4.9}
 
 If $\boldsymbol{A}$ is an $n\times n$ stochastic matrix and $\boldsymbol{x}_0$  is some initial vector for the difference equation
 $\boldsymbol{x}_{n+1}=\boldsymbol{A}\boldsymbol{x}_n$, then the steady state vector is
 $$
-\boldsymbol{x}_\text{equilibrium}=\lim_{k\to\infty}\boldsymbol{A}^k\boldsymbol{x}_0
+\boldsymbol{x}_\text{equilibrium}=\lim_{k\to\infty}\boldsymbol{A}^k\boldsymbol{x}_0=?
 $$
 
 \noindent Proof:\\
@@ -181,5 +188,17 @@ $$
 \noindent First note that $\boldsymbol{A}$ is an $n\times n$ stochastic matrix so from Theorem 4.8. We know that there are $n$ linearly independent eigenvectors.
 We can then substitute the eigenvalues from Theorem 4.8 in Theorem 4.7.
 Noting that if $0<\lambda_j<1$ we have $\lim_{k\to\infty}\lambda_j^k=0$ the result follows immediately.
+
+\section{Extra}
+
+\subsection*{Exercise 4.102}
+
+One thing that we didn’t consider in this version of the Google Page Rank algorithm is the random behavior of humans. One, admittedly slightly naive, modification that we can make to the present algorithm is to assume that the person surfing the web will randomly jump to any other page in the web at any time. For example, if someone is on page 1 in
+Figure~\ref{fig:web_graph2} then they could randomly jump to any page 2 - 8. They also have links to pages 2, 3, and 7. That is a total of 10 possible next steps for the web surfer. There is a
+$2/10$ chance of heading to page 2. One of those is following the link from page 1 to page 2 and the other is a random jump to page 2 without following the link. Similarly, there is a $2/10$ chance of heading to page 3, $2/10$ chance
+of heading to page 7, and a $1/10$ chance of randomly heading to any other page.\\
+
+\noindent Implement this new algorithm, called the random surfer algorithm, on the web in Figure~\ref{fig:web_graph2}.
+Compare your ranking to the non-random surfer results from the previous problem.
 
 \end{document}

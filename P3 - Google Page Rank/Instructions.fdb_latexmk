@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1762485553.45278 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Instructions.tex" "Instructions.pdf" "Instructions" 1762485554.1067 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Instructions.tex" 1762485552.8626 11654 87b63ef2dedc478bb561d6bd8f271289 ""
+["pdflatex"] 1762487273.37431 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Instructions.tex" "Instructions.pdf" "Instructions" 1762487273.98343 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Instructions.tex" 1762487272.33361 13216 58e4306d26000f250a5e9a0ffb043b7e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -88,9 +88,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Instructions.aux" 1762485554.03846 803 7390334131fa04ef0c91c675a200f052 "pdflatex"
-  "Instructions.tex" 1762485552.8626 11654 87b63ef2dedc478bb561d6bd8f271289 ""
+  "Instructions.aux" 1762487273.92074 753 530b5c1f60fc0132d942ccf6509c6bc9 "pdflatex"
+  "Instructions.tex" 1762487272.33361 13216 58e4306d26000f250a5e9a0ffb043b7e ""
   "web graph.png" 1762395885.49821 37839 7b277cdf689f52ef6488c8913a1953e4 ""
+  "web_graph2.png" 1762486017.1606 43766 14bfa74a4802b1311cd90de7a5d60b10 ""
   (generated)
   "Instructions.aux"
   "Instructions.log"
