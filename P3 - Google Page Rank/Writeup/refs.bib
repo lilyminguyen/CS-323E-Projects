@@ -1,1 +1,158 @@
 % add references here
+
+% The first 4 papers are about the general PageRank algo and how it applies to this project scope.
+
+% Title: The PageRank Citation Ranking: Bringing Order to the Web
+% primary paper
+@techreport{brin,
+          number = {1999-66},
+           month = {November},
+          author = {Lawrence Page and Sergey Brin and Rajeev Motwani and Terry Winograd},
+            note = {Previous number = SIDL-WP-1999-0120},
+           title = {The PageRank Citation Ranking: Bringing Order to the Web.},
+            type = {Technical Report},
+       publisher = {Stanford InfoLab},
+            year = {1999},
+     institution = {Stanford InfoLab},
+             url = {http://ilpubs.stanford.edu:8090/422/},
+        abstract = {The importance of a Web page is an inherently subjective matter, which depends on the readers interests, knowledge and attitudes. But there is still much that can be said objectively about the relative importance of Web pages. This paper describes PageRank, a mathod for rating Web pages objectively and mechanically, effectively measuring the human interest and attention devoted to them. We compare PageRank to an idealized random Web surfer. We show how to efficiently compute PageRank for large numbers of pages. And, we show how to apply PageRank to search and to user navigation.}
+}
+
+% Title: The Anatomy of a Large-Scale Hypertextual Web Search Engine
+% primary paper
+@article{brin2,
+        title	= {The Anatomy of a Large-Scale Hypertextual Web Search Engine},
+        author	= {Sergey Brin and Lawrence Page},
+        year	= {1998},
+        URL	= {https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf},
+        journal	= {Computer Networks},
+        pages	= {107-117},
+        volume	= {30}}
+
+% Title: Google’s PageRank and Beyond: The Science of Search Engine Rankings
+% standard math reference, eigenvectors, stochastic matrices, convergence theory  
+@book{langville,
+    abstract = {Why doesn't your home page appear on the first page of search results, even when you query your own name? How do other web pages always appear at the top? What creates these powerful rankings? And how? The first book ever about the science of web page rankings, Google's PageRank and Beyond supplies the answers to these and other questions and more.},
+    author = {Langville, Amy N and Meyer, Carl D},
+    address = {Princeton, N.J},
+    copyright = {Copyright 2013 Elsevier B.V., All rights reserved.},
+    edition = {1},
+    isbn = {0691122024},
+    keywords = {Addition ;  Algebras Linear ;  Blog ;  Electronic mail messages ;  Extrapolation ;  Information retrieval ;  Internet searching ;  Mason (Web site development tool) ;  Mathematics ;  Numerical analysis ;  Ratings and rankings ;  Technology ;  Web search engines ;  Web sites ;  World Wide Web},
+    language = {eng},
+    publisher = {Princeton University Press},
+    title = {Google's pagerank and beyond: The science of search engine rankings.},
+    year = {2009},
+    }
+
+% Title: Deeper Inside PageRank
+% explains why PageRank converges
+@article{langville2,
+    abstract = {This paper serves as a companion or extension to the "Inside PageRank" paper by Bianchini et al. [Bianchini et al. 03]. It is a comprehensive survey of all issues associated with PageRank, covering the basic PageRank model, available and recommended solution methods, storage issues, existence, uniqueness, and convergence properties, possible alterations to the basic model, suggested alternatives to the traditional solution methods, sensitivity and conditioning, and finally the updating problem. We introduce a few new results, provide an extensive reference list, and speculate about exciting areas of future research.},
+    author = {Langville, Amy N. and Meyer, Carl D.},
+    copyright = {Copyright Taylor & Francis Group, LLC 2004},
+    issn = {1542-7951},
+    journal = {Internet mathematics},
+    language = {eng},
+    number = {3},
+    pages = {335-380},
+    publisher = {A.K. Peters},
+    title = {Deeper Inside PageRank},
+    volume = {1},
+    year = {2004},
+}
+
+% Below are papers for further work beyond this project. (use for conclusion/further work section)
+
+% Title: PageRank as a Function of the Damping Factor
+% random surfer + damping factor
+@inproceedings{boldi,
+    abstract = {PageRank is defined as the stationary state of a Markov chain. The chain is obtained by perturbing the transition matrix induced by a web graph with a damping factor α that spreads uniformly part of the rank. The choice of α is eminently empirical, and in most cases the original suggestion α = 0.85 by Brin and Page is still used. Recently, however, the behaviour of PageRank with respect to changes in α was discovered to be useful in link-spam detection[21]. Moreover, an analytical justification of the value chosen for α is still missing. In this paper, we give the first mathematical analysis of PageRank when α changes. In particular, we show that, contrarily to popular belief, for real-world graphs values of α close to 1 do not give a more meaningful ranking. Then, we give closed-form formulae for PageRank derivatives of any order, and an extension of the Power Method that approximates them with convergence O (tk αt) for the k-th derivative. Finally, we show a tight connection between iterated computation and analytical behaviour by proving that the k-th iteration of the Power Method gives exactly the PageRank value obtained using a Maclaurin polynomial of degree k. The latter result paves the way towards the application of analytical methods to the study of PageRank.},
+    author = {Boldi, Paolo and Santini, Massimo and Vigna, Sebastiano},
+    address = {New York, NY, USA},
+    booktitle = {Proceedings of the 14th international conference on World Wide Web},
+    copyright = {2005 ACM},
+    isbn = {1595930469},
+    language = {eng},
+    pages = {557-566},
+    publisher = {ACM},
+    title = {PageRank as a function of the damping factor},
+    year = {2005},
+}
+
+% Title: Extrapolation Methods for Accelerating PageRank Computations
+% use to talk about faster future computations
+@inproceedings{kamvar,
+    abstract = {We present a novel algorithm for the fast computation of PageRank, a hyperlink-based estimate of the ''importance'' of Web pages. The original PageRank algorithm uses the Power Method to compute successive iterates that converge to the principal eigenvector of the Markov matrix representing the Web link graph. The algorithm presented here, called Quadratic Extrapolation, accelerates the convergence of the Power Method by periodically subtracting off estimates of the nonprincipal eigenvectors from the current iterate of the Power Method. In Quadratic Extrapolation, we take advantage of the fact that the first eigenvalue of a Markov matrix is known to be 1 to compute the nonprincipal eigenvectors using successive iterates of the Power Method. Empirically, we show that using Quadratic Extrapolation speeds up PageRank computation by 25-300% on a Web graph of 80 million nodes, with minimal overhead. Our contribution is useful to the PageRank community and the numerical linear algebra community in general, as it is a fast method for determining the dominant eigenvector of a matrix that is too large for standard fast methods to be practical.},
+    author = {Kamvar, Sepandar D. and Haveliwala, Taher H. and Manning, Christopher D. and Golub, Gene H.},
+    address = {New York, NY, USA},
+    booktitle = {Proceedings of the 12th International Conference on World Wide Web},
+    copyright = {2003 ACM},
+    isbn = {9781581136807},
+    language = {eng ; jpn},
+    pages = {261-270},
+    publisher = {ACM},
+    title = {Extrapolation methods for accelerating PageRank computations},
+    year = {2003},
+}
+
+% Title: PageRank Computation and the Structure of the Web: Experiments and Algorithms
+% discusses large-scale matrices and sparsity
+@inproceedings{arasu2002pagerank,
+  title     = {PageRank Computation and the Structure of the Web: Experiments and Algorithms},
+  author    = {Arasu, Arvind and Novak, Jasmine and Tomkins, Andrew and Tomlin, John},
+  booktitle = {Proceedings of the 11th International Conference on World Wide Web (WWW '02)},
+  year      = {2002},
+  organization = {ACM / IBM Almaden Research Center},
+  address   = {Honolulu, Hawaii},
+  note      = {Technical Report, IBM Almaden Research Center, November 2001.},
+}
+
+% Title: On new PageRank computation methods using quantum computing
+% applying quantum computing
+@article{chapuis-chkaiban,
+    abstract = {In this paper we propose several new quantum computation algorithms as an original contribution to the domain of PageRank algorithm theory, Spectral Graph Theory and Quantum Signal Processing. We first propose an application to PageRank of the HHL quantum algorithm for linear equation systems. We then introduce one of the first Quantum-Based Algorithms to perform a directed Graph Fourier Transform with a low gate complexity. After proposing a generalized PageRank formulation, based on ideas stemming from Spectral Graph Theory, we show how our quantum directed graph Fourier Transform can be applied to compute our generalized version of the PageRank.},
+    author = {Chapuis-Chkaiban, Théodore and Toffano, Zeno and Valiron, Benoît},
+    address = {New York},
+    copyright = {The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2023. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.},
+    issn = {1573-1332},
+    journal = {Quantum information processing},
+    keywords = {Computer science ;  Information retrieval ;  Information theory ;  Mathematical physics ;  Physical sciences ;  Physics ;  Quantum computing ;  Quantum theory ;  Spintronics},
+    language = {eng},
+    number = {3},
+    publisher = {Springer US},
+    title = {On new PageRank computation methods using quantum computing},
+    volume = {22},
+    year = {2023},
+}
+
+% Title: Computing Personalized PageRank Quickly by Exploiting Graph Structures
+% exploit graph structures to get PPR
+@article{maehara,
+    abstract = {We propose a new scalable algorithm that can compute Personalized PageRank (PPR) very quickly. The Power method is a state-of-the-art algorithm for computing exact PPR; however, it requires many iterations. Thus reducing the number of iterations is the main challenge.
+    We achieve this by exploiting graph structures of web graphs and social networks. The convergence of our algorithm is very fast. In fact, it requires up to 7.5 times fewer iterations than the Power method and is up to five times faster in actual computation time.
+    To the best of our knowledge, this is the first time to use graph structures explicitly to solve PPR quickly. Our contributions can be summarized as follows.
+    1. We provide an algorithm for computing a tree decomposition, which is more efficient and scalable than any previous algorithm.
+    2. Using the above algorithm, we can obtain a
+    core-tree decomposition
+    of any web graph and social network. This allows us to decompose a web graph and a social network into (1) the
+    core
+    , which behaves like an expander graph, and (2) a small tree-width graph, which behaves like a
+    tree
+    in an algorithmic sense.
+    3. We apply a direct method to the small tree-width graph to construct an LU decomposition.
+    4. Building on the LU decomposition and using it as
+    pre-conditoner
+    , we apply GMRES method (a state-of-the-art advanced iterative method) to compute PPR for whole web graphs and social networks.},
+    author = {Maehara, Takanori and Akiba, Takuya and Iwata, Yoichi and Kawarabayashi, Ken-ichi},
+    copyright = {Copyright 2021 Elsevier B.V., All rights reserved.},
+    issn = {2150-8097},
+    journal = {Proceedings of the VLDB Endowment},
+    language = {eng},
+    number = {12},
+    pages = {1023-1034},
+    title = {Computing personalized PageRank quickly by exploiting graph structures},
+    volume = {7},
+    year = {2014},
+}
+

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex P3"] 1762499332.27619 "P3.aux" "P3.bbl" "P3" 1762533750.00263 0
-  "./refs.bib" 1762499210.38993 21 dfea7c9201101ce17fb2fa845daeedbf ""
+["bibtex P3"] 1762540952.86349 "P3.aux" "P3.bbl" "P3" 1762540952.94186 0
+  "./refs.bib" 1762540952.77328 12271 fb5bcb0433cb103a50ac203e66fd3e1e ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "P3.aux" 1762533749.82236 1183 2c251bc3b8e5d991cf273dd8254c55fc "pdflatex"
+  "P3.aux" 1762540951.57178 1183 2c251bc3b8e5d991cf273dd8254c55fc "pdflatex"
   (generated)
   "P3.bbl"
   "P3.blg"
   (rewritten before read)
-["pdflatex"] 1762533749.39255 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1762533750.00272 0
+["pdflatex"] 1762540951.11536 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1762540952.9419 0
   "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" 1762533749.15143 1906 cc06b709a205d55be3b6aea6adf74fcd ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -146,9 +146,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "P3.aux" 1762533749.82236 1183 2c251bc3b8e5d991cf273dd8254c55fc "pdflatex"
-  "P3.bbl" 1762499332.37666 423 d77541692561a4e688805564dd21765b "bibtex P3"
-  "P3.out" 1762533749.8228 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
+  "P3.aux" 1762540951.57178 1183 2c251bc3b8e5d991cf273dd8254c55fc "pdflatex"
+  "P3.bbl" 1762540952.93969 423 d77541692561a4e688805564dd21765b "bibtex P3"
+  "P3.out" 1762540951.57209 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
   "P3.tex" 1762533749.15143 1906 cc06b709a205d55be3b6aea6adf74fcd ""
   (generated)
   "P3.aux"
