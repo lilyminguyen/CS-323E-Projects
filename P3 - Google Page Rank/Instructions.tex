@@ -81,32 +81,32 @@ When you type a query into Google the following two steps take place:
 \noindent We will first define some notation in the Page Rank algorithm:
 \begin{itemize}
     \item $|P_i|$ is the number of out links from page $P_i$
-    \item $H$ is the \textit{hyperlink} matrix defined as:
+    \item $\boldsymbol{H}$ is the \textit{hyperlink} matrix defined as:
         $$
-            H_{ij} =
+            \boldsymbol{H}_{ij} =
             \begin{cases}
                 \frac{1}{|P_j|}, & \text{if there is a link from node $j$ to node $i$} \\[6pt]
                 0, & \text{otherwise}
             \end{cases}
         $$
     where the $i$ and $j$ are the row and column incides respectively.
-    \item $\mathbf{x}$ is a vector that contains all of the Page Ranks for the individual pages.
+    \item $\boldsymbol{x}$ is a vector that contains all of the Page Ranks for the individual pages.
 \end{itemize}
 
 \noindent The Page Rank algorithm works as follows:
 
 \begin{enumerate}
-    \item Initialize the page ranks to all be equal. This means that our initial assumption is that all pages are of equal rank. In the case of Figure~\ref{fig:web_graph} we would take $\mathbf{x}_0$ to be
+    \item Initialize the page ranks to all be equal. This means that our initial assumption is that all pages are of equal rank. In the case of Figure~\ref{fig:web_graph} we would take $\boldsymbol{x}_0$ to be
         $$
-            \mathbf{x}_0=
+            \boldsymbol{x}_0=
             \begin{pmatrix}
                 1/6\\1/6\\1/6\\1/6\\1/6\\1/6
             \end{pmatrix}.
         $$
     \item Build the hyperlink matrix. As sn example, we'll consider node 3 in Figure~\ref{fig:web_graph}.
-            There sre three out links from node 3 (to nodes 1, 2, and 5). Hence, $H_{13}=1/3$, $H_{23}=1/3$, and $H_{53}=1/3$ 
+            There sre three out links from node 3 (to nodes 1, 2, and 5). Hence, $\boldsymbol{H}_{13}=1/3$, $\boldsymbol{H}_{23}=1/3$, and $\boldsymbol{H}_{53}=1/3$ 
             and the partially complete hyperlink matrix is
-            $$H=\begin{pmatrix}
+            $$\boldsymbol{H}=\begin{pmatrix}
                 -&-&1/3&-&-&-\\
                 -&-&1/3&-&-&-\\
                 -&-&0&-&-&-\\
@@ -115,7 +115,7 @@ When you type a query into Google the following two steps take place:
                 -&-&0&-&-&-\\
             \end{pmatrix}
             $$
-    \item The difference equation $X_{n+1}=H\mathbf{x}_n$ is used to iteratively refine the estimates of the page ranks. You can view the iterations as a person visiting a page and then following a link at random, then following a random link on the next page, and the next, and the next, etc. Hence we see that the iterations evolve exactly as expected for a difference equation.
+    \item The difference equation $\boldsymbol{X}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ is used to iteratively refine the estimates of the page ranks. You can view the iterations as a person visiting a page and then following a link at random, then following a random link on the next page, and the next, and the next, etc. Hence we see that the iterations evolve exactly as expected for a difference equation.
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|c|>{\raggedright\arraybackslash}p{6cm}|}
@@ -123,21 +123,21 @@ When you type a query into Google the following two steps take place:
                 \textbf{Iteration} & \textbf{New Page Rank Estimation} \\
                 \hline
                 0 & $x_0$ \\
-                1 & $x_1 = H x_0$ \\
-                2 & $x_2 = H x_1 = H^2 x_0$ \\
-                3 & $x_3 = H x_2 = H^3 x_0$ \\
-                4 & $x_4 = H x_3 = H^4 x_0$ \\
+                1 & $x_1 = \boldsymbol{H} x_0$ \\
+                2 & $x_2 = \boldsymbol{H} x_1 = \boldsymbol{H}^2 x_0$ \\
+                3 & $x_3 = \boldsymbol{H} x_2 = \boldsymbol{H}^3 x_0$ \\
+                4 & $x_4 = \boldsymbol{H} x_3 = \boldsymbol{H}^4 x_0$ \\
                 $\vdots$ & $\vdots$ \\
-                $k$ & $x_k = H^k x_0$ \\
+                $k$ & $x_k = \boldsymbol{H}^k x_0$ \\
                 \hline
                 \end{tabular}
                 % \caption{PageRank iterative computation}
             \end{table}
-    \item When a steady state is reached we sort the resulting vector $\mathbf{x}_k$ to give the page rank. The node (web page) with the highest rank will be the top search result, the second highest rank will be the second search result, and so on.
+    \item When a steady state is reached we sort the resulting vector $\boldsymbol{x}_k$ to give the page rank. The node (web page) with the highest rank will be the top search result, the second highest rank will be the second search result, and so on.
             
 \end{enumerate}
 
-\noindent It doesn’t take much to see that this process can be very time consuming. Think about your typical web search with hundreds of thousands of hits; that makes a square matrix $H$ 
+\noindent It doesn’t take much to see that this process can be very time consuming. Think about your typical web search with hundreds of thousands of hits; that makes a square matrix $\boldsymbol{H}$ 
 that has a size of hundreds of thousands of entries by hundreds of thousands of entries! The matrix multiplications alone would take many minutes (or possibly many hours) for every search! …but Brin and Page were pretty smart dudes!!\\
 
 \noindent We now state a few theorems and definitions that will help us simplify the iterative Page Rank process.
@@ -147,16 +147,16 @@ that has a size of hundreds of thousands of entries by hundreds of thousands of 
 
 \subsection{Theorem 4.7}
 
-If $A$ is an $n\times n$ matrix with $n$ linearly dependent eigenvectors $\mathbf{v}_1,\mathbf{v}_2, \mathbf{v}_3,\cdots,\mathbf{v}_n$
-and associated eigenvalues $\lambda_1,\lambda_2,\lambda_3,\cdots,\lambda_n$ then for any initial vector $\mathbf{x} \in \mathbb{R}^n$
-we can write $A^k\mathbf{x}$ as
+If $\boldsymbol{A}$ is an $n\times n$ matrix with $n$ linearly dependent eigenvectors $\boldsymbol{v}_1,\boldsymbol{v}_2, \boldsymbol{v}_3,\cdots,\boldsymbol{v}_n$
+and associated eigenvalues $\lambda_1,\lambda_2,\lambda_3,\cdots,\lambda_n$ then for any initial vector $\boldsymbol{x} \in \mathbb{R}^n$
+we can write $\boldsymbol{A}^k\boldsymbol{x}$ as
 $$
-A^k\mathbf{x}=c_1\lambda_1^k\mathbf{v}_1+c_2\lambda_2^k\mathbf{v}_2+c_3\lambda_3^k\mathbf{v}_3+\cdots+c_n\lambda_n^k\mathbf{v}_n
+A^k\boldsymbol{x}=c_1\lambda_1^k\boldsymbol{v}_1+c_2\lambda_2^k\boldsymbol{v}_2+c_3\lambda_3^k\boldsymbol{v}_3+\cdots+c_n\lambda_n^k\boldsymbol{v}_n
 $$
 
-\noindent where $c_1,c_2,c_3,\cdots,c_n$ are the constants found by expressing $\mathbf{x}$ as a linear combination of the eigenvectors.\\
+\noindent where $c_1,c_2,c_3,\cdots,c_n$ are the constants found by expressing $\boldsymbol{x}$ as a linear combination of the eigenvectors.\\
 
-\noindent Note: We can assume that the eigenvalues are ordered such that $|\lambda_1|>|\lambda_2|\geq|\lambda_3|\geq\cdots\geq|\lambda_n|$
+\noindent Note: We can assume that the eigenvalues are ordered such that $|\lambda_1|>|\lambda_2|\geq|\lambda_3|\geq\cdots\geq|\lambda_n|$.
 
 \subsection{Theorem 4.8}
 
@@ -164,21 +164,21 @@ A \textbf{probability vector} is a vector with entries on the interval $[0,1]$ t
 
 \noindent A \textbf{stochastic matrix} is a square matrix whose columns are probability vectors.\\
 
-\noindent If $A$ is a stochastic $n\times n$ matrix then $A$ will have $n$ linearly independent eigenvectors. Furthermore, the largest eigenvalue of a stochastic matrix will be
+\noindent If $\boldsymbol{A}$ is a stochastic $n\times n$ matrix then $\boldsymbol{A}$ will have $n$ linearly independent eigenvectors. Furthermore, the largest eigenvalue of a stochastic matrix will be
 $\lambda_1=1$ and the smallest eigenvalue will always be nonnegative: $0\leq|\lambda_n|<1$.\\
 
 
 \subsection{Theorem 4.9}
 
-If $A$ is an $n\times n$ stochastic matrix and $\mathbf{x}_0$  is some initial vector for the difference equation
-$\mathbf{x}_{n+1}=A\mathbf{x}_n$, then the steady state vector is
+If $\boldsymbol{A}$ is an $n\times n$ stochastic matrix and $\boldsymbol{x}_0$  is some initial vector for the difference equation
+$\boldsymbol{x}_{n+1}=\boldsymbol{A}\boldsymbol{x}_n$, then the steady state vector is
 $$
-\mathbf{x}_\text{equilibrium}=\lim_{k\to\infty}A^k\mathbf{x}_0
+\boldsymbol{x}_\text{equilibrium}=\lim_{k\to\infty}\boldsymbol{A}^k\boldsymbol{x}_0
 $$
 
 \noindent Proof:\\
 
-\noindent First note that $A$ is an $n\times n$ stochastic matrix so from Theorem 4.8. We know that there are $n$ linearly independent eigenvectors.
+\noindent First note that $\boldsymbol{A}$ is an $n\times n$ stochastic matrix so from Theorem 4.8. We know that there are $n$ linearly independent eigenvectors.
 We can then substitute the eigenvalues from Theorem 4.8 in Theorem 4.7.
 Noting that if $0<\lambda_j<1$ we have $\lim_{k\to\infty}\lambda_j^k=0$ the result follows immediately.
 
