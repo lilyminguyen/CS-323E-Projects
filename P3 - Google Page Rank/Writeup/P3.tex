@@ -90,7 +90,21 @@ page $j$ clicks through to page $i$:
     \end{pmatrix}
 \end{equation}
 
-\noindent We initialized the 
+\noindent We initialized the PageRank vector $\boldsymbol{x}_0$ with equal
+values and assumed that each page is equally likely to be visited from the
+start:
+\begin{equation}
+    \boldsymbol{x}_0=
+        \begin{pmatrix}
+            1/6\\1/6\\1/6\\1/6\\1/6\\1/6
+        \end{pmatrix}
+\end{equation}
+
+\noindent We then applied the iterative update rule $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$
+until the rank vector converged below a given tolerance to simulate a random surfer moving
+through the web graph following links. We visualized the convergence of the PageRank vector by 
+plotting each page's rank score at each ieration, which allowed us to track how the scores
+changed until they reached a steady state. Our results are shown in Figure~\ref{fig:conv1}.
 
 \begin{figure}[H]
     \centering

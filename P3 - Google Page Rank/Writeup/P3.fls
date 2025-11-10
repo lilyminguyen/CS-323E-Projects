@@ -269,12 +269,12 @@ INPUT ./graph1.png
 INPUT ./graph1.png
 INPUT ./graph1.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT ./convergence1.png
-INPUT ./convergence1.png
-INPUT ./convergence1.png
-INPUT ./convergence1.png
-INPUT ./convergence1.png
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./convergence1.png
+INPUT ./convergence1.png
+INPUT ./convergence1.png
+INPUT ./convergence1.png
+INPUT ./convergence1.png
 INPUT ./graph2.png
 INPUT ./graph2.png
 INPUT ./graph2.png
