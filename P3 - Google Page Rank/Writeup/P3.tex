@@ -72,7 +72,25 @@ behaves under different network structures and how quickly it converges
 
 \section{Data and Observations} \label{sec:data}
 
-To start, we 
+To start, we defined a 6-node directed graph where each page links to one or 
+more pages, as shown in Figure ~\ref{fig:graph1}. From this, we constructed
+the hyperlink matrix $\boldsymbol{H}$, where each non-zero entry $\boldsymbol{H}_{ij}$
+is equal to $\frac{1}{|P_{ij}}$, the reciprocal of the number of outbound links
+from page $P_j$. This matrix represents the probability that a random surfer on
+page $j$ clicks through to page $i$:
+
+\begin{equation}
+    \boldsymbol{H}=\begin{pmatrix}
+        0&0&1/3&0&0&0\\
+        1/2&0&1/3&0&0&0\\
+        1/2&1&0&0&0&0\\
+        0&0&0&0&1/2&1\\
+        0&0&1/3&1/2&0&0\\
+        0&0&0&1/2&1/2&0
+    \end{pmatrix}
+\end{equation}
+
+\noindent We initialized the 
 
 \begin{figure}[H]
     \centering
