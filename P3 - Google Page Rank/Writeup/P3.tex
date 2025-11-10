@@ -49,11 +49,46 @@ abstract
 
 \section{Introduction} \label{sec:intro}
 
-Intro
+The PageRank algorithm, first introduced by Larry Page and Sergey Brin, was one
+of the first algorithms to rank webpages based on their link structure rather
+than just content \cite{brin2}. The algorithm models the web as a directed graph
+and simulates a "random surfer" who follows hyperlinks with some probability or
+jumps to a random page to avoid getting stuck \cite{brin1}.
+
+\noindent This setup defines a Markov process where each page's importance is
+proportaional to the importance of pages linking to it. The final PageRank
+vector corresponds to the steady-state distribution of this process and can
+be found either by iteration or by solving for the dominant eigenvector of the
+hyperlink matrix $\boldsymbol{H}$ \cite{langville}.
+
+\noindent In this project, we first implemented PageRank using the difference
+equation $x_{k+1}=\boldsymbol{H}x_k$, which resulted in the scores converging
+once the solution reached the maximum tolerance allowed. We ten confirmed our
+result by solving for the eigenvector associated with the largest eigenvalue
+of the matrix $\boldsymbol{H}$. Our goal was to understand how the algorithm
+behaves under different network structures and how quickly it converges 
+\cite{langville2}.
+
 
 \section{Data and Observations} \label{sec:data}
 
 data/obs
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{convergence1.png}
+    \caption{PageRank convergence for graph 1.}
+    \label{fig:conv1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{convergence2.png}
+    \caption{PageRank Convergence for graph 2.}
+    \label{fig:conv2}
+\end{figure}
+
+
 
 
 \section{Results} \label{sec:results}
