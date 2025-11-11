@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 NOV 2025 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 NOV 2025 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -585,7 +585,8 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 25.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count373
 \l__pdf_internal_box=\box95
-) (./P3.aux)
+)
+No file P3.aux.
 \openout1 = `P3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -606,7 +607,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count374
 \scratchdimen=\dimen196
@@ -632,7 +633,6 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 25.
- (./P3.out) (./P3.out)
 \@outlinefile=\write5
 \openout5 = `P3.out'.
 
@@ -651,83 +651,123 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 1117) in paragraph at lines 52--53
+[]\OT1/cmr/m/n/10 NOTE: re-write/reorganize in-tro, data/observations,
+ []
+
+
+Package natbib Warning: Citation `brin2' on page 1 undefined on input line 56.
+
+
+Package natbib Warning: Citation `brin1' on page 1 undefined on input line 60.
+
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 62.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 62.
-<graph1.png, id=35, 943.525pt x 1078.0275pt>
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 66.
+
+Package natbib Warning: Citation `langville' on page 1 undefined on input line 66.
+
+
+Package natbib Warning: Citation `langville2' on page 1 undefined on input line 74.
+
+<graph1.png, id=7, 943.525pt x 1078.0275pt>
 File: graph1.png Graphic file (type png)
 <use graph1.png>
-Package pdftex.def Info: graph1.png  used on input line 85.
+Package pdftex.def Info: graph1.png  used on input line 89.
 (pdftex.def)             Requested size: 102.62192pt x 117.25099pt.
- [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+LaTeX Warning: Reference `fig:graph1' on page 1 undefined on input line 95.
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.96 
-      <./graph1.png>]
-/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex:111: Undefined control sequence.
-l.111     \boldsymmbol
-                      {x}_0=
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+l.113 \begin{equation}
+                       <./graph1.png>]
 
-<convergence1.png, id=68, 578.16pt x 361.35pt>
+LaTeX Warning: Reference `fig:conv1' on page 2 undefined on input line 123.
+
+<convergence1.png, id=38, 578.16pt x 361.35pt>
 File: convergence1.png Graphic file (type png)
 <use convergence1.png>
-Package pdftex.def Info: convergence1.png  used on input line 125.
+Package pdftex.def Info: convergence1.png  used on input line 126.
 (pdftex.def)             Requested size: 205.24384pt x 128.27739pt.
+<graph2.png, id=39, 1200.485pt x 1047.915pt>
+File: graph2.png Graphic file (type png)
+<use graph2.png>
+Package pdftex.def Info: graph2.png  used on input line 165.
+(pdftex.def)             Requested size: 128.27936pt x 111.97708pt.
+
+LaTeX Warning: Reference `fig:graph2' on page 2 undefined on input line 171.
+
 [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.157 \end{equation}
-                     <./convergence1.png>]
-<graph2.png, id=79, 1200.485pt x 1047.915pt>
-File: graph2.png Graphic file (type png)
-<use graph2.png>
-Package pdftex.def Info: graph2.png  used on input line 174.
-(pdftex.def)             Requested size: 128.27936pt x 111.97708pt.
- [3
+l.190 \end{equation}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.199 \end{equation}
-                     <./graph2.png>]
-<convergence2.png, id=94, 578.16pt x 361.35pt>
+l.190 \end{equation}
+                     <./convergence1.png> <./graph2.png>]
+
+LaTeX Warning: Reference `fig:conv2' on page 3 undefined on input line 194.
+
+<convergence2.png, id=52, 578.16pt x 361.35pt>
 File: convergence2.png Graphic file (type png)
 <use convergence2.png>
-Package pdftex.def Info: convergence2.png  used on input line 207.
+Package pdftex.def Info: convergence2.png  used on input line 198.
 (pdftex.def)             Requested size: 205.24384pt x 128.27739pt.
- [4
+(./P3.bbl [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.247 \section{Results}
-                        \label{sec:results} <./convergence2.png>] (./P3.bbl [5]) [6] (./P3.aux)
+l.1 \begin{thebibliography}{}
+                              <./convergence2.png>]) [4]
+
+Package natbib Warning: There were undefined citations.
+
+(./P3.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `P3.out' has not changed.
-(rerunfilecheck)             Checksum: FD6613885883F8A97E52E98D2DEE2C3B;631.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `P3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `P3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  FD6613885883F8A97E52E98D2DEE2C3B;631.
  ) 
 Here is how much of TeX's memory you used:
- 15850 strings out of 473190
- 252783 string characters out of 5715801
- 735423 words of memory out of 5000000
- 38795 multiletter control sequences out of 15000+600000
- 571667 words of font info for 87 fonts, out of 8000000 for 9000
+ 15825 strings out of 473190
+ 252487 string characters out of 5715801
+ 747769 words of memory out of 5000000
+ 38783 multiletter control sequences out of 15000+600000
+ 572269 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,7n,93p,588b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,7n,93p,588b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on P3.pdf (6 pages, 652644 bytes).
+Output written on P3.pdf (4 pages, 652154 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,5 @@
-\documentclass[linenumbers, RNAAS, trackchanges]{aastex631}
-% \documentclass[linenumbers, twocolumn]{aastex631}
+% \documentclass[linenumbers, RNAAS, trackchanges]{aastex631}
+\documentclass[linenumbers, twocolumn]{aastex631}
 
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}           % hrefs
@@ -49,20 +49,24 @@ abstract
 
 \section{Introduction} \label{sec:intro}
 
+NOTE: re-write/reorganize intro, data/observations, and results section for better flow/cohesiveness
+
 The PageRank algorithm, first introduced by Larry Page and Sergey Brin, was one
 of the first algorithms to rank webpages based on their link structure rather
-than just content \cite{brin2}. The algorithm models the web as a directed graph
-and simulates a "random surfer" who follows hyperlinks with some probability or
-jumps to a random page to avoid getting stuck \cite{brin1}.
+than solely content \cite{brin2}. The algorithm models the web as a directed graph
+and simulates a "random surfer" who follows hyperlinks with some probability. 
+Essentially, it tracks how often this "random surfer" would land on a particular 
+page over an extended period, so pages that are visited more frequently are 
+considered more important and thus receive a higher PageRank score\cite{brin1}.
 
 \noindent This setup defines a Markov process where each page's importance is
-proportaional to the importance of pages linking to it. The final PageRank
+proportional to the importance of pages linking to it. The final PageRank
 vector corresponds to the steady-state distribution of this process and can
 be found either by iteration or by solving for the dominant eigenvector of the
 hyperlink matrix $\boldsymbol{H}$ \cite{langville}.
 
 \noindent In this project, we first implemented PageRank using the difference
-equation $x_{k+1}=\boldsymbol{H}x_k$, which resulted in the scores converging
+equation $\boldsymbol{x}_{k+1}=\boldsymbol{H}x_k$, which resulted in the scores converging
 once the solution reached the maximum tolerance allowed. We then confirmed our
 result by solving for the eigenvector associated with the largest eigenvalue
 of the matrix $\boldsymbol{H}$. Our goal is to understand how the algorithm
@@ -93,7 +97,6 @@ the hyperlink matrix $\boldsymbol{H}$, where each non-zero entry $\boldsymbol{H}
 is equal to $\frac{1}{|P_{ij}}$, the reciprocal of the number of outbound links
 from page $P_j$. This matrix represents the probability that a random surfer on
 page $j$ clicks through to page $i$:
-
 \begin{equation}
     \boldsymbol{H}=\begin{pmatrix}
         0&0&1/3&0&0&0\\
@@ -113,34 +116,29 @@ values and assumed that each page is equally likely to be visited at first:
             1/6\\1/6\\1/6\\1/6\\1/6\\1/6
         \end{pmatrix}
 \end{equation}
-
 \noindent We then applied the iterative update rule $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$
 until the rank vector converged below a given tolerance to simulate a random surfer moving
 moving through the web graph via the links. We visualized the convergence of the PageRank vector by 
 plotting each page's rank score for each iteration, which allowed us to track how the scores
 changed until they reached a steady state. Our results are shown in Figure~\ref{fig:conv1}.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{convergence1.png}
     \caption{PageRank convergence for graph 1.}
     \label{fig:conv1}
 \end{figure}
-
 \noindent The convergence of the iterative method is a direct consequence of the 
-underlying theory of stochastic matrices. According to \textbf{Theorem~4.9}, if 
+underlying theory of stochastic matrices. According to Theorem~4.9, if 
 $\boldsymbol{H}$ is an $n\times n$ stochastic matrix and $\boldsymbol{x}_0$ is 
 some initial vector, then the system defined by the difference equation 
 $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ converges to a unique 
 steady-state vector. This limit corrresponds to the eigenvector $\boldsymbol{v}_1$ 
 associated with eigenvalue $\lambda=1$, since all the other eigenvalue 
 components vanish as $k\to\infty$:
-
 \begin{equation}
     \boldsymbol{x}_\text{equilibrium}=\lim_{k\to\infty}\boldsymbol{H}^k\boldsymbol{x}_0=c_1\boldsymbol{v}_1
 \end{equation}
-
-\noindent \textbf{Theorem~4.9} greatly simplifies the PageRank iterative process.
+\noindent Theorem~4.9 greatly simplifies the PageRank iterative process.
 Instead of repeatedly applying $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$,
 we can directly compute the dominant eigenvector of $\boldsymbol{H}$ corresponding
 to the eigenvalue $\lambda=1$. This vector represents the steady-state solution
@@ -148,25 +146,18 @@ and results in the same PageRank distribution as the limit of the iterative meth
 
 Both the iterative difference equation and the eigenvector method yield the
 same steady-state PageRank vector:
-
 \begin{equation}
     \boldsymbol{x}_\text{converged}=
     \begin{pmatrix}
         0\\0\\0\\4/9\\2/9\\1/3
     \end{pmatrix}
 \end{equation}
-
 \noindent This distribution reflects the long-term behavior of a random surfer
 nagivating the web graph. Based on the values, we rank the pages in order of
 importance as follows:
-
-\begin{enumerate}
-    \item Page~4: most important (score = $4/9$)
-    \item Page~6: second (score = $1/3$)
-    \item Page~5: third (score = $1/3$)
-    \item Pages~1--3: least important (score = $0$)
-\end{enumerate}
-
+$$
+\text{Page 4} > \text{Page 6} > \text{Page 5} > \text{Page 1} = \text{Page 2} = \text{Page 3}
+$$
 \noindent This confirms that Pages~4--6 FINISH WRITING INTERPRETATION OF FINAL VEC HERE 
 
 \begin{figure}[H]
@@ -227,9 +218,12 @@ method, we arrive at the same steady-state PageRank vector:
 \end{equation}
 
 \noindent From this result, we rank the pages in order of importance:
-\begin{equation}
-    \text{Page 4} > \text{Page 5} > \text{Page 6} > \text{Page 8} > \text{Page 3} > \text{Page 7} > \text{Page 2} > \text{Page 1}
-\end{equation}
+$$
+\text{Page 4} > \text{Page 5} > \text{Page 6} > \text{Page 8} > \text{Page 3}
+$$
+$$
+> \text{Page 7} > \text{Page 2} > \text{Page 1}
+$$
 \noindent Page~4 is the most dominant, whereas Page~1 has the lowest influence
 in the network. (ADD SMTH FOR VECTOR INTERPRETATION HERE)
 
@@ -238,7 +232,7 @@ PageRank vector. The first was an iterative method that started from a uniform
 initial distribution $\boldsymbol{x}_0$ and repeatedly applied the
 update equation $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ until the
 difference between successive iterations fell below a convergence threshold.
-The second approach used \textbf{Theorem~4.9}, which states that the steady-state 
+The second approach used Theorem~4.9, which states that the steady-state 
 distribution is the dominant eigenvector of the stochastic matrix $\boldsymbol{H}$.
 Both methods gave identical results, which confirms the accuracy of our
 implementation. We performed all computations in Python using \texttt{NumPy}
