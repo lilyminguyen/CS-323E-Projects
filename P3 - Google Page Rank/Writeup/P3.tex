@@ -169,14 +169,38 @@ importance as follows:
 
 \noindent This confirms that Pages~4--6 FINISH WRITING INTERPRETATION OF FINAL VEC HERE 
 
-\noindent TALK ABOUT SECOND GRAPH EX. HERE
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{graph2.png}
     \caption{example graph 2.}
     \label{fig:graph2}
 \end{figure}
+
+\noindent We applied the PageRank algorithm to a second web graph consisting of
+eight interconnected pages, as shown in Figure~\ref{fig:graph2}. The 
+corresponding hyperlink matrix $\boldsymbol{H}$ and initial uniform state
+vector $\boldsymbol{H}$ are defined below.
+
+\begin{equation}
+    \boldsymbol{H}=\begin{pmatrix}
+        0 & 0 & 0 & 0 & 0 & 0 & 1/3 & 0 \\
+        1/3 & 0 & 1/3 & 0 & 0 & 0 & 0 & 0 \\
+        1/3 & 1 & 0 & 0 & 1/4 & 0 & 1/3 & 0 \\
+        0 & 0 & 0 & 0 & 1/4 & 1 & 0 & 1 \\
+        0 & 0 & 1/3 & 1/3 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1/3 & 1/4 & 0 & 0 & 0 \\
+        1/3 & 0 & 1/3 & 0 & 1/4 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1/3 & 0 & 0 & 1/3 & 0 \\
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    \boldsymbol{x}_0=\begin{pmatrix}1/8\\1/8\\1/8\\1/8\\1/8\\1/8\\1/8\\1/8\end{pmatrix}
+\end{equation}
+
+\noindent Using both the iterative update method and the dominant eigenvector
+approach, we computed the steady-state PageRank distribution. The convergence
+behavior of the iterative method is shown in Figure~\ref{fig:conv2}
 
 \begin{figure}[H]
     \centering
