@@ -44,7 +44,7 @@ abstract
 \end{abstract}
 
 % Use astrothesaurus numbers in place of num
-\keywords{word1 --- word2 --- word3 --- word4 --- word5}
+\keywords{stochastic --- hyperlink --- directed graph --- word4 --- word5}
 
 
 \section{Introduction} \label{sec:intro}
@@ -72,6 +72,14 @@ behaves under different network structures and how quickly it converges
 
 \section{Data and Observations} \label{sec:data}
 
+For an $n\times n$ hyperlink matrix $\boldsymbol{H}$ to be stochastic, each
+column msut be a probability vector with non-negative entries that sum to 1.
+This ensures that probability is conserved at each step of the Markov process
+and allows the system to converge to a unique steady-state solution. This
+condition is only satisfied if every page has at least one outgoing link.
+Otherwise, the corresponding column in $\boldsymbol{H}$ would contain all 
+zeroes and violate the stochastic property.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.20\textwidth]{graph1.png}
@@ -79,7 +87,7 @@ behaves under different network structures and how quickly it converges
     \label{fig:graph1}
 \end{figure}
 
-To start, we defined a 6-node directed graph where each page links to one or 
+\noindent To start, we defined a 6-node directed graph where each page links to one or 
 more pages, as shown in Figure ~\ref{fig:graph1}. From this, we constructed
 the hyperlink matrix $\boldsymbol{H}$, where each non-zero entry $\boldsymbol{H}_{ij}$
 is equal to $\frac{1}{|P_{ij}}$, the reciprocal of the number of outbound links
