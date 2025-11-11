@@ -209,8 +209,29 @@ behavior of the iterative method is shown in Figure~\ref{fig:conv2}
     \label{fig:conv2}
 \end{figure}
 
+\noindent Using both the iterative difference equation and the dominant eigenvector
+method, we arrive at the same steady-state PageRank vector:
 
+\begin{equation}
+    \boldsymbol{x}_\text{converged}=
+    \begin{pmatrix}
+        0.0290\\
+        0.0516\\
+        0.1258\\
+        0.3000\\
+        0.1419\\
+        0.1355\\
+        0.0871\\
+        0.1290
+    \end{pmatrix}
+\end{equation}
 
+\noindent From this result, we rank the pages in order of importance:
+\begin{equation}
+    \text{Page 4} > \text{Page 5} > \text{Page 6} > \text{Page 8} > \text{Page 3} > \text{Page 7} > \text{Page 2} > \text{Page 1}
+\end{equation}
+\noindent Page~4 is the most dominant, whereas Page~1 has the lowest influence
+in the network. (ADD SMTH FOR VECTOR INTERPRETATION HERE)
 
 \section{Results} \label{sec:results}
 

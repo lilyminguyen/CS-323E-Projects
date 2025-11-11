@@ -1,0 +1,22 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{Brin \& Page(1998)}]{brin2}
+Brin, S., \& Page, L. 1998, Computer Networks, 30, 107.
+\newblock \url{https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf}
+
+\bibitem[{Langville \& Meyer(2004)}]{langville2}
+Langville, A.~N., \& Meyer, C.~D. 2004, Internet mathematics, 1, 335
+
+\bibitem[{Langville \& Meyer(2009)}]{langville}
+---. 2009, Google's pagerank and beyond: The science of search engine rankings., 1st edn. (Princeton, N.J: Princeton University Press)
+
+\bibitem[{Page {et~al.}(1999)Page, Brin, Motwani, \& Winograd}]{brin1}
+Page, L., Brin, S., Motwani, R., \& Winograd, T. 1999, The PageRank Citation Ranking: Bringing Order to the Web., Technical Report 1999-66, Stanford InfoLab.
+\newblock \url{http://ilpubs.stanford.edu:8090/422/}
+
+\end{thebibliography}
