@@ -128,7 +128,7 @@ changed until they reached a steady state. Our results are shown in Figure~\ref{
 \end{figure}
 
 \noindent The convergence of the iterative method is a direct consequence of the 
-underlying theory of stochastic matrices. According to \textbf{Theorem 4.9}, if 
+underlying theory of stochastic matrices. According to \textbf{Theorem~4.9}, if 
 $\boldsymbol{H}$ is an $n\times n$ stochastic matrix and $\boldsymbol{x}_0$ is 
 some initial vector, then the system defined by the difference equation 
 $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ converges to a unique 
@@ -140,7 +140,7 @@ components vanish as $k\to\infty$:
     \boldsymbol{x}_\text{equilibrium}=\lim_{k\to\infty}\boldsymbol{H}^k\boldsymbol{x}_0=c_1\boldsymbol{v}_1
 \end{equation}
 
-\noindent \textbf{Theorem 4.9} greatly simplifies the PageRank iterative process.
+\noindent \textbf{Theorem~4.9} greatly simplifies the PageRank iterative process.
 Instead of repeatedly applying $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$,
 we can directly compute the dominant eigenvector of $\boldsymbol{H}$ corresponding
 to the eigenvalue $\lambda=1$. This vector represents the steady-state solution
@@ -232,6 +232,17 @@ method, we arrive at the same steady-state PageRank vector:
 \end{equation}
 \noindent Page~4 is the most dominant, whereas Page~1 has the lowest influence
 in the network. (ADD SMTH FOR VECTOR INTERPRETATION HERE)
+
+\noindent To summarize, we implemented two numerical approaches to compute the
+PageRank vector. The first was an iterative method that started from a uniform
+initial distribution $\boldsymbol{x}_0$ and repeatedly applied the
+update equation $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ until the
+difference between successive iterations fell below a convergence threshold.
+The second approach used \textbf{Theorem~4.9}, which states that the steady-state 
+distribution is the dominant eigenvector of the stochastic matrix $\boldsymbol{H}$.
+Both methods yielded identical results, which confirms the accuracy of our
+implementation. We performed all computations in Python using \texttt{NumPy}
+and visualized convergence behavior with \texttt{matplotlib}.
 
 \section{Results} \label{sec:results}
 
