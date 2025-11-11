@@ -118,7 +118,16 @@ values and assumed that each page is equally likely to be visited at first:
 until the rank vector converged below a given tolerance to simulate a random surfer moving
 moving through the web graph via the links. We visualized the convergence of the PageRank vector by 
 plotting each page's rank score for each iteration, which allowed us to track how the scores
-changed until they reached a steady state. The resulting PageRank scores are:
+changed until they reached a steady state. Our results are shown in Figure~\ref{fig:conv1}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{convergence1.png}
+    \caption{PageRank convergence for graph 1.}
+    \label{fig:conv1}
+\end{figure}
+
+The resulting PageRank scores are:
 
 \begin{equation}
     \boldsymbol{x}_\text{converged}=
@@ -127,19 +136,8 @@ changed until they reached a steady state. The resulting PageRank scores are:
     \end{pmatrix}
 \end{equation}
 
-\noindent NOTE: REWRITE THIS PART IT SOUNDS WEIRD
-\noindent Pages~4--6 dominate the steady-state distribution, whereas Pages~1--3
-decay to zero in the same limit. Page 4 having the highest PageRank score of $4/9$ means 
-it is the most frequently visited node and most dominant page in the network. This 
-behavior matches the convergence pattern shown in Figure~\ref{fig:conv1}.
+\noindent NOTE: WRITE SOMETHING ABOUT INTERPRETING THE STEADY STATE VECTOR
 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{convergence1.png}
-    \caption{PageRank convergence for graph 1.}
-    \label{fig:conv1}
-\end{figure}
 
 
 \noindent TALK ABOUT SECOND GRAPH EX. HERE
