@@ -136,9 +136,23 @@ The resulting PageRank scores are:
     \end{pmatrix}
 \end{equation}
 
-\noindent NOTE: WRITE SOMETHING ABOUT INTERPRETING THE STEADY STATE VECTOR
+\noindent NOTE: WRITE SOMETHING ABOUT INTERPRETING THE STEADY STATE VECTOR\\
 
+\noindent The convergence of the iterative method is a direct consequence of the 
+underlying theory of stochastic matrices. According to \textbf{Theorem 4.9}, if 
+$\boldsymbol{H}$ is an $n\times n$ stochastic matrix and $\boldsymbol{x}_0$ is 
+some initial vector, then the system defined by the difference equation 
+$\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ converges to a unique 
+steady-state vector. This limit corrresponds to the eigenvector $\boldsymbol{v}_1$ 
+associated with eigenvalue $\lambda=1$, since all the other eigenvalue 
+components vanish as $k\to\infty$:
 
+\begin{equation}
+    \boldsymbol{x}_\text{equilibrium}=\lim_{k\to\infty}\boldsymbol{H}^k\boldsymbol{x}_0=c_1\boldsymbol{v}_1
+\end{equation}
+
+\noindent This explains why the iterative process reliably produces the correct
+long-term PageRank vector.
 
 \noindent TALK ABOUT SECOND GRAPH EX. HERE
 

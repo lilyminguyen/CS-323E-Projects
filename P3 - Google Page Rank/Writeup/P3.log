@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 NOV 2025 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 NOV 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -671,21 +671,26 @@ File: convergence1.png Graphic file (type png)
 <use convergence1.png>
 Package pdftex.def Info: convergence1.png  used on input line 125.
 (pdftex.def)             Requested size: 205.24384pt x 128.27739pt.
-<graph2.png, id=69, 1200.485pt x 1047.915pt>
-File: graph2.png Graphic file (type png)
-<use graph2.png>
-Package pdftex.def Info: graph2.png  used on input line 147.
-(pdftex.def)             Requested size: 128.27936pt x 111.97708pt.
- [2
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+[2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 
+l.149 
        <./convergence1.png>]
+<graph2.png, id=79, 1200.485pt x 1047.915pt>
+File: graph2.png Graphic file (type png)
+<use graph2.png>
+Package pdftex.def Info: graph2.png  used on input line 161.
+(pdftex.def)             Requested size: 128.27936pt x 111.97708pt.
 <convergence2.png, id=80, 578.16pt x 361.35pt>
 File: convergence2.png Graphic file (type png)
 <use convergence2.png>
-Package pdftex.def Info: convergence2.png  used on input line 154.
+Package pdftex.def Info: convergence2.png  used on input line 168.
 (pdftex.def)             Requested size: 205.24384pt x 128.27739pt.
  (./P3.bbl [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
@@ -706,18 +711,18 @@ Package rerunfilecheck Info: File `P3.out' has not changed.
 (rerunfilecheck)             Checksum: FD6613885883F8A97E52E98D2DEE2C3B;631.
  ) 
 Here is how much of TeX's memory you used:
- 15830 strings out of 473190
- 252533 string characters out of 5715801
+ 15831 strings out of 473190
+ 252543 string characters out of 5715801
  735428 words of memory out of 5000000
  38787 multiletter control sequences out of 15000+600000
  571499 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,6n,93p,588b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on P3.pdf (4 pages, 627737 bytes).
+Output written on P3.pdf (4 pages, 632915 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
