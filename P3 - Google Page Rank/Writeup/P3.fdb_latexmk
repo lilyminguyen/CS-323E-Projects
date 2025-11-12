@@ -1,26 +1,14 @@
 # Fdb version 4
-<<<<<<< Updated upstream
-["bibtex P3"] 1762988355.11542 "P3.aux" "P3.bbl" "P3" 1762988357.70564 0
-  "./refs.bib" 1762988227.90725 12260 b767fb6910cae9960a36ae8c4fd56a35 ""
+["bibtex P3"] 1762989362.66973 "P3.aux" "P3.bbl" "P3" 1762989373.95952 0
+  "./refs.bib" 1762989105.35257 12260 b767fb6910cae9960a36ae8c4fd56a35 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "P3.aux" 1762988357.42674 1821 31f13f5a399bbec9ccd85579d7cefed9 "pdflatex"
-=======
-["bibtex P3"] 1762964013.56663 "P3.aux" "P3.bbl" "P3" 1762964015.24986 0
-  "./refs.bib" 1762964011.72917 12260 b767fb6910cae9960a36ae8c4fd56a35 ""
-  "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "P3.aux" 1762964014.87552 1821 31f13f5a399bbec9ccd85579d7cefed9 "pdflatex"
->>>>>>> Stashed changes
+  "P3.aux" 1762989373.64813 1821 31f13f5a399bbec9ccd85579d7cefed9 "pdflatex"
   (generated)
   "P3.bbl"
   "P3.blg"
   (rewritten before read)
-<<<<<<< Updated upstream
-["pdflatex"] 1762988356.49891 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1762988357.70576 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" 1762988356.47319 12814 e4a8bacd32c144a07f187a6c87d3ea4f ""
-=======
-["pdflatex"] 1762964013.72119 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1762964015.25002 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" 1762964011.72836 12814 e4a8bacd32c144a07f187a6c87d3ea4f ""
->>>>>>> Stashed changes
+["pdflatex"] 1762989372.64298 "/Users/lilynguyen/Downloads/UT Fa25/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1762989373.95965 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" 1762989372.28595 12816 5e0afd9c854190b717ea125f32bfaeda ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -181,21 +169,14 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-<<<<<<< Updated upstream
-  "P3.aux" 1762988357.42674 1821 31f13f5a399bbec9ccd85579d7cefed9 "pdflatex"
-  "P3.bbl" 1762988355.2355 1186 e18df46775a70a8bd09e847fec387be0 "bibtex P3"
-  "P3.out" 1762988357.42739 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
-  "P3.tex" 1762988356.47319 12814 e4a8bacd32c144a07f187a6c87d3ea4f ""
-=======
-  "P3.aux" 1762964014.87552 1821 31f13f5a399bbec9ccd85579d7cefed9 "pdflatex"
-  "P3.bbl" 1762964013.7166 1186 e18df46775a70a8bd09e847fec387be0 "bibtex P3"
-  "P3.out" 1762964014.87639 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
-  "P3.tex" 1762964011.72836 12814 e4a8bacd32c144a07f187a6c87d3ea4f ""
->>>>>>> Stashed changes
-  "convergence1.png" 1762532011.53422 52868 eb7e72f48267d597ffc0addbccf22b8a ""
-  "convergence2.png" 1762541377.23185 75935 11ed68059ad0dcddafd2a00300861ca5 ""
-  "graph1.png" 1762803159.9638 134870 ee48171a52ca297ae24342726cab5b1f ""
-  "graph2.png" 1762803121.62888 170551 d79c8ba47b00e277c420e1b2bc97b190 ""
+  "P3.aux" 1762989373.64813 1821 31f13f5a399bbec9ccd85579d7cefed9 "pdflatex"
+  "P3.bbl" 1762989362.78975 1186 e18df46775a70a8bd09e847fec387be0 "bibtex P3"
+  "P3.out" 1762989373.64869 631 fd6613885883f8a97e52e98d2dee2c3b "pdflatex"
+  "P3.tex" 1762989372.28595 12816 5e0afd9c854190b717ea125f32bfaeda ""
+  "convergence1.png" 1762989105.35114 52868 eb7e72f48267d597ffc0addbccf22b8a ""
+  "convergence2.png" 1762989105.35141 75935 11ed68059ad0dcddafd2a00300861ca5 ""
+  "graph1.png" 1762989105.35185 134870 ee48171a52ca297ae24342726cab5b1f ""
+  "graph2.png" 1762989105.35242 170551 d79c8ba47b00e277c420e1b2bc97b190 ""
   (generated)
   "P3.aux"
   "P3.log"
