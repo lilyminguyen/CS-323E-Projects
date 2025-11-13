@@ -1,8 +1,8 @@
-PWD /Users/lilynguyen/Downloads/UT Fa25/CS-323E-Projects/P3 - Google Page Rank/Writeup
+PWD /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects-new/P3 - Google Page Rank/Writeup
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lilynguyen/Downloads/UT Fa25/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex
+INPUT /Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects-new/P3 - Google Page Rank/Writeup/P3.tex
 OUTPUT P3.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
