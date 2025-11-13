@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex P3"] 1763002646.35063 "P3.aux" "P3.bbl" "P3" 1763002955.85603 0
-  "./refs.bib" 1763000152.71722 12261 c69d224f6bd32ce4192f897c73876fc4 ""
+["bibtex P3"] 1763002646.35063 "P3.aux" "P3.bbl" "P3" 1763003638.38403 0
+  "./refs.bib" 1763003635.68924 12261 c69d224f6bd32ce4192f897c73876fc4 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "P3.aux" 1763002955.45073 1896 eea4bb9785b011478e5e3e5e27e571a9 "pdflatex"
+  "P3.aux" 1763003637.88716 1896 eea4bb9785b011478e5e3e5e27e571a9 "pdflatex"
   (generated)
   "P3.bbl"
   "P3.blg"
   (rewritten before read)
-["pdflatex"] 1763002954.21744 "/Users/lilynguyen/Downloads/UT Fa25/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1763002955.85626 0
-  "/Users/lilynguyen/Downloads/UT Fa25/CS-323E-Projects/P3 - Google Page Rank/Writeup/P3.tex" 1763002953.99258 13243 941d3e45df4203152f292e706fa89ba1 ""
+["pdflatex"] 1763003635.97724 "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects-new/P3 - Google Page Rank/Writeup/P3.tex" "P3.pdf" "P3" 1763003638.38437 0
+  "/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects-new/P3 - Google Page Rank/Writeup/P3.tex" 1763003635.68667 13243 941d3e45df4203152f292e706fa89ba1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -169,14 +169,14 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "P3.aux" 1763002955.45073 1896 eea4bb9785b011478e5e3e5e27e571a9 "pdflatex"
-  "P3.bbl" 1763002646.49952 1657 8c6cb1ed353125a069f2f459cce301b2 "bibtex P3"
-  "P3.out" 1763002955.45153 494 b0fd7c4186680a992fd2ce59d471242b "pdflatex"
-  "P3.tex" 1763002953.99258 13243 941d3e45df4203152f292e706fa89ba1 ""
-  "convergence1.png" 1762989105.35114 52868 eb7e72f48267d597ffc0addbccf22b8a ""
-  "convergence2.png" 1762989105.35141 75935 11ed68059ad0dcddafd2a00300861ca5 ""
-  "graph1.png" 1762989105.35185 134870 ee48171a52ca297ae24342726cab5b1f ""
-  "graph2.png" 1762989105.35242 170551 d79c8ba47b00e277c420e1b2bc97b190 ""
+  "P3.aux" 1763003637.88716 1896 eea4bb9785b011478e5e3e5e27e571a9 "pdflatex"
+  "P3.bbl" 1763003635.68234 1657 8c6cb1ed353125a069f2f459cce301b2 "bibtex P3"
+  "P3.out" 1763003637.88825 494 b0fd7c4186680a992fd2ce59d471242b "pdflatex"
+  "P3.tex" 1763003635.68667 13243 941d3e45df4203152f292e706fa89ba1 ""
+  "convergence1.png" 1763003635.68701 52868 eb7e72f48267d597ffc0addbccf22b8a ""
+  "convergence2.png" 1763003635.68744 75935 11ed68059ad0dcddafd2a00300861ca5 ""
+  "graph1.png" 1763003635.68812 134870 ee48171a52ca297ae24342726cab5b1f ""
+  "graph2.png" 1763003635.68898 170551 d79c8ba47b00e277c420e1b2bc97b190 ""
   (generated)
   "P3.aux"
   "P3.log"
