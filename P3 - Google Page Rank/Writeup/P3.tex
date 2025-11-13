@@ -38,10 +38,20 @@ Austin, TX 78712, USA}
 
 % 250 word limit for abstract
 \begin{abstract}
-
-  % test
-  In this projects, we explore the numerical methods to find the PageRank ranking. The PageRank matrix is a transition matrix that describes the probability of going from one page to another page. And the eigenvector is the ranking weights. The first method we is the iterative method, which repeatly applies the PageRank matrix to a equally weighted probability vector to see if it converges. If it converges to particular values that vector is the long term steady state vector describing the page that most people will end up over a long enougn time span. Another method we explored was a direct method, where we compute the steady-state eigenvector where the eigenvalue is 1. We also look at the limittion of the ergodic requirement for these methods and suggest a pertubation method known as "random surfer" to resolves that limitation.  
-
+    % test
+    In this project, we explored numerical methods for computing the PageRank 
+    vector, which ranks the relative importance of nodes in a directed network.
+    The PageRank matrix is a stochastic transition matrix that encodes the
+    probability of moving from one page to another. We first implement an
+    iterative method that repeatedly applies the hyperlink matrix $\boldsymbol{H}$
+    to a uniform probability vector and observe its convergence to a unique 
+    steady-state solution. We then apply a direct method by solving for the 
+    dominant eigenvector, whose eigenvalue is $\lambda=1$. Both approaches 
+    assume the matrix is ergodic (irreducible and aperiodic) to ensure
+    convergence. When this condition fails, we introduce the "random surfer"
+    model, which adds a damping factor to enable jumps to any node with fixed
+    probability. This adjustment ensures convergence and models more realistic
+    user behavior.
 \end{abstract}
 
 % Use astrothesaurus numbers in place of num
@@ -62,7 +72,7 @@ considered more important and thus receive a higher PageRank score \cite{brin1}.
 proportional to the importance of pages linking to it. The final PageRank
 vector corresponds to the steady-state distribution of this process and can
 be found either by iteration or by solving for the dominant eigenvector of the
-hyperlink matrix $\boldsymbol{H}$ \cite{langville}.
+hyperlink matrix $\boldsymbol{H}$ \cite{langville1}.
 
 \noindent In this project, we first implemented PageRank using the difference
 equation $\boldsymbol{x}_{k+1}=\boldsymbol{H}x_k$, which resulted in the scores converging
@@ -70,31 +80,30 @@ once the solution reached the maximum tolerance allowed. We then confirmed our
 result by solving for the eigenvector associated with the largest eigenvalue
 of the matrix $\boldsymbol{H}$. Our goal is to understand how the algorithm
 behaves under different network structures and how quickly it converges 
-\cite{langville2}.
+\cite{langville2}.\\
 
 
 \section{Data and Observations} \label{sec:data}
 
 For an $n\times n$ hyperlink matrix $\boldsymbol{H}$ to be stochastic, each
-column msut be a probability vector with non-negative entries that sum to 1. 
-The matrix must also be ergodic which means that cycles do not form and the matrix cannot be reduced to seperate independent stocastic matrix.
-This ensures that probability is conserved at each step of the Markov process
-and allows the system to converge to a unique steady-state solution. This
-condition is only satisfied if every page has at least one outgoing link.
-Otherwise, the corresponding column in $\boldsymbol{H}$ would contain all 
-zeroes and violate the stochastic property.
-
+column must be a probability vector with non-negative entries that sum to 1. 
+The matrix must also be ergodic, meaning it is both irreducible (every page
+can eventually be reached from any other page) and aperiodic (the system does
+not get trapped in cycles). This ensures that probability is conserved at each 
+step of the Markov process and allows the system to converge to a unique 
+steady-state solution. This condition is only satisfied if every page has at 
+least one outgoing link. Otherwise, the corresponding column in $\boldsymbol{H}$ 
+would contain all zeroes and violate the stochastic property \cite{langville1}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.20\textwidth]{graph1.png}
-    \caption{Stocastic Matrix Graph}
+    \caption{Example directed graph.}
     \label{fig:graph1}
 \end{figure}
-
-\noindent To start, we defined a 6-node directed graph where each page links to one or 
+\noindent To start, we define a 6-node directed graph where each page links to one or 
 more pages, as shown in Figure ~\ref{fig:graph1}. From this, we constructed
 the hyperlink matrix $\boldsymbol{H}$, where each non-zero entry $\boldsymbol{H}_{ij}$
-is equal to $\frac{1}{|P_{ij}}$, the reciprocal of the number of outbound links
+is equal to $\frac{1}{|P_{ij}|}$, the reciprocal of the number of outbound links
 from page $P_j$. This matrix represents the probability that an agent on
 page $j$ clicks through to page $i$:
 \begin{equation}
@@ -109,7 +118,7 @@ page $j$ clicks through to page $i$:
 \end{equation}
 
 \noindent We initialized the PageRank vector $\boldsymbol{x}_0$ with equal
-values and assumed that each page is equally likely to be visited at first:
+values and assumed that each page is equally likely to be visited:
 \begin{equation}
     \boldsymbol{x}_0=
         \begin{pmatrix}
@@ -124,7 +133,7 @@ changed until they reached a steady state. Our results are shown in Figure~\ref{
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{convergence1.png}
-    \caption{PageRank convergence for graph 1.}
+    \caption{PageRank convergence for the graph in Figure~\ref{fig:graph1}.}
     \label{fig:conv1}
 \end{figure}
 \noindent The convergence of the iterative method is a direct consequence of the 
@@ -132,7 +141,7 @@ underlying theory of stochastic matrices. According to Theorem~4.9, if
 $\boldsymbol{H}$ is an $n\times n$ stochastic matrix and $\boldsymbol{x}_0$ is 
 some initial vector, then the system defined by the difference equation 
 $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$ converges to a unique 
-steady-state vector. This limit corrresponds to the eigenvector $\boldsymbol{v}_1$ 
+steady-state vec \cite{brin1}. This limit corrresponds to the eigenvector $\boldsymbol{v}_1$ 
 associated with eigenvalue $\lambda=1$, since all the other eigenvalue 
 components vanish as $k\to\infty$:
 \begin{equation}
@@ -142,7 +151,8 @@ components vanish as $k\to\infty$:
 Instead of repeatedly applying $\boldsymbol{x}_{n+1}=\boldsymbol{H}\boldsymbol{x}_n$,
 we can directly compute the dominant eigenvector of $\boldsymbol{H}$ corresponding
 to the eigenvalue $\lambda=1$. This vector represents the steady-state solution
-and results in the same PageRank distribution as the limit of the iterative method. 
+and results in the same PageRank distribution as the limit of the iterative method
+\cite{kamvar}. 
 
 Both the iterative difference equation and the eigenvector method yield the
 same steady-state PageRank vector:
@@ -160,7 +170,7 @@ eight interconnected pages, as shown in Figure~\ref{fig:graph2}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{graph2.png}
-    \caption{example graph 2.}
+    \caption{Example directed graph.}
     \label{fig:graph2}
 \end{figure}
 
@@ -193,7 +203,7 @@ behavior of the iterative method is shown in Figure~\ref{fig:conv2}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{convergence2.png}
-    \caption{PageRank Convergence for graph 2.}
+    \caption{PageRank Convergence for the graph in Figure~\ref{fig:graph2}}
     \label{fig:conv2}
 \end{figure}
 
@@ -213,18 +223,24 @@ method, we arrive at the same steady-state PageRank vector:
         0.1290
     \end{pmatrix}
 \end{equation}
+\\
+
 \section{Results} \label{sec:results}
 
-\noindent This distribution for the first web graph reflects the long-term behavior of an agent nagivating the web graph. Based on the values, we rank the pages in order of
-importance as follows:
+\noindent The distribution for the first web graph reflects the long-term 
+behavior of an agent nagivating the web graph in Figure~\ref{fig:graph1}. 
+Based on the values, we rank the pages in order of importance as follows:
 $$
 \text{Page 4} > \text{Page 6} > \text{Page 5} > \text{Page 1} = \text{Page 2} = \text{Page 3}
 $$
 \noindent 
 
-We know that after a long enough time span, $\frac{4}{9}$ of a group of people will end up in Page 4, $\frac{2}{9}$ of a group of people will end up in page 5, and $\frac{1}{3}$ of a group prople will end up in Page 1. No one will end up on Page 1, 2, and 3. 
+After a long enough time span, $\frac{4}{9}$ of users will end up in page~4, 
+$\frac{2}{9}$ of users will end up in page~5, and $\frac{1}{3}$ of users will 
+end up in page~6. Practically one will end up on pages~1, 2, and 3. 
 
-\noindent From this second web graph result, we rank the pages in order of importance:
+\noindent From the results of the final distribution for the graph in Figure~\ref{fig:graph2}, 
+we rank the pages in order of importance:
 $$
 \text{Page 4} > \text{Page 5} > \text{Page 6} > \text{Page 8} > \text{Page 3}
 $$
@@ -232,7 +248,8 @@ $$
 > \text{Page 7} > \text{Page 2} > \text{Page 1}
 $$
 \noindent Page~4 is the most dominant, whereas Page~1 has the lowest influence
-in the network. In order word most people will end up on page 4 and the least amount of people will end up on page 1 given a long enough timespan. 
+in the network. Most people will end up on page~4 and the least amount of 
+people will end up on page~1 in the limit of increasing time.\\ 
 
 \section{Summary and Conclusion} \label{sec:summary}
 
@@ -245,20 +262,33 @@ difference between successive iterations fell below a convergence threshold.
 The second approach used Theorem~4.9, which states that the steady-state 
 distribution is the dominant eigenvector of the stochastic matrix $\boldsymbol{H}$.
 Both methods gave identical results, which confirms the accuracy of our
-implementation to describe long term internet behavior. We performed all computations in Python using \texttt{NumPy}
-and visualized convergence behavior with \texttt{matplotlib}.
+implementation to in describing long-term internet behavior. We performed all 
+computations in Python using \texttt{NumPy} and visualized convergence 
+behavior with \texttt{matplotlib}.
 
-The biggest limitation is that each iteration is assumed to be indepedent, which means that the current page and previous that the user is on does not influence the next page the user will explore. This condition might of held when the internet was more decentralized. Given the rise of modern recommendation algorithm on platforms that tries to maximize user retention, this assumption doesn't hold true.
+One limitation of the PageRank model is the assumption that each transition is
+independent, meaning the current and previous pages visited do not influence
+the next page \cite{langville1}. While this may have been reasonable when the 
+internet was more decentralized, it does not reflect the behavior driven by 
+modern recommendation algorithms which actively shape user navigation to 
+maximize engagement and retention.
 
-Another limitation is that the PageRank matrix \textbf{H} must be ergodic, such as the one that we've shown in the article. In order to solve this issue a pertubation can be made to the original matrix be made to make all matrixes ergodic. This is done by introducing a dampening factor $\alpha$ which represent the dampening factor, J is a ones matrix, and n is the number of pages. 
-
+Another limitation is the the hyperlink matrix $\boldsymbol{H}$ must be ergodic
+for the iterative method to converge. In cases where this condition fails, such
+as with dangling nodes or disconnected components, we suggest introducing a
+pertubation to enforce ergodicity. This is achived by modifying the original
+matrix with a damping factor $\alpha$ to produce a new matrix:
 \begin{equation}
-  \label{eq:} \hat{H} = (1 - \alpha) H + \frac{\alpha}{n} J
+    \hat{\boldsymbol{H}} = (\boldsymbol{1} - \alpha) \boldsymbol{H}+ \frac{\alpha}{n} \boldsymbol{J}
 \end{equation}
+Here, $\boldsymbol{J}$ is a ones matrix and $n$ is the total number of pages.
+This perturbation represents the the probability that a user may jump to any 
+page and ensures the matrix remains stochastic. Thus, the random surfer model
+not only guaruantees convergence but also aligns more closely with realistic
+user behavior on the modern web \cite{boldi}.\\
 
-This pertubation represents the chance that the user has of jumping to another page randomly. It has a nice property of preventing loops from forming, while also summing the probabilities for one page to jump to another page up to one which defines a stocastic matrix.
 
-\subsection{Acknowledgements}
+\subsection*{Acknowledgements}
 We thank Professor Mitra for his guidance and instruction throughout the course,
 as well as the teaching assistants for their helpful feedback. We also
 acknowledge the Department of Physics for providing an excellent academic foundation 
