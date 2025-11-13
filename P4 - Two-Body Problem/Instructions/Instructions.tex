@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\title{P4: Two-Body Problem}
+% \author{Lily Nguyen}
+\date{November 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Instructions}
+
+Consider two masses, $m_1$ and $m_2$, under mutual gravitational influence. The position vectors for the two masses are $\mathbf{r}_1$ and $\mathbf{r}_2$. From Newton’s second law and the universal law of gravitation, we get:
+\begin{equation}
+    m_1\mathbf{r''}_1=\mathbf{F}, \quad m_2\mathbf{r''}_2=-\mathbf{F}
+\end{equation}
+\noindent where
+\begin{equation}
+    \mathbf{F}=-Gm_1m_2\frac{(\mathbf{r}_1-\mathbf{r}_2)}{|\mathbf{r}_1-\mathbf{r}_2|^3}
+\end{equation}
+where $G$ is the graviational constant. $\mathbf{r''}_1$ and $\mathbf{r''}_2$ are the second derivatives of $\mathbf{r}_1$ and $\mathbf{r}_2$ with respect to time.\\
+
+\noindent The two-body problem can be reduced to a one-body problem by a change of coordinates. Let r be the relative position vector, and R be the coordinate of the center of mass of the system; that is:
+\begin{equation}
+    \mathbf{r}=\mathbf{r}_1-\mathbf{r}_2,\quad\text{and}\quad\mathbf{R}=\frac{(m_1\mathbf{r}_1+m_2\mathbf{r}_2)}{m_1+m_2}
+\end{equation}
+Now, changing coordinates in Newton’s equations from $\mathbf{r}_1$ and $\mathbf{r}_2$ to $\mathbf{r}$ and $\mathbf{R}$ results in
+\begin{equation}
+    \frac{m_1\mathbf{R}+(m_1m_2\mathbf{r})}{m_1+m_2}=\mathbf{F},\quad \frac{m_2\mathbf{R}-(m_1m_2\mathbf{r})}{m_1+m_2}=-\mathbf{F}
+\end{equation}
+\noindent and adding and subtracting these two equations yields the result
+\begin{equation}
+    \mathbf{R''}=0\quad\text{and}\quad\mu\mathbf{r''}=\mathbf{F}
+\end{equation}
+where $\mu$ is called the reduced mass and is given by $\mu=\frac{m_1m_2}{m_1+m_2}$.\\
+
+\noindent The center-of-mass coordinate system is an inertial coordinate system (one moving at constant velocity with the center-of-mass fixed at the origin $\mathbf{R} = 0$). The remaining equation for the relative coordinate has the form of a one-body problem and can be written as
+\begin{equation}
+    \mathbf{r''}=-\frac{k\mathbf{r}}{r^3},\quad\text{where}\quad k=G(m_1+m_2)
+\end{equation}
+Once $\mathbf{r}$ is determined, the coordinates of the two masses in the center-of-mass coordinate system can be found from
+\begin{equation}
+    \mathbf{r}_1=\frac{m_2\mathbf{r}}{m_1+m_2}\quad\text{and}\quad\mathbf{r}_2=\frac{m_1\mathbf{r}}{m_1+m_2}
+\end{equation}
+The equivalent one-body problem can be simplified further. The position vector $\mathbf{r}$ and the velocity vector $\mathbf{r'}$ form a plane. Since the acceleration vector points in the direction of the position vector, the one-body motion will be restricted to this plane. There is no force component trying to move the masses off the plane. We can place our coordinate system so that $\mathbf{r}$ lies in the x-y plane with $z = 0$ and write $\mathbf{r} = x \mathbf{\hat{i}} + y \mathbf{\hat{j}}$.\\
+
+\noindent The relevant units are length and time, and they may be nondimensionalized using the constant parameter k (which has units $l^3/t^2$) and the distance of the closest approach of the two masses (the minimum value of $\mathbf{r}$). The dimensionless governing equations, in component form, are then given by
+\begin{equation}
+    x''=-\frac{x}{(x^2+y^2)^{3/2}}\quad\text{and}\quad y''=-\frac{y}{(x^2+y^2)^{3/2}}
+\end{equation}
+We can further orient the x-y axes so that the solution $r = r(t)$ is symmetric about the x-axis, and the minimum value of $\mathbf{r}$ occurs at $x = -1$ and $y = 0$, where symmetry also requires $x' = 0$. The quantities $x'$ and $y'$ are the first derivatives with respect to time. Setting our initial conditions at the point of minimum $\mathbf{r}$, we can write
+\begin{equation}
+    x(0)=-1,\quad y(0)=0,\quad x'(0)=0,\quad y'(0)=(1+e)^{1/2}
+\end{equation}
+where we have parameterized $y'(0)$ using $\varepsilon$. The parameter $\varepsilon$ is called the eccentricity of the orbit. Circular orbits have $\varepsilon = 0$, and elliptical orbits have $0 < \varepsilon < 1$. When $\varepsilon = 1$, the orbit is parabolic; for $\varepsilon > 1$, we get a hyperbolic orbit. The period of a closed orbit is given by
+\begin{equation}
+    T=\frac{2}{(1-e)^{3/2}}
+\end{equation}
+NOTE: double check numerator of the fraction with prof/canvas\\
+
+\noindent For this project, you will write code that solves the two-body problem. You will investigate the orbit for four mass ratios ($m_1$:$m_2$) -- 1:1, 1:2, 1:4, and 1:16. For each mass ratio, you will determine the orbit for the four eccentricity values -- 0, 0.25, 0.50, and 0.75. Altogether, you will have 16 configurations.\\
+
+\noindent You can write your own Runge-Kutta fourth-order solver or use the ODE solver in \texttt{SciPy}. Given the initial conditions, specified value of e, and mass ratio, solve a system of four first-order differential equations for the sixteen configurations.
+
+\end{document}
