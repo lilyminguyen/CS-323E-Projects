@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 NOV 2025 05:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 NOV 2025 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,106 +639,162 @@ Package hyperref Info: Link coloring ON on input line 26.
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 26.
 Class revtex4-1 Info: Reinvoke \linenumbers on input line 26.
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 26.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 50.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 48.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<1_1_0.00.png, id=23, 289.08pt x 289.08pt>
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
+
+ []
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
+
+ []
+
+<1_1_0.00.png, id=74, 289.08pt x 289.08pt>
 File: 1_1_0.00.png Graphic file (type png)
 <use 1_1_0.00.png>
-Package pdftex.def Info: 1_1_0.00.png  used on input line 65.
+Package pdftex.def Info: 1_1_0.00.png  used on input line 171.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_1_0.25.png, id=25, 289.08pt x 289.08pt>
+<1_1_0.25.png, id=76, 289.08pt x 289.08pt>
 File: 1_1_0.25.png Graphic file (type png)
 <use 1_1_0.25.png>
-Package pdftex.def Info: 1_1_0.25.png  used on input line 65.
+Package pdftex.def Info: 1_1_0.25.png  used on input line 171.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_1_0.50.png, id=26, 289.08pt x 289.08pt>
+<1_1_0.50.png, id=77, 289.08pt x 289.08pt>
 File: 1_1_0.50.png Graphic file (type png)
 <use 1_1_0.50.png>
-Package pdftex.def Info: 1_1_0.50.png  used on input line 65.
+Package pdftex.def Info: 1_1_0.50.png  used on input line 171.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_1_0.75.png, id=27, 289.08pt x 289.08pt>
+<1_1_0.75.png, id=78, 289.08pt x 289.08pt>
 File: 1_1_0.75.png Graphic file (type png)
 <use 1_1_0.75.png>
-Package pdftex.def Info: 1_1_0.75.png  used on input line 65.
+Package pdftex.def Info: 1_1_0.75.png  used on input line 171.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_2_0.00.png, id=28, 289.08pt x 289.08pt>
+<1_2_0.00.png, id=79, 289.08pt x 289.08pt>
 File: 1_2_0.00.png Graphic file (type png)
 <use 1_2_0.00.png>
-Package pdftex.def Info: 1_2_0.00.png  used on input line 73.
+Package pdftex.def Info: 1_2_0.00.png  used on input line 179.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_2_0.25.png, id=29, 289.08pt x 289.08pt>
+<1_2_0.25.png, id=80, 289.08pt x 289.08pt>
 File: 1_2_0.25.png Graphic file (type png)
 <use 1_2_0.25.png>
-Package pdftex.def Info: 1_2_0.25.png  used on input line 73.
+Package pdftex.def Info: 1_2_0.25.png  used on input line 179.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_2_0.50.png, id=30, 289.08pt x 289.08pt>
+<1_2_0.50.png, id=81, 289.08pt x 289.08pt>
 File: 1_2_0.50.png Graphic file (type png)
 <use 1_2_0.50.png>
-Package pdftex.def Info: 1_2_0.50.png  used on input line 73.
+Package pdftex.def Info: 1_2_0.50.png  used on input line 179.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_2_0.75.png, id=31, 289.08pt x 289.08pt>
+<1_2_0.75.png, id=82, 289.08pt x 289.08pt>
 File: 1_2_0.75.png Graphic file (type png)
 <use 1_2_0.75.png>
-Package pdftex.def Info: 1_2_0.75.png  used on input line 73.
+Package pdftex.def Info: 1_2_0.75.png  used on input line 179.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_4_0.00.png, id=32, 289.08pt x 289.08pt>
+<1_4_0.00.png, id=83, 289.08pt x 289.08pt>
 File: 1_4_0.00.png Graphic file (type png)
 <use 1_4_0.00.png>
-Package pdftex.def Info: 1_4_0.00.png  used on input line 81.
+Package pdftex.def Info: 1_4_0.00.png  used on input line 187.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_4_0.25.png, id=33, 289.08pt x 289.08pt>
+<1_4_0.25.png, id=84, 289.08pt x 289.08pt>
 File: 1_4_0.25.png Graphic file (type png)
 <use 1_4_0.25.png>
-Package pdftex.def Info: 1_4_0.25.png  used on input line 81.
+Package pdftex.def Info: 1_4_0.25.png  used on input line 187.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_4_0.50.png, id=34, 289.08pt x 289.08pt>
+<1_4_0.50.png, id=85, 289.08pt x 289.08pt>
 File: 1_4_0.50.png Graphic file (type png)
 <use 1_4_0.50.png>
-Package pdftex.def Info: 1_4_0.50.png  used on input line 81.
+Package pdftex.def Info: 1_4_0.50.png  used on input line 187.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_4_0.75.png, id=35, 289.08pt x 289.08pt>
+<1_4_0.75.png, id=86, 289.08pt x 289.08pt>
 File: 1_4_0.75.png Graphic file (type png)
 <use 1_4_0.75.png>
-Package pdftex.def Info: 1_4_0.75.png  used on input line 81.
+Package pdftex.def Info: 1_4_0.75.png  used on input line 187.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_16_0.00.png, id=36, 289.08pt x 289.08pt>
+<1_16_0.00.png, id=87, 289.08pt x 289.08pt>
 File: 1_16_0.00.png Graphic file (type png)
 <use 1_16_0.00.png>
-Package pdftex.def Info: 1_16_0.00.png  used on input line 89.
+Package pdftex.def Info: 1_16_0.00.png  used on input line 195.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_16_0.25.png, id=37, 289.08pt x 289.08pt>
+<1_16_0.25.png, id=88, 289.08pt x 289.08pt>
 File: 1_16_0.25.png Graphic file (type png)
 <use 1_16_0.25.png>
-Package pdftex.def Info: 1_16_0.25.png  used on input line 89.
+Package pdftex.def Info: 1_16_0.25.png  used on input line 195.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_16_0.50.png, id=38, 289.08pt x 289.08pt>
+<1_16_0.50.png, id=89, 289.08pt x 289.08pt>
 File: 1_16_0.50.png Graphic file (type png)
 <use 1_16_0.50.png>
-Package pdftex.def Info: 1_16_0.50.png  used on input line 89.
+Package pdftex.def Info: 1_16_0.50.png  used on input line 195.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
-<1_16_0.75.png, id=39, 289.08pt x 289.08pt>
+<1_16_0.75.png, id=90, 289.08pt x 289.08pt>
 File: 1_16_0.75.png Graphic file (type png)
 <use 1_16_0.75.png>
-Package pdftex.def Info: 1_16_0.75.png  used on input line 89.
+Package pdftex.def Info: 1_16_0.75.png  used on input line 195.
 (pdftex.def)             Requested size: 123.151pt x 123.1507pt.
 
-No file P4.bbl.
-[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+Underfull \hbox (badness 10000) in paragraph at lines 203--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--227
+
+ []
+
+[2]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 236.
+
+[3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.115 \end{document}
-                     <./1_1_0.00.png> <./1_1_0.25.png> <./1_1_0.50.png> <./1_1_0.75.png> <./1_2_0.00.png> <./1_2_0.25.png> <./1_2_0.50.png> <./1_2_0.75.png> <./1_4_0.00.png> <./1_4_0.25.png> <./1_4_0.50.png> <./1_4_0.75.png> <./1_16_0.00.png> <./1_16_0.25.png> <./1_16_0.50.png> <./1_16_0.75.png>] (./P4.aux)
+l.236 
+       <./1_1_0.00.png> <./1_1_0.25.png> <./1_1_0.50.png> <./1_1_0.75.png> <./1_2_0.00.png> <./1_2_0.25.png> <./1_2_0.50.png> <./1_2_0.75.png> <./1_4_0.00.png> <./1_4_0.25.png> <./1_4_0.50.png> <./1_4_0.75.png> <./1_16_0.00.png> <./1_16_0.25.png> <./1_16_0.50.png> <./1_16_0.75.png>] (./P4.bbl) [4] (./P4.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -747,18 +803,18 @@ Package rerunfilecheck Info: File `P4.out' has not changed.
 (rerunfilecheck)             Checksum: B0FD7C4186680A992FD2CE59D471242B;494.
  ) 
 Here is how much of TeX's memory you used:
- 15834 strings out of 473190
- 253024 string characters out of 5715801
- 727062 words of memory out of 5000000
- 38817 multiletter control sequences out of 15000+600000
- 568280 words of font info for 72 fonts, out of 8000000 for 9000
+ 15896 strings out of 473190
+ 253895 string characters out of 5715801
+ 751517 words of memory out of 5000000
+ 38860 multiletter control sequences out of 15000+600000
+ 569714 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,8n,93p,588b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on P4.pdf (2 pages, 457233 bytes).
+ 94i,8n,93p,588b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on P4.pdf (4 pages, 539072 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

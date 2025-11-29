@@ -13,7 +13,7 @@
 
 
 % Search Query Metadata
-\shorttitle{Google PageRank}
+\shorttitle{Two-Body Orbital Simulations}
 %\shortauthors{Nguyen & Sae}
 
 % Hyperlink setup
@@ -25,7 +25,8 @@ urlcolor=blue
 
 \begin{document}
 
-\title{Two-Body Problem}
+\title{Numerical Simulation of Two-Body Orbits Using Runge-Kutta Methods}
+% \title{Runge-Kutta Simulation of Orbital Motion in a Two-Body System}
 % [] is for ORCiD
 %\correspondingauthor{Main Author}
 %\email{author1@email.com, author2@email.com, author3@email.com}
@@ -41,20 +42,125 @@ Austin, TX 78712, USA}
 % 250 word limit for abstract
 \begin{abstract}
 
+We numerically solve the two-body gravitational problem using the fourth-order
+Runge-Kutta method to study how mass ratio and orbital eccentricity affect
+orbital motion. After reducing the system to an effective one-body problem, we
+simulated 16 configurations consisting of four mass ratios ($m_1:m_2=1:1,1:2,1:4,1:16$)
+and four eccentricities ($\varepsilon=0,0.25,0.5,0.75$). We set initial conditions
+to ensure closed orbits and constructed the full trajectories of both bodies in the
+center-of-mass frame. We found that increasing the eccentricity led to more elongated
+orbits and higher velocities near periapsis, which is consistent with the
+conservation of angular momentum. As the mass ratio became more extreme, the heaver 
+body remained close to the center of mass while the ligher one followed a significantly
+larger orbit, which aligns with theoretical expectations and highlights the
+effectiveness of numerical methods in modeling classical gravitational systems.
+This framework can be extended to include perturbations, spin-orbit coupling,
+or additional bodies, which are relevant to modern applications in 
+astrophysics.
+
 \end{abstract}
 
 % Use astrothesaurus numbers in place of num
-\keywords{(1) --- (2)  --- (3) ---}
-
+\keywords{two-body problem --- orbital dynamics  --- Runge-Kutta method --- mass ratio --- eccentricity --- numerical simulation}
 
 \section{Introduction} \label{sec:intro}
 
+The two-body problem from classical mechanics occurs when two masses interact 
+through a central force, most commonly gravity. It appears in physical 
+systems, such as the Earth orbiting the Sun, binary star pairs, and the motion 
+of artificial satellites. Despite its simplicity, this problem captures 
+essential features of orbital motion and serves as a foundation for more 
+complex models. Because it can be solved exactly within the framework of
+Newtonian mechanics, it holds both theoretical and practical importance
+in physics and astronomy \cite{murray}.
 
+\noindent Given two masses, $m_1$ and $m_2$, interacting via Newton's laws of
+graviation, the force on each body is governed by:
+\begin{equation}
+    \vec{F}=-G\frac{m_1m_2}{r^2}\hat{r},
+\end{equation}
+\noindent where $G$ is the gravitational constant, $r$ is the distance between
+the two masses, and $\hat{r}$ is the unit vector pointing from one mass to the other
+\cite{taylor}.\\
+
+\noindent To simplify our analysis, we can reduce the two-body system to an 
+effective one-body problem by introducing the relative position vector
+$\vec{r}=\vec{r}_1-\vec{r}_2$ and the reduced mass $\mu=\frac{m_1m_2}{m_1+m_2}$.
+The resulting equation of motion becomes:
+\begin{equation}
+    \mu\ddot{\vec{r}}=-G\frac{m_1m_2}{r^2}\hat{r},
+\end{equation}
+\noindent which describes the motion of a single particle of mass $\mu$ undergoing
+a central force. The general solution to this equation yields conic-section
+trajectories (elliptical, parabolic, or hyperbolic) depending on the total energy
+and angular momentum of the system \cite{taylor}.\\
+
+\noindent The two-body problem can be solved analytically, which highlights
+its importance in understanding more complex dynamical systems such as
+celestial mechanics, orbital determination, and pertubation theory \cite{meyer, schneider}. In 
+computational contexts such as this project, it also provides a useful model
+for implementing and validating numerical methods like the Runge-Kutta
+algorithm \cite{sullivan}.\\
+
+\noindent In this project, we observe how variations in mass ratios and orbital
+eccentricity affect the resulting orbits in the two-body problem. We numerically
+solve the equations of motion using the fourth-order Runge-Kutta method and
+visualize the resulting trajectories under these various configurations.\\
 
 \section{Data and Observations} \label{sec:data}
 
+The two-body problem involves two point masses, $m_1$ and $m_2$, interacting via
+a central force. To simplify, we can reduce it to an equivalent one-body problem
+by switching from absolute position vectors $\vec{r}_1$ and $\vec{r}_2$ to the
+relative position vector $\vec{r}=\vec{r}_1-\vec{r}_2$.\\
 
-\begin{figure*}
+\noindent By applying Newton's second law to each body, the graviational force 
+acting on $m_1$ due to $m_2$ becomes:
+\begin{equation}
+    \vec{F}_{12}=-G\frac{m_1m_2}{|\vec{r}_1-\vec{r}_2|^2}\hat{r},
+\end{equation}
+\noindent and the force acting on $m_2$ is simply $\vec{F}_{21}=-\vec{F}_{12}$. Subtracting the two
+equations of motion eliminates forces gives us an effective second-order
+differential equation for the relative coordinate:
+\begin{equation}
+    \mu\ddot{\vec{r}}=-G\frac{m_1m_2}{r^2}\hat{r},
+\end{equation}
+where $\mu=\frac{m_1m_2}{m_1+m_2}$ is the reduced mass of the system and $r=|\vec{r}|$.\\
+
+\noindent This equation describes the motion of a single particle of mass $\mu$
+in a central graviational potential, and the resulting orbits are conic sections
+(ellipses, parabolas, or hyperolas) depending on the system's energy and
+angular momentum \cite{taylor, murray}.\\
+
+\noindent Once we solve for the relative motion, we can recover the original
+trajectories using the center-of-mass frame:
+\begin{equation}
+    \vec{r}_1=\frac{m_2}{m_1+m_2}\vec{r},\quad \vec{r}_2=\frac{m_1}{m_1+m_2}\vec{r}.
+    \label{eq:positions}
+\end{equation}
+
+\noindent To study the dynamics of the reduced one-body system, we placed the particle
+of reduced mass at $(x_0,y_0)=(-1,0)$ with an initial velocity $(v_{x0}, v_{y0})=(0,\sqrt{1+\varepsilon})$
+and constrained $\varepsilon<1$ to ensure closed-bounded orbits. We evolved the system
+over one orbital period:
+\begin{equation}
+    T=\frac{2\pi}{(1-\varepsilon)^{3/2}}
+\end{equation}
+\noindent using four values for eccentricity $\varepsilon=(0, 0.25,0.5,0.75)$
+and four mass ratios $m_1:m_2=(1:1,1:2,1:4,1:16)$, totaling 16 configurations.\\
+
+\noindent We solved the resulting system of first-order ODEs using the
+fourth-order Runge-Kutta method implemented via \texttt{solve\_ivp} from Python's
+\texttt{SciPy} library with 500 time steps per orbit \cite{sullivan}. 
+
+
+\section{Results} \label{sec:results}
+
+After obtaining the relative trajectories, we reconstructed the positions of the two bodies using 
+Equation~\ref{eq:positions}. The resulting orbital trajectories are shown
+in Figure~\ref{fig:orbits}.
+
+\begin{figure*}[t]
     \centering
     % Row 1: m1:m2 = 1:1
     \gridline{
@@ -87,18 +193,46 @@ Austin, TX 78712, USA}
         \fig{1_16_0.50.png}{0.24\textwidth}{}
         \fig{1_16_0.75.png}{0.24\textwidth}{}
     }
-    \caption{Two-body orbit plots for various mass ratios ($m_1:m_2$ from top
-    to bottom) and eccentricities ($\varepsilon$ from left to right).}
+    \caption{Two-body orbit plots for various mass ratios ($m_1:m_2$, top
+    to bottom) and eccentricities ($\varepsilon$, left to right).}
     \label{fig:orbits}
 \end{figure*}
 
-
-\section{Results} \label{sec:results}
-
-
-
 \section{Summary and Conclusion} \label{sec:summary}
 
+In this project, we numerically analyzed the two-body problem using the
+fourth-order Runge-Kutta method to solve the equations for 16 distinct
+configurations. We observed how changing the mass ratio and orbital
+eccentricity parameters influenced the shape and dynamics of the resulting
+orbits. As expected, increasing the eccentricity led to more elongated 
+trajectories and sharper velocity changes near periapsis, which aligns with
+the conservation of angular momentum \cite{murray}.\\
+
+\noindent We also found that greater mass asymmetry causes the more massive
+body to remain closer to the system's center of mass while the ligher
+body follows a larger orbit. In the limiting case of a very large mass ratio,
+the heavier object remains nearly fixed. Physically, the behavior of a small
+body orbiting a much larger one is in line with a planet orbiting a star. Altogether,
+our results agree with theoretical predictions and highlight the effectiveness
+of numerical methods in modeling gravitational systems beyond simple analytic
+cases.\\
+
+\noindent Real-world uses of the two-body problem highlight its ongoing
+relevance in modern astrophysics. For instance, NASA's DART mission used perturbed
+two-body dynamics to model post-impact changes in the Didymos-Dimorphos binary
+system to help estimate orbital shifts and assess the effectiveness of asteroid
+deflection strategies \cite{meyer}. Similarly, accurate two-body and N-body
+models are essential in characterizing and cataloging exoplanetary systems,
+such as those in the exoplanet.eu database \cite{schneider}.\\
+
+\noindent Overall, these applications demonstrate how even a well-understood
+classical system like the two-body problem continues to influence active
+areas of research such as asteroid deflection strategies and exoplanet
+discovery and classification \cite{meyer}. Further extensions could include modeling
+perturbative forces (e.g. non-gravitational effects or third-body influences),
+validating simulations against real astronomical data, or exploring transitions
+to chaotic behavior. These additions would bridge the gap between theory and
+the complexities of real-world orbital systems.
 
 
 \subsection*{Acknowledgements}
