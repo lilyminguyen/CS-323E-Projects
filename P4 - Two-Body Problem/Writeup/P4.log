@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  12 NOV 2025 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 NOV 2025 05:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects-new/P4 - Two-Body Problem/Writeup/P4.tex"
-(/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects-new/P4 - Two-Body Problem/Writeup/P4.tex
+**"/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P4 - Two-Body Problem/Writeup/P4.tex"
+(/Users/lilynguyen/Downloads/UT Fa25/CS 323E/CS-323E-Projects/P4 - Two-Body Problem/Writeup/P4.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/aastex/aastex631.cls
@@ -571,16 +571,16 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 
 Couldn't patch \@starttoc
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
-Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 26.
 
 
 Class revtex4-1 Warning: Repair the float package.
 
-Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 25.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 25.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 25.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 25.
+Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 26.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 26.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 26.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 26.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count373
@@ -588,24 +588,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./P4.aux)
 \openout1 = `P4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count374
@@ -631,28 +631,114 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 26.
  (./P4.out) (./P4.out)
 \@outlinefile=\write5
 \openout5 = `P4.out'.
 
-Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 25.
-Class revtex4-1 Info: Reinvoke \linenumbers on input line 25.
-Class revtex4-1 Info: Overriding \@LN@LLerror on input line 25.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 48.
+Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 26.
+Class revtex4-1 Info: Reinvoke \linenumbers on input line 26.
+Class revtex4-1 Info: Overriding \@LN@LLerror on input line 26.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 50.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<1_1_0.00.png, id=23, 289.08pt x 289.08pt>
+File: 1_1_0.00.png Graphic file (type png)
+<use 1_1_0.00.png>
+Package pdftex.def Info: 1_1_0.00.png  used on input line 65.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_1_0.25.png, id=25, 289.08pt x 289.08pt>
+File: 1_1_0.25.png Graphic file (type png)
+<use 1_1_0.25.png>
+Package pdftex.def Info: 1_1_0.25.png  used on input line 65.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_1_0.50.png, id=26, 289.08pt x 289.08pt>
+File: 1_1_0.50.png Graphic file (type png)
+<use 1_1_0.50.png>
+Package pdftex.def Info: 1_1_0.50.png  used on input line 65.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_1_0.75.png, id=27, 289.08pt x 289.08pt>
+File: 1_1_0.75.png Graphic file (type png)
+<use 1_1_0.75.png>
+Package pdftex.def Info: 1_1_0.75.png  used on input line 65.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_2_0.00.png, id=28, 289.08pt x 289.08pt>
+File: 1_2_0.00.png Graphic file (type png)
+<use 1_2_0.00.png>
+Package pdftex.def Info: 1_2_0.00.png  used on input line 73.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_2_0.25.png, id=29, 289.08pt x 289.08pt>
+File: 1_2_0.25.png Graphic file (type png)
+<use 1_2_0.25.png>
+Package pdftex.def Info: 1_2_0.25.png  used on input line 73.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_2_0.50.png, id=30, 289.08pt x 289.08pt>
+File: 1_2_0.50.png Graphic file (type png)
+<use 1_2_0.50.png>
+Package pdftex.def Info: 1_2_0.50.png  used on input line 73.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_2_0.75.png, id=31, 289.08pt x 289.08pt>
+File: 1_2_0.75.png Graphic file (type png)
+<use 1_2_0.75.png>
+Package pdftex.def Info: 1_2_0.75.png  used on input line 73.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_4_0.00.png, id=32, 289.08pt x 289.08pt>
+File: 1_4_0.00.png Graphic file (type png)
+<use 1_4_0.00.png>
+Package pdftex.def Info: 1_4_0.00.png  used on input line 81.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_4_0.25.png, id=33, 289.08pt x 289.08pt>
+File: 1_4_0.25.png Graphic file (type png)
+<use 1_4_0.25.png>
+Package pdftex.def Info: 1_4_0.25.png  used on input line 81.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_4_0.50.png, id=34, 289.08pt x 289.08pt>
+File: 1_4_0.50.png Graphic file (type png)
+<use 1_4_0.50.png>
+Package pdftex.def Info: 1_4_0.50.png  used on input line 81.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_4_0.75.png, id=35, 289.08pt x 289.08pt>
+File: 1_4_0.75.png Graphic file (type png)
+<use 1_4_0.75.png>
+Package pdftex.def Info: 1_4_0.75.png  used on input line 81.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_16_0.00.png, id=36, 289.08pt x 289.08pt>
+File: 1_16_0.00.png Graphic file (type png)
+<use 1_16_0.00.png>
+Package pdftex.def Info: 1_16_0.00.png  used on input line 89.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_16_0.25.png, id=37, 289.08pt x 289.08pt>
+File: 1_16_0.25.png Graphic file (type png)
+<use 1_16_0.25.png>
+Package pdftex.def Info: 1_16_0.25.png  used on input line 89.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_16_0.50.png, id=38, 289.08pt x 289.08pt>
+File: 1_16_0.50.png Graphic file (type png)
+<use 1_16_0.50.png>
+Package pdftex.def Info: 1_16_0.50.png  used on input line 89.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+<1_16_0.75.png, id=39, 289.08pt x 289.08pt>
+File: 1_16_0.75.png Graphic file (type png)
+<use 1_16_0.75.png>
+Package pdftex.def Info: 1_16_0.75.png  used on input line 89.
+(pdftex.def)             Requested size: 123.151pt x 123.1507pt.
+
 No file P4.bbl.
-[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./P4.aux)
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 \end{document}
+                     <./1_1_0.00.png> <./1_1_0.25.png> <./1_1_0.50.png> <./1_1_0.75.png> <./1_2_0.00.png> <./1_2_0.25.png> <./1_2_0.50.png> <./1_2_0.75.png> <./1_4_0.00.png> <./1_4_0.25.png> <./1_4_0.50.png> <./1_4_0.75.png> <./1_16_0.00.png> <./1_16_0.25.png> <./1_16_0.50.png> <./1_16_0.75.png>] (./P4.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -661,18 +747,18 @@ Package rerunfilecheck Info: File `P4.out' has not changed.
 (rerunfilecheck)             Checksum: B0FD7C4186680A992FD2CE59D471242B;494.
  ) 
 Here is how much of TeX's memory you used:
- 15706 strings out of 473190
- 250669 string characters out of 5715801
- 723019 words of memory out of 5000000
- 38692 multiletter control sequences out of 15000+600000
- 567671 words of font info for 70 fonts, out of 8000000 for 9000
+ 15834 strings out of 473190
+ 253024 string characters out of 5715801
+ 727062 words of memory out of 5000000
+ 38817 multiletter control sequences out of 15000+600000
+ 568280 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,5n,93p,592b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on P4.pdf (1 page, 124539 bytes).
+ 94i,8n,93p,588b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on P4.pdf (2 pages, 457233 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

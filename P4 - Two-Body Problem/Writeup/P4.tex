@@ -9,6 +9,7 @@
 \usepackage{graphicx}           % used for non-SVG images
 \usepackage{amsmath}
 \usepackage{parskip}
+% \usepackage{subcaption}
 
 
 % Search Query Metadata
@@ -23,6 +24,7 @@ urlcolor=blue
 }
 
 \begin{document}
+
 \title{Two-Body Problem}
 % [] is for ORCiD
 %\correspondingauthor{Main Author}
@@ -52,12 +54,43 @@ Austin, TX 78712, USA}
 \section{Data and Observations} \label{sec:data}
 
 
-%\begin{figure}[H]
-    %\centering
-    %\includegraphics[width=0.30\textwidth]{name.png}
-    %\caption{caption.}
-    %\label{fig:label}
-%\end{figure}
+\begin{figure*}
+    \centering
+    % Row 1: m1:m2 = 1:1
+    \gridline{
+        \fig{1_1_0.00.png}{0.24\textwidth}{}
+        \fig{1_1_0.25.png}{0.24\textwidth}{}
+        \fig{1_1_0.50.png}{0.24\textwidth}{}
+        \fig{1_1_0.75.png}{0.24\textwidth}{}
+    }
+    \vspace{-2mm}
+    % Row 2: m1:m2 = 1:2
+    \gridline{
+        \fig{1_2_0.00.png}{0.24\textwidth}{}
+        \fig{1_2_0.25.png}{0.24\textwidth}{}
+        \fig{1_2_0.50.png}{0.24\textwidth}{}
+        \fig{1_2_0.75.png}{0.24\textwidth}{}
+    }
+    \vspace{-2mm}
+    % Row 3: m1:m2 = 1:4
+    \gridline{
+        \fig{1_4_0.00.png}{0.24\textwidth}{}
+        \fig{1_4_0.25.png}{0.24\textwidth}{}
+        \fig{1_4_0.50.png}{0.24\textwidth}{}
+        \fig{1_4_0.75.png}{0.24\textwidth}{}
+    }
+    \vspace{-2mm}
+    % Row 4: m1:m2 = 1:16
+    \gridline{
+        \fig{1_16_0.00.png}{0.24\textwidth}{}
+        \fig{1_16_0.25.png}{0.24\textwidth}{}
+        \fig{1_16_0.50.png}{0.24\textwidth}{}
+        \fig{1_16_0.75.png}{0.24\textwidth}{}
+    }
+    \caption{Two-body orbit plots for various mass ratios ($m_1:m_2$ from top
+    to bottom) and eccentricities ($\varepsilon$ from left to right).}
+    \label{fig:orbits}
+\end{figure*}
 
 
 \section{Results} \label{sec:results}
